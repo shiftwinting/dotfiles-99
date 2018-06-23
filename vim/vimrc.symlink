@@ -6,10 +6,18 @@
 " configuration options for each plugin and automatically loaded by Vim.
 source ~/.vim/plugin/plugins.vim
 
+"-----------------------------
+" Mappings
+"-----------------------------
+" Keep selection after the identation
+vnoremap < <gv
+vnoremap > >gv
+
 " Leader Mappings
 map <Space> <leader>
 map <Leader>w :update<CR>
 map <Leader>q :qall<CR>
+" Relative path to clipboard
 nnoremap <Leader>rp :let @*=expand("%")<CR>
 
 syntax on
@@ -53,30 +61,29 @@ set wildignore+=*/coverage/*
 "-------------------------------------------------------------------------------
 " Interface
 "-------------------------------------------------------------------------------
-
 set number relativenumber " Enable line numbers
 set scrolloff=5           " Leave 5 lines of buffer when scrolling
 set sidescrolloff=10      " Leave 10 characters of horizontal buffer when scrolling
 set foldmethod=indent
 set nofoldenable
 set cursorline
+" Vertital column at 120
 highlight ColorColumn ctermbg=gray
 set colorcolumn=120
 
 "-------------------------------------------------------------------------------
 " Colors & Formatting
 "-------------------------------------------------------------------------------
-
-colorscheme palenight
+let g:onedark_terminal_italics=1
+colorscheme onedark
 set guifont=Operator\ Mono\ Book:h20
-
-" Showcase comments in italics
-highlight Comment cterm=italic gui=italic
 
 "-------------------------------------------------------------------------------
 " Tab navigation
 "-------------------------------------------------------------------------------
-set guioptions-=e                          " Change tab for buffer on macvim
+set guioptions-=e                        " Change tab for buffer on macvim
+set guioptions-=r                        " Remove right scroll on macvim
+set guioptions-=L                        " Remove left scroll on macvim
 " Easy tab navigation
 nnoremap <C-Tab> :tabnext<CR>
 nnoremap <C-S-Tab> :tabprevious<CR>
@@ -95,20 +102,3 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
-
-"-------------------------------------------------------------------------------
-" Neovim-specific configurations
-"-------------------------------------------------------------------------------
-
-if has('nvim')
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  set termguicolors
-  colorscheme NeoSolarized
-  set background=dark
-
-  " Fix vim-tmux-navigator <C-h> https://git.io/viGRU
-  nmap <BS> <C-W>h
-
-  " Fix vim-tmux-navigator <C-h> https://git.io/vS5QH
-  nmap <BS> :<C-u>TmuxNavigateLeft<CR>
-endif
