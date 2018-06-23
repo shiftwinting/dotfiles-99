@@ -1,6 +1,7 @@
-let g:fzf_buffers_jump = 1
-nnoremap <D-p> :FZF<CR>
-nnoremap <D-9> :GFiles?<CR>
-nnoremap <Leader>. :Ag <CR>
-nnoremap <Leader>, :Tags<CR>
-nnoremap <Leader>e :Buffers<CR>
+let g:fzf_buffers_jump = 1 " Jump to the existing window if possible
+
+nnoremap <Leader>p :FZF<CR>
+nnoremap <Leader>m :GFiles?<CR>
+nnoremap <Leader>/ :Ag <CR>
+nnoremap <Leader>. :History<CR>
+nnoremap <Leader>, :Buffers<CR>

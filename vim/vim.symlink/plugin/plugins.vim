@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 " Addons
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'yegappan/mru' " Shows the most recent opened files
 Plug 'airblade/vim-gitgutter'
 Plug 'matze/vim-move'
 Plug 'vim-airline/vim-airline'
