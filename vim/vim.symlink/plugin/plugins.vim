@@ -20,6 +20,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-fugitive'
 Plug 'janko-m/vim-test'
 Plug 'chrisbra/Colorizer' " Display hex colors
+Plug 'ludovicchabant/vim-gutentags'
 
 " File system navigation
 Plug 'junegunn/fzf', { 'dir': '~/.vim/plugged/.fzf', 'do': './install --bin' }

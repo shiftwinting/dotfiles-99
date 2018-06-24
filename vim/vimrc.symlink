@@ -95,7 +95,8 @@ nnoremap <D-5> :tabn5<CR>
 nnoremap <D-6> :tabn6<CR>
 nnoremap <D-7> :tabn7<CR>
 nnoremap <D-8> :tabn8<CR>
-nnoremap <D-0> :terminal<CR>
+nnoremap <D-9> :tabn9<CR>
+nnoremap <Leader>0 :terminal<CR>
 
 " Get off my lawn - helpful when learning Vim :)
 nnoremap <Left> :echoe "Use h"<CR>
