@@ -35,8 +35,11 @@ Plug 'elzr/vim-json'
 Plug 'tpope/vim-markdown' " Markdown support
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'Keithbsmiley/rspec.vim'
 Plug 'alvan/vim-closetag' " Autoclose HTML tags
 Plug 'Valloric/MatchTagAlways' " Highlight HTML tags
+Plug 'stephpy/vim-yaml'
 
 " Syntax errors
 Plug 'vim-syntastic/syntastic'
