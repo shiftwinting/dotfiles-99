@@ -18,8 +18,9 @@ let g:ale_pattern_options = {
 \ 'facil123\/app\/javascript\/src\/components\/.*\.js$': {'ale_linters': ['standard']},
 \ 'facil123\/app\/javascript\/src\/services\/.*\.js$': {'ale_linters': ['standard']},
 \ 'facil123\/app\/javascript\/src\/scenes\/.*\.js$': {'ale_linters': ['standard']},
+\ 'facil123\/app\/javascript\/src\/store\/.*\.js$': {'ale_linters': ['standard']},
 \ 'facil123\/app\/javascript\/src\/.*\/.*\.js$': {'ale_linters': ['jscs', 'jshint']},
 \ 'facil123\/spec\/javascripts\/.*\/.*\.js$': {'ale_linters': ['jscs', 'jshint']},
 \ 'facil123\/app\/.*\.rb$': {'ale_linters': ['rubocop']},
-\ '\.js$': {'ale_linters': [], 'ale_fixers': []},
+\ '\.js$': {'ale_linters': [], 'ale_fixers': []}
 \}

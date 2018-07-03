@@ -13,19 +13,19 @@ Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tmhedberg/matchit' " Expand % match to a lot of languages
 Plug 'vim-scripts/tComment'
-Plug 'farmergreg/vim-lastplace'
+Plug 'farmergreg/vim-lastplace' " When reopen a buffer, puts the cursor where it was last time
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'mhinz/vim-startify'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-fugitive'
 Plug 'janko-m/vim-test'
 Plug 'chrisbra/Colorizer' " Display hex colors
-Plug 'ludovicchabant/vim-gutentags'
+Plug 'ludovicchabant/vim-gutentags' " Generate ctags automatically
+Plug 'simeji/winresizer' " Windows manager (resize)
 
 " File system navigation
 Plug 'junegunn/fzf', { 'dir': '~/.vim/plugged/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
-Plug 'mileszs/ack.vim'
 
 " Syntax highlighting
 Plug 'vim-ruby/vim-ruby'
@@ -47,6 +47,5 @@ Plug 'w0rp/ale'
 
 " Themes
 Plug 'joshdick/onedark.vim'
-Plug 'morhetz/gruvbox'
 
 call plug#end()

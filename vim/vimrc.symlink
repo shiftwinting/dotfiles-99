@@ -12,16 +12,14 @@ source ~/.vim/plugin/plugins.vim
 " Keep selection after the identation
 vnoremap < <gv
 vnoremap > >gv
-
 " Leader Mappings
 map <Space> <leader>
-map <Leader>w :update<CR>
-map <Leader>q :qall<CR>
 " Relative path to clipboard
 nnoremap <Leader>rp :let @*=expand("%")<CR>
 
 syntax on
 
+set hidden                            " Allows change the buffer without the needs to save it
 set autoread                          " Auto reload changed files
 set wildmenu                          " Tab autocomplete in command mode
 set backspace=indent,eol,start        " http://vi.stackexchange.com/a/2163
@@ -50,7 +48,7 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 
-" Ignored files/directories from autocomplete (and CtrlP)
+" Ignored files/directories from autocomplete
 set wildignore+=*/tmp/*
 set wildignore+=*.so
 set wildignore+=*.zip
@@ -77,6 +75,7 @@ set colorcolumn=120
 let g:onedark_terminal_italics=1
 colorscheme onedark
 set guifont=Operator\ Mono\ Book:h20
+set linespace=5
 
 "-------------------------------------------------------------------------------
 " Tab navigation
@@ -85,21 +84,21 @@ set guioptions-=e                        " Change tab for buffer on macvim
 set guioptions-=r                        " Remove right scroll on macvim
 set guioptions-=L                        " Remove left scroll on macvim
 " Easy tab navigation
-nnoremap <C-Tab> :tabnext<CR>
-nnoremap <C-S-Tab> :tabprevious<CR>
-nnoremap <D-1> :tabn1<CR>
-nnoremap <D-2> :tabn2<CR>
-nnoremap <D-3> :tabn3<CR>
-nnoremap <D-4> :tabn4<CR>
-nnoremap <D-5> :tabn5<CR>
-nnoremap <D-6> :tabn6<CR>
-nnoremap <D-7> :tabn7<CR>
-nnoremap <D-8> :tabn8<CR>
-nnoremap <D-9> :tabn9<CR>
+nnoremap <D-w> :bd<CR>
+nnoremap <C-Tab> :bnext<CR>
+nnoremap <C-S-Tab> :bprevious<CR>
 nnoremap <Leader>0 :terminal<CR>
 
 " Get off my lawn - helpful when learning Vim :)
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
+nnoremap <Up>     <NOP>
+nnoremap <Down>   <NOP>
+nnoremap <Left>   <NOP>
+nnoremap <Right>  <NOP>
+inoremap <Up>     <NOP>
+inoremap <Down>   <NOP>
+inoremap <Left>   <NOP>
+inoremap <Right>  <NOP>
+vnoremap <Up>     <NOP>
+vnoremap <Down>   <NOP>
+vnoremap <Left>   <NOP>
+vnoremap <Right>  <NOP>
