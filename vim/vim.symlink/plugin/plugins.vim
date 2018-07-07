@@ -47,5 +47,6 @@ Plug 'w0rp/ale'
 
 " Themes
 Plug 'joshdick/onedark.vim'
+Plug 'trevordmiller/nova-vim'
 
 call plug#end()

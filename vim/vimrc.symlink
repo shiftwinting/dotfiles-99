@@ -1,6 +1,3 @@
-" Vim settings for @mscoutermarsh
-"
-
 " Settings in this file may depend on plugins, so let's install them first.
 " Not to be confused with the contents of ~/.vim/plugin/* which are
 " configuration options for each plugin and automatically loaded by Vim.
@@ -9,9 +6,6 @@ source ~/.vim/plugin/plugins.vim
 "-----------------------------
 " Mappings
 "-----------------------------
-" Keep selection after the identation
-vnoremap < <gv
-vnoremap > >gv
 " Leader Mappings
 map <Space> <leader>
 " Relative path to clipboard
@@ -64,27 +58,28 @@ set scrolloff=5           " Leave 5 lines of buffer when scrolling
 set sidescrolloff=10      " Leave 10 characters of horizontal buffer when scrolling
 set foldmethod=indent
 set nofoldenable
-set cursorline
-" Vertital column at 120
-highlight ColorColumn ctermbg=gray
-set colorcolumn=120
+set cursorline " Highlight on current line
+set colorcolumn=120 " Vertital column at 120
 
 "-------------------------------------------------------------------------------
 " Colors & Formatting
 "-------------------------------------------------------------------------------
-let g:onedark_terminal_italics=1
-colorscheme onedark
-set guifont=Operator\ Mono\ Book:h20
+" let g:onedark_terminal_italics=1
+" colorscheme onedark
+colorscheme nova
+set guifont=SF\ Mono\ Regular:h18
 set linespace=5
 
 "-------------------------------------------------------------------------------
 " Tab navigation
 "-------------------------------------------------------------------------------
-set guioptions-=e                        " Change tab for buffer on macvim
-set guioptions-=r                        " Remove right scroll on macvim
-set guioptions-=L                        " Remove left scroll on macvim
+if has("gui_macvim")
+  set guioptions-=r                        " Remove right scroll on macvim
+  set guioptions-=L                        " Remove left scroll on macvim
+endif
 " Easy tab navigation
 nnoremap <D-w> :bd<CR>
+nnoremap <D-t> :enew<CR>
 nnoremap <C-Tab> :bnext<CR>
 nnoremap <C-S-Tab> :bprevious<CR>
 nnoremap <Leader>0 :terminal<CR>
