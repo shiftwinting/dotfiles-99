@@ -42,7 +42,6 @@ Plug 'Valloric/MatchTagAlways' " Highlight HTML tags
 Plug 'stephpy/vim-yaml'
 
 " Syntax errors
-Plug 'vim-syntastic/syntastic'
 Plug 'w0rp/ale'
 
 " Themes
