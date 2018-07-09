@@ -40,8 +40,6 @@ set noshowmode                        " Do not show the mode below the statuslin
 " Persistent undo
 set undodir=~/.vim/undo/
 set undofile
-set undolevels=1000
-set undoreload=10000
 
 " Ignored files/directories from autocomplete
 set wildignore+=*/tmp/*

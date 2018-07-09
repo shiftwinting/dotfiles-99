@@ -22,6 +22,7 @@ Plug 'janko-m/vim-test'
 Plug 'chrisbra/Colorizer' " Display hex colors
 Plug 'ludovicchabant/vim-gutentags' " Generate ctags automatically
 Plug 'simeji/winresizer' " Windows manager (resize)
+Plug 'mbbill/undotree'
 
 " File system navigation
 Plug 'junegunn/fzf', { 'dir': '~/.vim/plugged/.fzf', 'do': './install --bin' }
