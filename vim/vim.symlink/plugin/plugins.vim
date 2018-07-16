@@ -6,7 +6,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'matze/vim-move'
 Plug 'vim-airline/vim-airline'
-Plug 'ervandew/supertab'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-endwise' " Close 'begin end' ruby tag wisely
 Plug 'tpope/vim-surround'
@@ -25,7 +24,7 @@ Plug 'simeji/winresizer' " Windows manager (resize)
 Plug 'mbbill/undotree'
 
 " File system navigation
-Plug 'junegunn/fzf', { 'dir': '~/.vim/plugged/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 
 " Syntax highlighting
@@ -41,6 +40,8 @@ Plug 'Keithbsmiley/rspec.vim'
 Plug 'alvan/vim-closetag' " Autoclose HTML tags
 Plug 'Valloric/MatchTagAlways' " Highlight HTML tags
 Plug 'stephpy/vim-yaml'
+
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --js-completer' }
 
 " Syntax errors
 Plug 'w0rp/ale'
