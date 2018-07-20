@@ -53,8 +53,6 @@ set wildignore+=*/coverage/*
 " Interface
 "-------------------------------------------------------------------------------
 set number relativenumber " Enable line numbers
-set scrolloff=5           " Leave 5 lines of buffer when scrolling
-set sidescrolloff=10      " Leave 10 characters of horizontal buffer when scrolling
 set foldmethod=indent
 set nofoldenable
 set cursorline " Highlight on current line
