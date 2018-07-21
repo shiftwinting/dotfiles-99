@@ -19,8 +19,6 @@ set wildmenu                          " Tab autocomplete in command mode
 set backspace=indent,eol,start        " http://vi.stackexchange.com/a/2163
 set clipboard=unnamed                 " Clipboard support (OSX)
 set laststatus=2                      " Show status line on startup
-set splitright                        " Open new splits to the right
-set splitbelow                        " Open new splits to the bottom
 set lazyredraw                        " Reduce the redraw frequency
 set ttyfast                           " Send more characters in fast terminals
 set nowrap                            " Don't wrap long lines
@@ -34,7 +32,6 @@ set hlsearch                          " Highlight search results
 set ignorecase smartcase              " Search queries intelligently set case
 set incsearch                         " Show search results as you type
 set timeoutlen=1000 ttimeoutlen=0     " Remove timeout when hitting escape
-set showcmd                           " Show size of visual selection
 set noshowmode                        " Do not show the mode below the statusline
 
 " Persistent undo
