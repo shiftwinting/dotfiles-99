@@ -58,9 +58,9 @@ set colorcolumn=120 " Vertital column at 120
 "-------------------------------------------------------------------------------
 " Colors & Formatting
 "-------------------------------------------------------------------------------
-" let g:onedark_terminal_italics=1
-" colorscheme onedark
-colorscheme nova
+let g:nord_uniform_diff_background = 1
+let g:nord_cursor_line_number_background = 1
+colorscheme nord
 set guifont=SF\ Mono\ Regular:h18
 set linespace=5
 
