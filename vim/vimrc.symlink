@@ -72,7 +72,6 @@ if has("gui_macvim")
   set guioptions-=L                        " Remove left scroll on macvim
 endif
 " Easy tab navigation
-nnoremap <D-w> :bd<CR>
 nnoremap <D-t> :enew<CR>
 nnoremap <C-Tab> :bnext<CR>
 nnoremap <C-S-Tab> :bprevious<CR>
