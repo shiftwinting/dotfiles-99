@@ -47,7 +47,6 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --js-completer' }
 Plug 'w0rp/ale'
 
 " Themes
-Plug 'vim-airline/vim-airline-themes'
 Plug 'joshdick/onedark.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'jnurmine/Zenburn'
