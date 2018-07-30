@@ -16,7 +16,6 @@ syntax on
 set hidden                            " Allows change the buffer without the needs to save it
 set autoread                          " Auto reload changed files
 set wildmenu                          " Tab autocomplete in command mode
-set backspace=indent,eol,start        " http://vi.stackexchange.com/a/2163
 set clipboard=unnamed                 " Clipboard support (OSX)
 set laststatus=2                      " Show status line on startup
 set lazyredraw                        " Reduce the redraw frequency
@@ -33,6 +32,7 @@ set ignorecase smartcase              " Search queries intelligently set case
 set incsearch                         " Show search results as you type
 set timeoutlen=1000 ttimeoutlen=0     " Remove timeout when hitting escape
 set noshowmode                        " Do not show the mode below the statusline
+set encoding=utf-8
 
 " Persistent undo
 set undodir=~/.vim/undo/
@@ -54,23 +54,23 @@ set foldmethod=indent
 set nofoldenable
 set cursorline " Highlight on current line
 set colorcolumn=120 " Vertital column at 120
-
-"-------------------------------------------------------------------------------
-" Colors & Formatting
-"-------------------------------------------------------------------------------
-let g:nord_uniform_diff_background = 1
-let g:nord_cursor_line_number_background = 1
-colorscheme nord
-set guifont=SF\ Mono\ Regular:h18
 set linespace=5
 
-"-------------------------------------------------------------------------------
-" Tab navigation
-"-------------------------------------------------------------------------------
 if has("gui_macvim")
+  set macligatures
+  set guifont=Fira\ Code:h18
+
   set guioptions-=r                        " Remove right scroll on macvim
   set guioptions-=L                        " Remove left scroll on macvim
+
+  let g:nord_uniform_status_lines = 1
+  let g:nord_underline = 1
+  let g:nord_italic_comments = 1
+  let g:nord_uniform_diff_background = 1
+  let g:nord_cursor_line_number_background = 1
+  colorscheme nord
 endif
+
 " Easy tab navigation
 nnoremap <D-t> :enew<CR>
 nnoremap <C-Tab> :bnext<CR>
