@@ -56,21 +56,6 @@ set cursorline " Highlight on current line
 set colorcolumn=120 " Vertital column at 120
 set linespace=5
 
-if has("gui_macvim")
-  set macligatures
-  set guifont=Fira\ Code:h18
-
-  set guioptions-=r                        " Remove right scroll on macvim
-  set guioptions-=L                        " Remove left scroll on macvim
-
-  let g:nord_uniform_status_lines = 1
-  let g:nord_underline = 1
-  let g:nord_italic_comments = 1
-  let g:nord_uniform_diff_background = 1
-  let g:nord_cursor_line_number_background = 1
-  colorscheme nord
-endif
-
 " Easy tab navigation
 nnoremap <D-t> :enew<CR>
 nnoremap <C-Tab> :bnext<CR>

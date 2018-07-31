@@ -1,3 +1,13 @@
-if has("gui_macvim")
-  macmenu &File.New\ Tab key=<nop>
-endif
+macmenu &File.New\ Tab key=<nop>
+
+set guifont=SF\ Mono:h18
+
+set guioptions-=r                        " Remove right scroll on macvim
+set guioptions-=L                        " Remove left scroll on macvim
+
+let g:nord_uniform_status_lines = 1
+let g:nord_underline = 1
+let g:nord_italic_comments = 1
+let g:nord_uniform_diff_background = 1
+let g:nord_cursor_line_number_background = 1
+colorscheme nord
