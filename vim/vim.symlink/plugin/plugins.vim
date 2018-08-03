@@ -24,23 +24,16 @@ Plug 'simeji/winresizer' " Windows manager (resize)
 Plug 'mbbill/undotree'
 Plug 'junegunn/vim-peekaboo'
 Plug 'ryanoasis/vim-devicons'
+Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
+Plug 'alvan/vim-closetag' " Autoclose HTML tags
 
 " File system navigation
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 
 " Syntax highlighting
-Plug 'vim-ruby/vim-ruby'
-Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rails'
-Plug 'elzr/vim-json'
-Plug 'tpope/vim-markdown' " Markdown support
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'Keithbsmiley/rspec.vim'
-Plug 'alvan/vim-closetag' " Autoclose HTML tags
-Plug 'stephpy/vim-yaml'
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --js-completer' }
 
