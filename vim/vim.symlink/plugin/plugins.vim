@@ -23,6 +23,7 @@ Plug 'ludovicchabant/vim-gutentags' " Generate ctags automatically
 Plug 'simeji/winresizer' " Windows manager (resize)
 Plug 'mbbill/undotree'
 Plug 'junegunn/vim-peekaboo'
+Plug 'ryanoasis/vim-devicons'
 
 " File system navigation
 Plug 'junegunn/fzf', { 'do': './install --bin' }

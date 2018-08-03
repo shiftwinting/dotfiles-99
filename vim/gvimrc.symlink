@@ -1,6 +1,6 @@
 macmenu &File.New\ Tab key=<nop>
 
-set guifont=SF\ Mono:h18
+set guifont=FuraCode\ Nerd\ Font:h18
 
 set guioptions-=r                        " Remove right scroll on macvim
 set guioptions-=L                        " Remove left scroll on macvim
