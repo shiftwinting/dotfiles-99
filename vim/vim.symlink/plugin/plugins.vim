@@ -20,7 +20,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'janko-m/vim-test'
 Plug 'chrisbra/Colorizer' " Display hex colors
 Plug 'ludovicchabant/vim-gutentags' " Generate ctags automatically
-Plug 'simeji/winresizer' " Windows manager (resize)
 Plug 'mbbill/undotree'
 Plug 'junegunn/vim-peekaboo'
 Plug 'ryanoasis/vim-devicons'
