@@ -22,7 +22,6 @@ Plug 'chrisbra/Colorizer' " Display hex colors
 Plug 'ludovicchabant/vim-gutentags' " Generate ctags automatically
 Plug 'mbbill/undotree'
 Plug 'junegunn/vim-peekaboo'
-Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'alvan/vim-closetag' " Autoclose HTML tags
 
