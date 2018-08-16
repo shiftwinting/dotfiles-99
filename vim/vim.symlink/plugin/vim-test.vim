@@ -1,4 +1,4 @@
-let test#strategy = 'terminal'
+let test#strategy = 'vimterminal'
 let test#javascript#karma#file_pattern = '\v_spec_js$'
 
 nmap <silent> <leader>n :TestNearest<CR>
