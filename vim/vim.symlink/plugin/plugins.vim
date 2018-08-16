@@ -45,5 +45,8 @@ Plug 'jnurmine/Zenburn'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'arcticicestudio/nord-vim'
+Plug 'whatyouhide/vim-gotham'
+Plug 'hzchirs/vim-material'
+Plug 'rakr/vim-one'
 
 call plug#end()
