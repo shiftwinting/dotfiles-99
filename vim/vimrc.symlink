@@ -54,7 +54,6 @@ set foldmethod=indent
 set nofoldenable
 set cursorline " Highlight on current line
 set colorcolumn=120 " Vertital column at 120
-set linespace=5
 
 let g:nord_uniform_status_lines = 1
 let g:nord_underline = 1
