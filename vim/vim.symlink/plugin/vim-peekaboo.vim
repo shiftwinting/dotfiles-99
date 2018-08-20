@@ -1,1 +1,1 @@
-let g:peekaboo_window = 'vert bo 50new'
+let g:peekaboo_window = 'vert bo 80new'
