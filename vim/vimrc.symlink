@@ -18,8 +18,6 @@ set autoread                          " Auto reload changed files
 set wildmenu                          " Tab autocomplete in command mode
 set clipboard=unnamed                 " Clipboard support (OSX)
 set laststatus=2                      " Show status line on startup
-set lazyredraw                        " Reduce the redraw frequency
-set ttyfast                           " Send more characters in fast terminals
 set nowrap                            " Don't wrap long lines
 set listchars=extends:→               " Show arrow if line continues rightwards
 set listchars+=precedes:←             " Show arrow if line continues leftwards
@@ -30,7 +28,6 @@ set history=500
 set hlsearch                          " Highlight search results
 set ignorecase smartcase              " Search queries intelligently set case
 set incsearch                         " Show search results as you type
-set timeoutlen=1000 ttimeoutlen=0     " Remove timeout when hitting escape
 set noshowmode                        " Do not show the mode below the statusline
 set encoding=utf-8
 
