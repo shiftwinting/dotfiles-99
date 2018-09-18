@@ -23,6 +23,7 @@ Plug 'mbbill/undotree'
 Plug 'junegunn/vim-peekaboo'
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'alvan/vim-closetag' " Autoclose HTML tags
+Plug 'semanser/vim-outdated-plugins'
 
 " File system navigation
 Plug 'junegunn/fzf', { 'do': './install --bin' }
@@ -47,5 +48,6 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'hzchirs/vim-material'
 Plug 'rakr/vim-one'
+Plug 'haishanh/night-owl.vim'
 
 call plug#end()
