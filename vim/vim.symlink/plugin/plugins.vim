@@ -16,6 +16,8 @@ Plug 'farmergreg/vim-lastplace' " When reopen a buffer, puts the cursor where it
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
+Plug 'tpope/vim-rhubarb'
 Plug 'janko-m/vim-test'
 Plug 'chrisbra/Colorizer' " Display hex colors
 Plug 'ludovicchabant/vim-gutentags' " Generate ctags automatically
