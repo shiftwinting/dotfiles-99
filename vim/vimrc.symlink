@@ -10,6 +10,7 @@ source ~/.vim/plugin/plugins.vim
 map <Space> <leader>
 " Relative path to clipboard
 nnoremap <Leader>rp :let @*=expand("%")<CR>
+autocmd BufEnter * silent !{xkbswitch -s 4}
 
 syntax on
 
@@ -56,6 +57,7 @@ set cursorline " Highlight on current line
 set colorcolumn=120 " Vertital column at 120
 
 let g:nord_uniform_status_lines = 1
+let g:nord_italic = 1
 let g:nord_underline = 1
 let g:nord_italic_comments = 1
 let g:nord_uniform_diff_background = 1
