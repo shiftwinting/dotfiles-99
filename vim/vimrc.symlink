@@ -10,6 +10,8 @@ source ~/.vim/plugin/plugins.vim
 map <Space> <leader>
 " Relative path to clipboard
 nnoremap <Leader>rp :let @*=expand("%")<CR>
+
+" Change keyboard to USA layout on buffer enter
 autocmd BufEnter * silent !{xkbswitch -s 4}
 
 syntax on
@@ -17,7 +19,7 @@ syntax on
 set hidden                            " Allows change the buffer without the needs to save it
 set autoread                          " Auto reload changed files
 set wildmenu                          " Tab autocomplete in command mode
-set clipboard=unnamed                 " Clipboard support (OSX)
+set clipboard=unnamed,unnamedplus     " Clipboard support (OSX)
 set laststatus=2                      " Show status line on startup
 set nowrap                            " Don't wrap long lines
 set listchars=extends:→               " Show arrow if line continues rightwards
@@ -60,13 +62,11 @@ if !has('gui_running')
   set mouse=a
 endif
 
-let g:nord_uniform_status_lines = 1
-let g:nord_italic = 1
-let g:nord_underline = 1
-let g:nord_italic_comments = 1
-let g:nord_uniform_diff_background = 1
-let g:nord_cursor_line_number_background = 1
-colorscheme nord
+" Use <TAB> to select the popup menu.
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+colorscheme dracula
 
 " Get off my lawn - helpful when learning Vim :)
 nnoremap <Up>     <NOP>

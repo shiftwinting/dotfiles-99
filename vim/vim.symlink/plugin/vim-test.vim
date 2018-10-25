@@ -1,4 +1,6 @@
-let test#strategy = 'vimterminal'
+if !has('nvim')
+  let test#strategy = 'vimterminal'
+endif
 
 nmap <silent> <leader>n :TestNearest<CR>
 nmap <silent> <leader>f :TestFile<CR>

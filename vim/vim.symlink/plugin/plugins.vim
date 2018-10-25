@@ -16,11 +16,9 @@ Plug 'farmergreg/vim-lastplace' " When reopen a buffer, puts the cursor where it
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
-Plug 'tpope/vim-rhubarb'
+Plug 'cohama/agit.vim'
 Plug 'janko-m/vim-test'
 Plug 'chrisbra/Colorizer' " Display hex colors
-Plug 'ludovicchabant/vim-gutentags' " Generate ctags automatically
 Plug 'mbbill/undotree'
 Plug 'junegunn/vim-peekaboo'
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
@@ -35,14 +33,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rails'
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-  Plug 'ervandew/supertab'
-else
-  " YouCompleteMe works only macvim
-  Plug 'Valloric/YouCompleteMe', { 'do': './install.py --js-completer' }
-endif
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
 " Syntax errors
 Plug 'w0rp/ale'
@@ -59,5 +50,7 @@ Plug 'hzchirs/vim-material'
 Plug 'rakr/vim-one'
 Plug 'dracula/vim'
 Plug 'haishanh/night-owl.vim'
+Plug 'cocopon/iceberg.vim'
+Plug 'cormacrelf/vim-colors-github'
 
 call plug#end()

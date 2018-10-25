@@ -9,9 +9,4 @@ let g:ale_linters = {
 \   'javascript': ['standard', 'jscs', 'jshint'],
 \   'ruby': ['rubocop']
 \}
-let g:ale_fixers = {
-\   'javascript': ['standard'],
-\   'ruby': ['rubocop']
-\}
 let g:ale_linters_explicit = 1
-let g:ale_fix_on_save = 1
