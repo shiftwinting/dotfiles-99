@@ -1,6 +1,5 @@
 " Change the fzf to use ag
 let $FZF_DEFAULT_COMMAND='ag --hidden -g ""'
-let g:fzf_buffers_jump = 1 " Jump to the existing window if possible
 
 nnoremap <Leader>p :FZF<CR>
 nnoremap <Leader>9 :GFiles?<CR>
