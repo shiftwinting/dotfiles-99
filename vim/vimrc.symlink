@@ -18,6 +18,9 @@ syntax on
 
 set hidden                            " Allows change the buffer without the needs to save it
 set autoread                          " Auto reload changed files
+if !has('gui_running')
+  au FocusGained * :checktime         " Auto load external changes when it gains focus
+endif
 set wildmenu                          " Tab autocomplete in command mode
 set clipboard=unnamed,unnamedplus     " Clipboard support (OSX)
 set laststatus=2                      " Show status line on startup
@@ -27,7 +30,7 @@ set listchars+=precedes:←             " Show arrow if line continues leftwards
 set nobackup nowritebackup noswapfile " Turn off backup files
 set noerrorbells novisualbell         " Turn off visual and audible bells
 set expandtab shiftwidth=2 tabstop=2  " Two spaces for tabs everywhere
-set history=500
+set history=500                       " Number of commands history to store
 set hlsearch                          " Highlight search results
 set ignorecase smartcase              " Search queries intelligently set case
 set incsearch                         " Show search results as you type
@@ -35,6 +38,7 @@ set splitright                        " Open new splits to the right
 set splitbelow                        " Open new splits to the bottom
 set noshowmode                        " Do not show the mode below the statusline
 set exrc                              " enable project speficific vimrc
+set showcmd                           " shows partial commands in the right bottom of screen
 set encoding=utf-8
 
 " Persistent undo
