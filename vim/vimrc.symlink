@@ -19,8 +19,8 @@ if has('nvim')
   tnoremap <C-w>l <C-\><C-N><C-w>l
 endif
 
-" Change keyboard to USA layout on buffer enter
-autocmd BufEnter * silent !{xkbswitch -s 4}
+" Change keyboard to USA layout on vim enter
+au VimEnter * silent !{xkbswitch -s 4}
 
 syntax on
 
