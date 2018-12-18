@@ -40,18 +40,11 @@ Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 Plug 'w0rp/ale'
 
 " Themes
-Plug 'joshdick/onedark.vim'
 Plug 'altercation/vim-colors-solarized'
-Plug 'jnurmine/Zenburn'
-Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'arcticicestudio/nord-vim'
-Plug 'whatyouhide/vim-gotham'
-Plug 'hzchirs/vim-material'
 Plug 'rakr/vim-one'
 Plug 'dracula/vim'
 Plug 'haishanh/night-owl.vim'
-Plug 'cocopon/iceberg.vim'
 Plug 'cormacrelf/vim-colors-github'
 
 call plug#end()
