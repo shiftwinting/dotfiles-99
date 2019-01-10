@@ -11,12 +11,16 @@ map <Space> <leader>
 " Relative path to clipboard
 nnoremap <Leader>rp :let @*=expand("%")<CR>
 
+" Indent all file, return the cursor to the latest position and put the code
+" in the middle of the screen
+nnoremap <Leader>= gg=G``zz
+
 if has('nvim')
   tnoremap <C-o> <C-\><C-n>
-  tnoremap <C-w>h <C-\><C-N><C-w>h
-  tnoremap <C-w>j <C-\><C-N><C-w>j
-  tnoremap <C-w>k <C-\><C-N><C-w>k
-  tnoremap <C-w>l <C-\><C-N><C-w>l
+  tnoremap <C-w>h <C-\><C-n><C-w>h
+  tnoremap <C-w>j <C-\><C-n><C-w>j
+  tnoremap <C-w>k <C-\><C-n><C-w>k
+  tnoremap <C-w>l <C-\><C-n><C-w>l
 endif
 
 " Change keyboard to USA layout on vim enter

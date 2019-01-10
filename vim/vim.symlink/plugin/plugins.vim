@@ -5,7 +5,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'matze/vim-move'
-Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline', { 'tag': '*' }
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-endwise' " Close 'begin end' ruby tag wisely
 Plug 'tpope/vim-surround'
@@ -23,7 +23,6 @@ Plug 'mbbill/undotree'
 Plug 'junegunn/vim-peekaboo'
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'alvan/vim-closetag' " Autoclose HTML tags
-Plug 'semanser/vim-outdated-plugins'
 Plug 'PeterRincker/vim-argumentative'
 
 " File system navigation
@@ -37,7 +36,7 @@ Plug 'tpope/vim-rails'
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 
 " Syntax errors
-Plug 'w0rp/ale'
+Plug 'w0rp/ale', { 'tag': '*' }
 
 " Themes
 Plug 'altercation/vim-colors-solarized'
@@ -46,5 +45,6 @@ Plug 'rakr/vim-one'
 Plug 'dracula/vim'
 Plug 'haishanh/night-owl.vim'
 Plug 'cormacrelf/vim-colors-github'
+Plug 'whatyouhide/vim-gotham'
 
 call plug#end()
