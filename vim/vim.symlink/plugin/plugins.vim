@@ -2,7 +2,6 @@ call plug#begin()
 
 " Addons
 Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'matze/vim-move'
 Plug 'vim-airline/vim-airline', { 'tag': '*' }
@@ -42,9 +41,10 @@ Plug 'w0rp/ale', { 'tag': '*' }
 Plug 'altercation/vim-colors-solarized'
 Plug 'arcticicestudio/nord-vim'
 Plug 'rakr/vim-one'
-Plug 'dracula/vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'haishanh/night-owl.vim'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'whatyouhide/vim-gotham'
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
 call plug#end()
