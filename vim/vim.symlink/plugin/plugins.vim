@@ -35,7 +35,7 @@ Plug 'tpope/vim-rails'
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 
 " Syntax errors
-Plug 'w0rp/ale', { 'tag': '*' }
+Plug 'w0rp/ale'
 
 " Themes
 Plug 'altercation/vim-colors-solarized'
