@@ -4,7 +4,7 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'matze/vim-move'
-Plug 'vim-airline/vim-airline', { 'tag': '*' }
+Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-endwise' " Close 'begin end' ruby tag wisely
 Plug 'tpope/vim-surround'
