@@ -21,6 +21,7 @@ if has('nvim')
   tnoremap <C-w>j <C-\><C-n><C-w>j
   tnoremap <C-w>k <C-\><C-n><C-w>k
   tnoremap <C-w>l <C-\><C-n><C-w>l
+  tnoremap <C-w>o <C-\><C-n><C-w>o
 endif
 
 " Change keyboard to USA layout on vim enter
