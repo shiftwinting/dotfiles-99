@@ -1,1 +1,1 @@
-let g:colorizer_auto_filetype='css,scss,html,javascript.jsx'
+let g:colorizer_auto_filetype='css,scss,html'
