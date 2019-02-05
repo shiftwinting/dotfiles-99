@@ -14,6 +14,7 @@ nnoremap <Leader>rp :let @*=expand("%")<CR>
 " Indent all file, return the cursor to the latest position and put the code
 " in the middle of the screen
 nnoremap <Leader>= gg=G``zz
+nnoremap <M-a> ggVG
 
 if has('nvim')
   tnoremap <C-w>h <C-\><C-n><C-w>h
