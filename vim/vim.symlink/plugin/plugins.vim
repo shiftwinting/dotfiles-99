@@ -34,9 +34,6 @@ Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 
-" Syntax errors
-Plug 'w0rp/ale'
-
 " Themes
 Plug 'altercation/vim-colors-solarized'
 Plug 'arcticicestudio/nord-vim'
