@@ -1,12 +1,12 @@
 call plug#begin()
 
 " Addons
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'airblade/vim-gitgutter'
 Plug 'matze/vim-move'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-endwise' " Close 'begin end' ruby tag wisely
+Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'andymass/vim-matchup' " Expand % match to a lot of languages and hightlight it
@@ -17,11 +17,11 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-fugitive'
 Plug 'cohama/agit.vim'
 Plug 'janko-m/vim-test'
-Plug 'chrisbra/Colorizer' " Display hex colors
+Plug 'chrisbra/Colorizer', { 'for': ['css', 'scss'] }
 Plug 'mbbill/undotree'
 Plug 'junegunn/vim-peekaboo'
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
-Plug 'alvan/vim-closetag' " Autoclose HTML tags
+Plug 'alvan/vim-closetag', { 'for': ['html', 'javascript.jsx'] }
 Plug 'PeterRincker/vim-argumentative'
 
 " File system navigation
@@ -30,7 +30,7 @@ Plug 'junegunn/fzf.vim'
 
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 
