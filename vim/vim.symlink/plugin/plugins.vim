@@ -33,7 +33,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
-Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
+if has('nvim')
+  " you gotta install the wip rpc-node-plugin for vim
+  Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
+endif
 
 " Themes
 Plug 'altercation/vim-colors-solarized'
