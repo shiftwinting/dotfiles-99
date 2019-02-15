@@ -7,7 +7,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'matze/vim-move'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-endwise', { 'for': 'ruby' }
+Plug 'tpope/vim-endwise', { 'for': ['ruby', 'vim'] }
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'andymass/vim-matchup' " Expand % match to a lot of languages and hightlight it
