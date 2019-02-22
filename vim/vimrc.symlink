@@ -84,7 +84,8 @@ endif
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-colorscheme dracula
+let g:github_colors_soft = 1
+colorscheme github
 
 " Get off my lawn - helpful when learning Vim :)
 nnoremap <Up>     <NOP>

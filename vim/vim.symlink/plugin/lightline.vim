@@ -1,4 +1,5 @@
 let g:lightline = {
+      \ 'colorscheme': 'github',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch' ],
