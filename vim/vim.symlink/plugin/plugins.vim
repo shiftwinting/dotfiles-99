@@ -16,7 +16,7 @@ Plug 'farmergreg/vim-lastplace' " When reopen a buffer, puts the cursor where it
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-fugitive'
-Plug 'cohama/agit.vim'
+Plug 'junegunn/gv.vim'
 Plug 'janko-m/vim-test'
 Plug 'chrisbra/Colorizer', { 'for': ['css', 'scss'] }
 Plug 'mbbill/undotree'
