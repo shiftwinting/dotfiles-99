@@ -24,6 +24,7 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'alvan/vim-closetag', { 'for': ['html', 'javascript.jsx'] }
 Plug 'PeterRincker/vim-argumentative'
+Plug 'tommcdo/vim-exchange'
 
 " File system navigation
 Plug 'junegunn/fzf', { 'do': './install --bin' }
