@@ -26,7 +26,9 @@ if has('nvim')
 endif
 
 " Change keyboard to USA layout on vim enter
-au VimEnter * silent !{xkbswitch -s 4}
+if executable('xkbswitch')
+  au VimEnter * silent !{xkbswitch -s 4}
+endif
 
 syntax on
 
