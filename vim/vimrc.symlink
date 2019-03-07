@@ -16,6 +16,9 @@ nnoremap <Leader>rp :let @*=expand("%")<CR>
 nnoremap <Leader>= gg=G``zz
 nnoremap <M-a> ggVG
 
+vnoremap < <gv
+vnoremap > >gv
+
 if has('nvim')
   tnoremap <C-w>h <C-\><C-n><C-w>h
   tnoremap <C-w>j <C-\><C-n><C-w>j
