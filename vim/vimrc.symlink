@@ -59,6 +59,7 @@ set noshowmode                        " Do not show the mode below the statuslin
 set exrc                              " enable project speficific vimrc
 set showcmd                           " shows partial commands in the right bottom of screen
 set encoding=utf-8
+set synmaxcol=150                     " make syntax highligh works just for the first 150 chars
 
 " Persistent undo
 set undodir=~/.vim/undo/
