@@ -35,6 +35,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 'markdown' }
+
 if has('nvim')
   " you gotta install the wip rpc-node-plugin for vim
   Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
