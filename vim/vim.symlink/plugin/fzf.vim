@@ -1,5 +1,7 @@
 " Change the fzf to use ag
-let $FZF_DEFAULT_COMMAND='ag --hidden -g ""'
+if (executable('ag'))
+  let $FZF_DEFAULT_COMMAND='ag --hidden -g ""'
+endif
 
 nnoremap <Leader>p :FZF<CR>
 nnoremap <Leader>9 :GFiles?<CR>
