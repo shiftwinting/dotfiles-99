@@ -42,6 +42,9 @@ if has('nvim')
   Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 endif
 
+" Syntax errors
+Plug 'w0rp/ale'
+
 " Themes
 Plug 'altercation/vim-colors-solarized'
 Plug 'arcticicestudio/nord-vim'
