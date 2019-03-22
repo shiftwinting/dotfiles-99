@@ -22,6 +22,7 @@ if has('nvim')
   tnoremap <C-w>k <C-\><C-n><C-w>k
   tnoremap <C-w>l <C-\><C-n><C-w>l
   tnoremap <C-w>o <C-\><C-n><C-w>o
+  tnoremap <C-w>v <C-\><C-n><C-w>v
   tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
 endif
 
