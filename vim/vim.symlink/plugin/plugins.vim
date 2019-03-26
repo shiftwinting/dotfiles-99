@@ -18,7 +18,6 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'janko-m/vim-test'
-Plug 'chrisbra/Colorizer', { 'for': ['css', 'scss'] }
 Plug 'mbbill/undotree'
 Plug 'junegunn/vim-peekaboo'
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
@@ -40,6 +39,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 if has('nvim')
   " you gotta install the wip rpc-node-plugin for vim
   Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
+else
+  " coc already provide colorizer
+  Plug 'RRethy/vim-hexokinase', { 'for': ['css', 'scss'] }
 endif
 
 " Syntax errors
