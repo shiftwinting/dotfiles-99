@@ -9,3 +9,5 @@ nnoremap <Leader>/ :Ag <CR>
 nnoremap <Leader>o :BTags<CR>
 nnoremap <Leader>. :History<CR>
 nnoremap <Leader>, :Buffers<CR>
+
+command! -bang -nargs=? GFiles call fzf#vim#gitfiles(<q-args>, {'options': '--no-preview'}, <bang>0)
