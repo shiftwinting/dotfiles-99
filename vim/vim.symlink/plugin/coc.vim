@@ -1,4 +1,3 @@
-if has('nvim')
 " Use <c-space> for trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
@@ -15,4 +14,3 @@ nmap <leader>rn <Plug>(coc-rename)
 
 " suppress the annoying 'match x of y', 'The only match' and 'Pattern not found' messages
 set shortmess+=c
-endif

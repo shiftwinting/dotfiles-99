@@ -36,13 +36,7 @@ Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
-if has('nvim')
-  " you gotta install the wip rpc-node-plugin for vim
-  Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
-else
-  " coc already provide colorizer
-  Plug 'RRethy/vim-hexokinase', { 'for': ['css', 'scss'] }
-endif
+Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': './install.sh' }
 
 " Syntax errors
 Plug 'w0rp/ale'
