@@ -6,7 +6,15 @@ let g:ale_fix_on_save = 1
 
 " Run only the linters configured below
 let g:ale_linters = {
-\   'javascript': ['standard', 'jscs', 'jshint'],
+\   'javascript': ['eslint'],
+\   'ruby': ['rubocop']
+\}
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
 \   'ruby': ['rubocop']
 \}
 let g:ale_linters_explicit = 1
+
+if has('nvim')
+  let g:ale_virtualtext_cursor = 1
+endif
