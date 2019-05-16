@@ -25,6 +25,7 @@ Plug 'alvan/vim-closetag', { 'for': ['html', 'javascript.jsx'] }
 Plug 'PeterRincker/vim-argumentative'
 Plug 'google/vim-searchindex'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'nelstrom/vim-visual-star-search'
 
 " File system navigation
 Plug 'junegunn/fzf', { 'do': './install --bin' }
