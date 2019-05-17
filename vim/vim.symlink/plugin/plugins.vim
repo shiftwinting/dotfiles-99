@@ -39,9 +39,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': './install.sh' }
 
-" Syntax errors
-Plug 'w0rp/ale'
-
 " Themes
 Plug 'altercation/vim-colors-solarized'
 Plug 'arcticicestudio/nord-vim'
