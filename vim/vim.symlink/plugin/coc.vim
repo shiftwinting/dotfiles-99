@@ -1,6 +1,3 @@
-" Use <c-space> for trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
-
 " Close preview window when completion is done
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
