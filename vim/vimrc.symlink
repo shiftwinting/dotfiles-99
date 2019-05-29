@@ -88,15 +88,8 @@ endif
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-let g:one_allow_italics = 1
-colorscheme one
-if strftime("%H") < 18
-  set background=light
-  call one#highlight('Folded', 'b0b0b0', 'f5f5f5', '')
-  call one#highlight('Search', 'none', 'feffe5', '')
-endif
-call one#highlight('jsFunction', '', '', 'italic')
-call one#highlight('jsGlobalObjects', '', '', 'italic')
+let g:github_colors_soft = 1
+colorscheme github
 
 " Get off my lawn - helpful when learning Vim :)
 nnoremap <Up>     <NOP>
