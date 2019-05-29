@@ -5,12 +5,13 @@ let g:lightline = {
       \             [ 'gitbranch' ],
       \             [ 'readonly', 'filename'] ],
       \   'right': [ [ 'lineinfo' ],
-      \              ['alestatuses'],
+      \              ['cocstatus'],
       \              [ 'filetype'] ]
       \ },
       \ 'component_function': {
       \   'gitbranch': 'fugitive#head',
-      \   'filename': 'LightlineFilename'
+      \   'filename': 'LightlineFilename',
+      \   'cocstatus': 'coc#status'
       \ },
       \ }
 
