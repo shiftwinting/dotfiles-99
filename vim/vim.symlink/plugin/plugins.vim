@@ -3,7 +3,6 @@ call plug#begin()
 " Addons
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'lourenci/nerdtree-yank-node-plugin', { 'tag': '*', 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
-Plug 'airblade/vim-gitgutter'
 Plug 'matze/vim-move'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-repeat'
@@ -16,7 +15,6 @@ Plug 'farmergreg/vim-lastplace' " When reopen a buffer, puts the cursor where it
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
 Plug 'janko-m/vim-test'
 Plug 'mbbill/undotree'
 Plug 'junegunn/vim-peekaboo'
