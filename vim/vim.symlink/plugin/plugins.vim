@@ -30,7 +30,6 @@ Plug 'junegunn/fzf.vim'
 
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
