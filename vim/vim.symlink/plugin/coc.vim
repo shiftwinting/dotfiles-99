@@ -14,7 +14,7 @@ nmap ]g <Plug>(coc-git-nextchunk)
 nmap [g <Plug>(coc-git-prevchunk)
 nmap gs <Plug>(coc-git-chunkinfo)
 nmap gu :CocCommand git.chunkUndo<CR>
-nmap gh :CocCommand git.browserOpen<CR>
+nnoremap <silent> gh  :<C-u>CocList --normal bcommits<CR>
 
 " suppress the annoying 'match x of y', 'The only match' and 'Pattern not found' messages
 set shortmess+=c
