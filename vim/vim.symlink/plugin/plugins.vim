@@ -3,7 +3,6 @@ call plug#begin()
 " Addons
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'lourenci/nerdtree-yank-node-plugin', { 'tag': '*', 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
-Plug 'matze/vim-move'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-endwise', { 'for': ['ruby', 'vim'] }
