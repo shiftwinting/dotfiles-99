@@ -32,7 +32,7 @@ Plug 'sheerun/vim-polyglot'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'neoclide/coc.nvim', { 'tag': '*', 'branch': 'release' }
 
 " Themes
 Plug 'altercation/vim-colors-solarized'
