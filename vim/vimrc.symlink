@@ -24,6 +24,7 @@ if has('nvim')
   tnoremap <C-w>o <C-\><C-n><C-w>o
   tnoremap <C-w>v <C-\><C-n><C-w>v
   tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
+  set inccommand=nosplit
 endif
 
 " Change keyboard to USA layout on vim enter
