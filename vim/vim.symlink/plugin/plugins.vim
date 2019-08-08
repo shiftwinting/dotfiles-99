@@ -32,7 +32,7 @@ Plug 'sheerun/vim-polyglot'
 
 Plug 'junegunn/goyo.vim', { 'on': ['Goyo'] }
 
-Plug 'neoclide/coc.nvim', { 'tag': '*', 'branch': 'release' }
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " Themes
 if !has('gui_running')
