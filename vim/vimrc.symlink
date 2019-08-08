@@ -90,15 +90,12 @@ endif
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-let g:one_allow_italics = 1
-colorscheme one
-if strftime("%H") < 18
+if strftime("%H") >= 17
+  colorscheme gruvbox-material
+else
   set background=light
-  call one#highlight('Folded', 'b0b0b0', 'f5f5f5', '')
-  call one#highlight('Search', 'none', 'feffe5', '')
+  colorscheme solarized
 endif
-call one#highlight('jsFunction', '', '', 'italic')
-call one#highlight('jsGlobalObjects', '', '', 'italic')
 
 " Get off my lawn - helpful when learning Vim :)
 nnoremap <Up>     <NOP>

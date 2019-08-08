@@ -36,7 +36,11 @@ Plug 'junegunn/goyo.vim', { 'on': ['Goyo'] }
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'branch': 'release' }
 
 " Themes
-Plug 'altercation/vim-colors-solarized'
+if !has('gui_running')
+  Plug 'arakashic/nvim-colors-solarized'
+else
+  Plug 'altercation/vim-colors-solarized'
+endif
 Plug 'arcticicestudio/nord-vim'
 Plug 'rakr/vim-one'
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -44,5 +48,6 @@ Plug 'haishanh/night-owl.vim'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'whatyouhide/vim-gotham'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'sainnhe/gruvbox-material'
 
 call plug#end()
