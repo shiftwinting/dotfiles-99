@@ -59,6 +59,7 @@ set exrc                              " enable project speficific vimrc
 set showcmd                           " shows partial commands in the right bottom of screen
 set encoding=utf-8
 set synmaxcol=300                     " make syntax highligh works just for the first 300 chars
+set diffopt+=indent-heuristic,algorithm:patience
 
 " Persistent undo
 set undodir=~/.vim/undo/
