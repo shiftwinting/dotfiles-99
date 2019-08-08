@@ -30,7 +30,6 @@ Plug 'junegunn/fzf.vim'
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot'
 
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'junegunn/goyo.vim', { 'on': ['Goyo'] }
 
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'branch': 'release' }
