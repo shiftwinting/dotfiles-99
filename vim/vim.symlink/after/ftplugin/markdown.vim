@@ -1,1 +1,1 @@
-set wrap spell spelllang=en_us
+set wrap linebreak spell spelllang=en_us
