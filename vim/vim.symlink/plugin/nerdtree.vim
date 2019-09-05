@@ -5,7 +5,7 @@ let g:NERDTreeAutoDeleteBuffer = 1
 let g:NERDTreeMinimalUI = 1
 
 " Toggle nerdtree
-map <F2> :NERDTreeToggle<CR>
+map <F3> :NERDTreeToggle<CR>
 
 " Current file in nerdtree
-map <F3> :NERDTreeFind<CR>
+map - :NERDTreeFind<CR>
