@@ -29,16 +29,23 @@ endif
 
 " Change keyboard to USA layout on vim enter
 if executable('xkbswitch')
-  au VimEnter * silent !{xkbswitch -s 4}
+  augroup SetEnglishKeyboard
+    autocmd!
+    autocmd VimEnter * silent !{xkbswitch -s 4}
+  augroup END
+endif
+
+if !has('gui_running')
+  augroup LoadChangedFileExternally
+    autocmd!
+    autocmd FocusGained * :checktime
+  augroup END
 endif
 
 syntax on
 
 set hidden                            " Allows change the buffer without the needs to save it
 set autoread                          " Auto reload changed files
-if !has('gui_running')
-  au FocusGained * :checktime         " Auto load external changes when it gains focus
-endif
 set wildmenu                          " Tab autocomplete in command mode
 set clipboard=unnamed,unnamedplus     " Clipboard support (OSX)
 set laststatus=2                      " Show status line on startup
@@ -91,8 +98,12 @@ if !exists('g:lasttab')
   let g:lasttab = 1
 endif
 nmap gl :exe "tabn ".g:lasttab<CR>
-au TabLeave * let g:lasttab = tabpagenr()
+augroup SetLastTab
+  autocmd!
+  autocmd TabLeave * let g:lasttab = tabpagenr()
+augroup END
 
+" Colorscheme
 if strftime("%H") >= 17
   colorscheme gruvbox-material
 else
