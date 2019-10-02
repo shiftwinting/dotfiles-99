@@ -1,7 +1,7 @@
 macmenu &File.New\ Tab key=<nop>
 
 set macligatures
-set guifont=Dank\ Mono:h20
+set guifont=Dank\ Mono:h22
 
 set guioptions-=r                        " Remove right scroll on macvim
 set guioptions-=L                        " Remove left scroll on macvim
