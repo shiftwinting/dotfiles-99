@@ -1,0 +1,8 @@
+{
+  "eslint.run": "onSave",
+  "eslint.autoFixOnSave": true,
+  "git.realtimeGutters": false,
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "solargraph.diagnostics": true
+}

@@ -1,36 +1,15 @@
 " Settings in this file may depend on plugins, so let's install them first.
 " Not to be confused with the contents of ~/.vim/plugin/* which are
 " configuration options for each plugin and automatically loaded by Vim.
-source ~/.vim/plugin/plugins.vim
-
-"-----------------------------
-" Mappings
-"-----------------------------
-" Leader Mappings
-map <Space> <leader>
-" Relative path to clipboard
-nnoremap <Leader>rp :let @*=expand("%")<CR>
-
-nnoremap <M-a> ggVG
-nnoremap ]q :cnext<CR>
-nnoremap [q :cprev<CR>
-
-nnoremap <C-l> 10zl
-nnoremap <C-h> 10zh
+if has('nvim')
+  runtime plugin/plugins.vim
+  runtime keymappings.vim
+else
+  runtime .vim/plugin/plugins.vim
+  runtime .vim/keymappings.vim
+endif
 
 if has('nvim')
-  tnoremap <C-w>h <C-\><C-n><C-w>h
-  tnoremap <C-w>j <C-\><C-n><C-w>j
-  tnoremap <C-w>k <C-\><C-n><C-w>k
-  tnoremap <C-w>l <C-\><C-n><C-w>l
-  tnoremap <C-w>o <C-\><C-n><C-w>o
-  tnoremap <C-w>v <C-\><C-n><C-w>v
-  tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
-  tnoremap <C-d> <C-\><C-n><C-d>
-  tnoremap <C-u> <C-\><C-n><C-u>
-  tnoremap <C-f> <C-\><C-n><C-f>
-  tnoremap <C-b> <C-\><C-n><C-b>
-
   set inccommand=nosplit
 endif
 
@@ -100,15 +79,6 @@ if !has('gui_running')
   set mouse=a
 endif
 
-" Change to the last active tab
-if !exists('g:lasttab')
-  let g:lasttab = 1
-endif
-nmap gl :exe "tabn ".g:lasttab<CR>
-augroup SetLastTab
-  autocmd!
-  autocmd TabLeave * let g:lasttab = tabpagenr()
-augroup END
 
 " Colorscheme
 if strftime("%H") >= 17
@@ -124,17 +94,3 @@ else
   let g:pencil_terminal_italics = 1
   colorscheme pencil
 endif
-
-" Get off my lawn - helpful when learning Vim :)
-nnoremap <Up>     <NOP>
-nnoremap <Down>   <NOP>
-nnoremap <Left>   <NOP>
-nnoremap <Right>  <NOP>
-inoremap <Up>     <NOP>
-inoremap <Down>   <NOP>
-inoremap <Left>   <NOP>
-inoremap <Right>  <NOP>
-vnoremap <Up>     <NOP>
-vnoremap <Down>   <NOP>
-vnoremap <Left>   <NOP>
-vnoremap <Right>  <NOP>
