@@ -11,10 +11,12 @@ map <Space> <leader>
 " Relative path to clipboard
 nnoremap <Leader>rp :let @*=expand("%")<CR>
 
-" Indent all file, return the cursor to the latest position and put the code
-" in the middle of the screen
-nnoremap <Leader>= gg=G``zz
 nnoremap <M-a> ggVG
+nnoremap ]q :cnext<CR>
+nnoremap [q :cprev<CR>
+
+nnoremap <C-l> 10zl
+nnoremap <C-h> 10zh
 
 if has('nvim')
   tnoremap <C-w>h <C-\><C-n><C-w>h
@@ -36,7 +38,7 @@ endif
 if executable('xkbswitch')
   augroup SetEnglishKeyboard
     autocmd!
-    autocmd VimEnter * silent !{xkbswitch -s 4}
+    autocmd VimEnter * silent !{xkbswitch -se US}
   augroup END
 endif
 
@@ -110,10 +112,17 @@ augroup END
 
 " Colorscheme
 if strftime("%H") >= 17
-  colorscheme gruvbox-material
+  let g:nord_cursor_line_number_background = 1
+  let g:nord_uniform_diff_background = 1
+  let g:nord_italic = 1
+  let g:nord_bold = 1
+  let g:nord_italic_comments = 1
+  let g:nord_underline = 1
+  colorscheme nord
 else
   set background=light
-  colorscheme solarized
+  let g:pencil_terminal_italics = 1
+  colorscheme pencil
 endif
 
 " Get off my lawn - helpful when learning Vim :)

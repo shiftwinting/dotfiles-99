@@ -16,7 +16,6 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-fugitive'
 Plug 'janko-m/vim-test'
 Plug 'mbbill/undotree'
-Plug 'junegunn/vim-peekaboo'
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'alvan/vim-closetag', { 'for': ['html', 'javascript.jsx'] }
 Plug 'PeterRincker/vim-argumentative'
@@ -24,6 +23,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'nelstrom/vim-visual-star-search'
 
 Plug 'tpope/vim-projectionist'
+Plug 'rhysd/git-messenger.vim', { 'on': ['GitMessenger'] }
 
 " File system navigation
 Plug 'junegunn/fzf', { 'do': './install --bin' }
@@ -42,7 +42,7 @@ if !has('gui_running')
 else
   Plug 'altercation/vim-colors-solarized'
 endif
-Plug 'arcticicestudio/nord-vim'
+Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
 Plug 'rakr/vim-one'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'haishanh/night-owl.vim'
@@ -50,5 +50,6 @@ Plug 'cormacrelf/vim-colors-github'
 Plug 'whatyouhide/vim-gotham'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'sainnhe/gruvbox-material'
+Plug 'reedes/vim-colors-pencil'
 
 call plug#end()

@@ -21,7 +21,7 @@ function! LightlineFilename()
 endfunction
 
 if strftime("%H") >= 17
-  let g:lightline.colorscheme = 'gruvbox_material'
+  let g:lightline.colorscheme = 'nord'
 else
-  let g:lightline.colorscheme = 'solarized'
+  let g:lightline.colorscheme = 'one'
 endif

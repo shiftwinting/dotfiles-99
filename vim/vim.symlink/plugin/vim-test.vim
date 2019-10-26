@@ -1,8 +1,18 @@
 if has('nvim')
-  let test#strategy = 'neovim'
+  let test#strategy = {
+        \ 'nearest': 'neovim',
+        \ 'file':    'iterm',
+        \}
 else
-  let test#strategy = 'vimterminal'
+  let test#strategy = {
+        \ 'nearest': 'vimterminal',
+        \ 'file':    'iterm',
+        \}
 endif
+
+let test#javascript#jest#options = {
+      \ 'file':    '--watch --runInBand --notify',
+      \}
 
 nmap <silent> <leader>n :TestNearest<CR>
 nmap <silent> <leader>f :TestFile<CR>
