@@ -9,25 +9,6 @@ else
   runtime .vim/keymappings.vim
 endif
 
-if has('nvim')
-  set inccommand=nosplit
-endif
-
-" Change keyboard to USA layout on vim enter
-if executable('xkbswitch')
-  augroup SetEnglishKeyboard
-    autocmd!
-    autocmd VimEnter * silent !{xkbswitch -se US}
-  augroup END
-endif
-
-if !has('gui_running')
-  augroup LoadChangedFileExternally
-    autocmd!
-    autocmd FocusGained * :checktime
-  augroup END
-endif
-
 syntax on
 
 set hidden                            " Allows change the buffer without the needs to save it
@@ -53,22 +34,14 @@ set showcmd                           " shows partial commands in the right bott
 set encoding=utf-8
 set synmaxcol=300                     " make syntax highligh works just for the first 300 chars
 set diffopt+=indent-heuristic,algorithm:patience
-
-" Persistent undo
 set undodir=~/.vim/undo/
 set undofile
-
-" Ignored files/directories from autocomplete
 set wildignore+=*/tmp/*
 set wildignore+=*.so
 set wildignore+=*.zip
 set wildignore+=*/vendor/bundle/*
 set wildignore+=*/node_modules/*
 set wildignore+=*/coverage/*
-
-"-------------------------------------------------------------------------------
-" Interface
-"-------------------------------------------------------------------------------
 set number relativenumber " Enable line numbers
 set foldmethod=indent
 set nofoldenable
@@ -78,7 +51,9 @@ if !has('gui_running')
   set termguicolors
   set mouse=a
 endif
-
+if has('nvim')
+  set inccommand=nosplit
+endif
 
 " Colorscheme
 if strftime("%H") >= 17
@@ -93,4 +68,19 @@ else
   set background=light
   let g:pencil_terminal_italics = 1
   colorscheme pencil
+endif
+
+" Change keyboard to USA layout on vim enter
+if executable('xkbswitch')
+  augroup SetEnglishKeyboard
+    autocmd!
+    autocmd VimEnter * silent !{xkbswitch -se US}
+  augroup END
+endif
+
+if !has('gui_running')
+  augroup LoadChangedFileExternally
+    autocmd!
+    autocmd FocusGained * :checktime
+  augroup END
 endif
