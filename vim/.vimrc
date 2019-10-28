@@ -2,11 +2,11 @@
 " Not to be confused with the contents of ~/.vim/plugin/* which are
 " configuration options for each plugin and automatically loaded by Vim.
 if has('nvim')
-  runtime plugin/plugins.vim
-  runtime keymappings.vim
+  source ~/.config/nvim/plugin/plugins.vim
+  source ~/.config/nvim/keymappings.vim
 else
-  runtime .vim/plugin/plugins.vim
-  runtime .vim/keymappings.vim
+  source ~/.vim/plugin/plugins.vim
+  source ~/.vim/keymappings.vim
 endif
 
 syntax on
