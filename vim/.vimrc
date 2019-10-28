@@ -34,7 +34,6 @@ set showcmd                           " shows partial commands in the right bott
 set encoding=utf-8
 set synmaxcol=300                     " make syntax highligh works just for the first 300 chars
 set diffopt+=indent-heuristic,algorithm:patience
-set undodir=~/.vim/undo/
 set undofile
 set wildignore+=*/tmp/*
 set wildignore+=*.so
@@ -53,6 +52,9 @@ if !has('gui_running')
 endif
 if has('nvim')
   set inccommand=nosplit
+  set undodir=~/.config/nvim/undo/
+else
+  set undodir=~/.vim/undo/
 endif
 
 " Colorscheme
