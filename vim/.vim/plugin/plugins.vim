@@ -36,6 +36,10 @@ Plug 'junegunn/goyo.vim', { 'on': ['Goyo'] }
 
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
+if !has('nvim')
+  Plug 'markonm/traces.vim'
+endif
+
 " Themes
 if !has('gui_running')
   Plug 'arakashic/nvim-colors-solarized'
