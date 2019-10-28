@@ -56,9 +56,10 @@ do
           ;;
         2)
           printf '%s\n' 'Symlinking vim'
-          rm -rf ~/.vim ~/.vimrc
+          rm -rf ~/.vim ~/.vimrc ~/.gvimrc
           ln -s $PWD/vim/.vim ~/.vim
           ln -s $PWD/vim/.vimrc ~/.vimrc
+          ln -s $PWD/vim/.gvimrc ~/.gvimrc
           ;;
         3)
           printf '%s\n' 'Symlinking karabiner'
