@@ -44,10 +44,6 @@ if has('nvim')
   tnoremap <C-w>o <C-\><C-n><C-w>o
   tnoremap <C-w>v <C-\><C-n><C-w>v
   tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
-  tnoremap <C-d> <C-\><C-n><C-d>
-  tnoremap <C-u> <C-\><C-n><C-u>
-  tnoremap <C-f> <C-\><C-n><C-f>
-  tnoremap <C-b> <C-\><C-n><C-b>
 endif
 
 """""""""""""" PLUGINS MAPS
@@ -71,7 +67,6 @@ nmap ]z <Plug>(coc-git-nextchunk)
 nmap [z <Plug>(coc-git-prevchunk)
 nmap zs <Plug>(coc-git-chunkinfo)
 nmap zu :CocCommand git.chunkUndo<CR>
-nnoremap <silent> zh  :<C-u>CocList --normal bcommits<CR>
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -92,6 +87,7 @@ nnoremap <Leader>o :BTags!<CR>
 nnoremap <Leader>. :History!<CR>
 nnoremap <Leader>, :Buffers!<CR>
 nnoremap <Leader>t :Filetypes!<CR>
+nnoremap <Leader>c :BCommits!<CR>
 
 """"" Nerdtree
 map <F3> :NERDTreeToggle<CR>
