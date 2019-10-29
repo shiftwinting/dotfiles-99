@@ -1,15 +1,5 @@
 if has('nvim')
-  let test#strategy = {
-        \ 'nearest': 'neovim',
-        \ 'file':    'iterm',
-        \}
+  let test#strategy = 'neovim'
 else
-  let test#strategy = {
-        \ 'nearest': 'vimterminal',
-        \ 'file':    'iterm',
-        \}
+  let test#strategy = 'vimterminal'
 endif
-
-let test#javascript#jest#options = {
-      \ 'file':    '--watch --runInBand --notify',
-      \}
