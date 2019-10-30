@@ -12,6 +12,8 @@ nnoremap [q :cprev<CR>
 nnoremap <C-l> 10zl
 nnoremap <C-h> 10zh
 
+nnoremap <Leader>rm :!rm %<CR>
+
 " Change to the last active tab
 if !exists('g:lasttab')
   let g:lasttab = 1
@@ -58,15 +60,14 @@ nmap <leader>rn <Plug>(coc-rename)
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" Use `[g` and `]g` to navigate diagnostics
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> [z <Plug>(coc-diagnostic-prev)
+nmap <silent> ]z <Plug>(coc-diagnostic-next)
 
 " Commands for the git extension
-nmap ]z <Plug>(coc-git-nextchunk)
-nmap [z <Plug>(coc-git-prevchunk)
-nmap zs <Plug>(coc-git-chunkinfo)
-nmap zu :CocCommand git.chunkUndo<CR>
+nmap ]g <Plug>(coc-git-nextchunk)
+nmap [g <Plug>(coc-git-prevchunk)
+nmap <leader>gi <Plug>(coc-git-chunkinfo)
+nmap <leader>gu :CocCommand git.chunkUndo<CR>
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
