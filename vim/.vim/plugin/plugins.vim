@@ -23,7 +23,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'nelstrom/vim-visual-star-search'
 
 Plug 'tpope/vim-projectionist'
-Plug 'rhysd/git-messenger.vim', { 'on': ['GitMessenger'] }
+Plug 'rhysd/git-messenger.vim'
 
 " File system navigation
 Plug 'junegunn/fzf', { 'do': './install --bin' }
