@@ -25,6 +25,8 @@ Plug 'nelstrom/vim-visual-star-search'
 Plug 'tpope/vim-projectionist'
 Plug 'rhysd/git-messenger.vim'
 
+Plug 'mateusbraga/vim-spell-pt-br'
+
 " File system navigation
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
