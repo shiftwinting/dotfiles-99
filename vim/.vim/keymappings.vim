@@ -83,7 +83,7 @@ endfunction
 """"" FZF
 nnoremap <Leader>p :FZF!<CR>
 nnoremap <Leader>9 :GFiles!?<CR>
-nnoremap <Leader>/ :Ag! <CR>
+nnoremap <Leader>/ :Rg! <CR>
 nnoremap <Leader>o :BTags!<CR>
 nnoremap <Leader>. :History!<CR>
 nnoremap <Leader>, :Buffers!<CR>
