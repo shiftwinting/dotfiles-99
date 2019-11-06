@@ -24,11 +24,12 @@ augroup SetLastTab
   autocmd TabLeave * let g:lasttab = tabpagenr()
 augroup END
 
+nnoremap <Up> :resize +2<CR>
+nnoremap <Down> :resize -2<CR>
+nnoremap <Left> :vertical resize -2<CR>
+nnoremap <Right> :vertical resize +2<CR>
+
 " Get off my lawn - helpful when learning Vim :)
-nnoremap <Up>     <NOP>
-nnoremap <Down>   <NOP>
-nnoremap <Left>   <NOP>
-nnoremap <Right>  <NOP>
 inoremap <Up>     <NOP>
 inoremap <Down>   <NOP>
 inoremap <Left>   <NOP>
