@@ -22,6 +22,7 @@ Plug 'nelstrom/vim-visual-star-search'
 
 Plug 'tpope/vim-projectionist'
 Plug 'rhysd/git-messenger.vim'
+Plug 'airblade/vim-rooter'
 
 Plug 'mateusbraga/vim-spell-pt-br'
 
