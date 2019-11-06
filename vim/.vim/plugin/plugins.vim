@@ -33,8 +33,6 @@ Plug 'junegunn/fzf.vim'
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot'
 
-Plug 'junegunn/goyo.vim', { 'on': ['Goyo'] }
-
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 if !has('nvim')
