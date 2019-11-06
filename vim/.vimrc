@@ -28,19 +28,11 @@ set ignorecase smartcase              " Search queries intelligently set case
 set incsearch                         " Show search results as you type
 set splitright                        " Open new splits to the right
 set splitbelow                        " Open new splits to the bottom
-set noshowmode                        " Do not show the mode below the statusline
-set exrc                              " enable project speficific vimrc
 set showcmd                           " shows partial commands in the right bottom of screen
 set encoding=utf-8
 set synmaxcol=300                     " make syntax highligh works just for the first 300 chars
 set diffopt+=indent-heuristic,algorithm:patience
 set undofile
-set wildignore+=*/tmp/*
-set wildignore+=*.so
-set wildignore+=*.zip
-set wildignore+=*/vendor/bundle/*
-set wildignore+=*/node_modules/*
-set wildignore+=*/coverage/*
 set number relativenumber " Enable line numbers
 set foldmethod=indent
 set nofoldenable
