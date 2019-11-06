@@ -81,6 +81,7 @@ function! s:show_documentation()
   endif
 endfunction
 
+nnoremap <silent> <leader>c :<C-u>CocList --normal bcommits<CR>
 """"" FZF
 nnoremap <Leader>p :FZF!<CR>
 nnoremap <Leader>9 :GFiles!?<CR>
@@ -89,7 +90,6 @@ nnoremap <Leader>o :BTags!<CR>
 nnoremap <Leader>. :History!<CR>
 nnoremap <Leader>, :Buffers!<CR>
 nnoremap <Leader>t :Filetypes!<CR>
-nnoremap <Leader>c :BCommits!<CR>
 
 """"" Nerdtree
 map <F3> :NERDTreeToggle<CR>
