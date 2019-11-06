@@ -86,3 +86,8 @@ if !has('gui_running')
     autocmd FocusGained * :checktime
   augroup END
 endif
+
+augroup RemoveTraillingSpaces
+  autocmd!
+  autocmd BufWritePre * %s/\s\+$//e
+augroup END

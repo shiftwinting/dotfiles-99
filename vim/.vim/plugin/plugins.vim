@@ -11,7 +11,6 @@ Plug 'andymass/vim-matchup' " Expand % match to a lot of languages and hightligh
 Plug 'tpope/vim-commentary'
 Plug 'farmergreg/vim-lastplace' " When reopen a buffer, puts the cursor where it was last time
 Plug 'michaeljsmith/vim-indent-object'
-Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-fugitive'
 Plug 'janko-m/vim-test'
 Plug 'mbbill/undotree'
