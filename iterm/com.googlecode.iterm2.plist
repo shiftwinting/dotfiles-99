@@ -1003,15 +1003,15 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>331 367 928 394 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 877 0 0 1440 877 </string>
+	<string>0 0 1330 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 240 1440 637 0 0 1440 877 </string>
+	<string>0 0 1330 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 9 1440 868 0 0 1440 877 </string>
+	<string>0 0 1330 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>0 81 1330 796 0 0 1440 877 </string>
+	<string>0 0 1330 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>0 72 1330 796 0 0 1440 877 </string>
+	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_C3193E48-0D4B-48F2-A655-6D1BD170A778</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_C3193E48-0D4B-48F2-A655-6D1BD170A778_selection</key>
@@ -1813,7 +1813,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>IBMPlexMono 22</string>
+			<string>Menlo-Regular 19</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1857,7 +1857,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Show Status Bar</key>
-			<true/>
+			<false/>
 			<key>Silence Bell</key>
 			<true/>
 			<key>Status Bar Layout</key>
@@ -2030,7 +2030,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1</real>
+			<real>1.25</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -2084,7 +2084,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{376, 692}</string>
+		<string>{225, 652}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2097,7 +2097,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>588614564.53436804</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>142</integer>
+	<integer>204</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2853,13 +2853,16 @@
 	</array>
 	<key>NoSyncSearchHistory2</key>
 	<array>
-		<string>&lt;select</string>
-		<string>&lt;selet</string>
+		<string>console</string>
+		<string>watch</string>
 		<string>leandro</string>
-		<string>lourenci</string>
-		<string>&lt;ProtectedRoute exact path={`${this.props.match.url}/`} module='financial'           render={props =&gt; &lt;TransactionsIndex {...props} filters={filters} currentUser={currentUser} /&gt;}         /&gt;</string>
-		<string>browser</string>
-		<string>test</string>
+		<string>aborting</string>
+		<string>aborting\</string>
+		<string>boar</string>
+		<string>kkkjjkkk</string>
+		<string>command! -bang -nargs=* Ag call fzf#vim#ag(&lt;q-args&gt;, {'options': '--delimiter : --nth 4..'}, &lt;bang&gt;0)</string>
+		<string>swal-overlay</string>
+		<string>--files</string>
 	</array>
 	<key>NoSyncSuppressClipboardAccessDeniedWarning</key>
 	<true/>
@@ -2971,6 +2974,8 @@
 	<true/>
 	<key>PromptOnQuit</key>
 	<true/>
+	<key>QuitWhenAllWindowsClosed</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -2980,7 +2985,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-31T14:27:30Z</date>
+	<date>2019-11-10T15:12:40Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2988,7 +2993,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
