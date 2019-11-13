@@ -57,8 +57,6 @@ Plug 'rakr/vim-one'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'haishanh/night-owl.vim'
 Plug 'cormacrelf/vim-colors-github'
-Plug 'whatyouhide/vim-gotham'
-Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'sainnhe/gruvbox-material'
 Plug 'reedes/vim-colors-pencil'
 
