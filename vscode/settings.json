@@ -1,7 +1,6 @@
 {
-  "editor.fontSize": 21,
+  "editor.fontSize": 19,
   "editor.lineHeight": 40,
-  "editor.fontFamily": "'IBM Plex Mono'",
   "editor.lineNumbers": "relative",
   "editor.tabSize": 2,
   "vim.visualstar": true,
