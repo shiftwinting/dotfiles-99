@@ -81,7 +81,7 @@ function! s:show_documentation()
   endif
 endfunction
 
-nnoremap <silent> <leader>c :<C-u>CocList --normal bcommits<CR>
+nnoremap <silent> <leader>c :<C-u>CocList --tab --normal bcommits<CR>
 nnoremap <silent> <Leader>o  :<C-u>CocList --tab outline<CR>
 
 """"" FZF
