@@ -82,11 +82,12 @@ function! s:show_documentation()
 endfunction
 
 nnoremap <silent> <leader>c :<C-u>CocList --normal bcommits<CR>
+nnoremap <silent> <Leader>o  :<C-u>CocList --tab outline<CR>
+
 """"" FZF
 nnoremap <Leader>p :FZF!<CR>
 nnoremap <Leader>9 :GFiles!?<CR>
 nnoremap <Leader>/ :Rg! <CR>
-nnoremap <Leader>o :BTags!<CR>
 nnoremap <Leader>. :History!<CR>
 nnoremap <Leader>, :Buffers!<CR>
 nnoremap <Leader>t :Filetypes!<CR>
