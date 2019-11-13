@@ -11,7 +11,6 @@ Plug 'tpope/vim-commentary'
 Plug 'farmergreg/vim-lastplace' " When reopen a buffer, puts the cursor where it was last time
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-fugitive'
-Plug 'janko-m/vim-test'
 Plug 'mbbill/undotree'
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'alvan/vim-closetag', { 'for': ['html', 'javascript.jsx'] }

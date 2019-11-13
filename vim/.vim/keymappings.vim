@@ -100,9 +100,3 @@ nnoremap <F5> :UndotreeToggle<cr>
 
 "" Projectionist
 nnoremap <Leader>a :A<CR>
-
-"" Test
-nmap <silent> <leader>n :TestNearest<CR>
-nmap <silent> <leader>f :TestFile<CR>
-nmap <silent> <leader>l :TestLast<CR>
-nmap <silent> <leader>v :TestVisit<CR>
