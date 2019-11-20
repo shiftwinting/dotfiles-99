@@ -18,6 +18,7 @@ Plug 'alvan/vim-closetag', { 'for': ['html', 'javascript.jsx'] }
 Plug 'PeterRincker/vim-argumentative'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'nelstrom/vim-visual-star-search'
+Plug 'moll/vim-bbye'
 
 Plug 'tpope/vim-projectionist'
 Plug 'rhysd/git-messenger.vim'
