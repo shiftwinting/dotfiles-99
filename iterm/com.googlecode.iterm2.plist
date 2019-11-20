@@ -900,7 +900,7 @@
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
-	<true/>
+	<false/>
 	<key>HideTabCloseButton</key>
 	<false/>
 	<key>HideTabNumber</key>
@@ -995,7 +995,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>394 224 799 448 0 0 1440 877 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>760 696 400 129 0 0 1920 1057 </string>
+	<string>520 561 400 129 0 0 1440 900 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
@@ -1003,11 +1003,11 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>331 367 928 394 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1330 877 0 0 1440 877 </string>
+	<string>0 0 1440 900 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 1330 877 0 0 1440 877 </string>
+	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 0 1330 877 0 0 1440 877 </string>
+	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>0 0 1330 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -1825,7 +1825,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1946,6 +1946,27 @@
 					</dict>
 					<dict>
 						<key>class</key>
+						<string>iTermStatusBarMemoryUtilizationComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: compression resistance</key>
+								<integer>1</integer>
+								<key>base: priority</key>
+								<real>5</real>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>0</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
 						<string>iTermStatusBarBatteryComponent</string>
 						<key>configuration</key>
 						<dict>
@@ -2018,7 +2039,7 @@
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -2034,7 +2055,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>15</integer>
 			<key>Working Directory</key>
 			<string>/Users/leandro</string>
 		</dict>
@@ -2097,7 +2118,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>588614564.53436804</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>204</integer>
+	<integer>207</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2853,16 +2874,16 @@
 	</array>
 	<key>NoSyncSearchHistory2</key>
 	<array>
+		<string>status</string>
+		<string>icms_tax</string>
+		<string>icms-</string>
 		<string>console</string>
-		<string>watch</string>
-		<string>leandro</string>
-		<string>aborting</string>
-		<string>aborting\</string>
-		<string>boar</string>
-		<string>kkkjjkkk</string>
-		<string>command! -bang -nargs=* Ag call fzf#vim#ag(&lt;q-args&gt;, {'options': '--delimiter : --nth 4..'}, &lt;bang&gt;0)</string>
-		<string>swal-overlay</string>
-		<string>--files</string>
+		<string>ls -la</string>
+		<string>list</string>
+		<string>console.</string>
+		<string>Reduzir</string>
+		<string>Reduzic</string>
+		<string>Redm</string>
 	</array>
 	<key>NoSyncSuppressClipboardAccessDeniedWarning</key>
 	<true/>
@@ -2985,11 +3006,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-10T15:12:40Z</date>
+	<date>2019-11-18T13:24:27Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
-	<false/>
+	<true/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
