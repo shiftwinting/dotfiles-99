@@ -9,6 +9,8 @@ nnoremap <M-a> ggVG
 nnoremap ]q :cnext<CR>
 nnoremap [q :cprev<CR>
 
+nnoremap <Leader>0 :split<bar>terminal<CR>
+
 nnoremap <C-l> 10zl
 nnoremap <C-h> 10zh
 
@@ -47,6 +49,7 @@ if has('nvim')
   tnoremap <C-w>o <C-\><C-n><C-w>o
   tnoremap <C-w>v <C-\><C-n><C-w>v
   tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
+  tnoremap <C-^> <C-\><C-n><C-^>
 endif
 
 """""""""""""" PLUGINS MAPS

@@ -84,3 +84,11 @@ augroup RemoveTraillingSpaces
   autocmd!
   autocmd BufWritePre * %s/\s\+$//e
 augroup END
+
+if has('nvim')
+  augroup StartTerminalInInsertMode
+    " https://github.com/neovim/neovim/issues/8816
+    autocmd!
+    autocmd TermOpen term://* startinsert
+  augroup END
+endif
