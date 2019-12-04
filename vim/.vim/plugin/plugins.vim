@@ -23,6 +23,7 @@ Plug 'moll/vim-bbye'
 Plug 'tpope/vim-projectionist'
 Plug 'rhysd/git-messenger.vim'
 Plug 'airblade/vim-rooter'
+Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
 
 Plug 'mateusbraga/vim-spell-pt-br'
 
