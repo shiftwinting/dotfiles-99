@@ -8,7 +8,6 @@ Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'andymass/vim-matchup' " Expand % match to a lot of languages and hightlight it
 Plug 'tpope/vim-commentary'
-Plug 'farmergreg/vim-lastplace' " When reopen a buffer, puts the cursor where it was last time
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
@@ -21,7 +20,6 @@ Plug 'nelstrom/vim-visual-star-search'
 Plug 'moll/vim-bbye'
 
 Plug 'tpope/vim-projectionist'
-Plug 'rhysd/git-messenger.vim'
 Plug 'airblade/vim-rooter'
 Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
 
