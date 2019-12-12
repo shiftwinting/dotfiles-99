@@ -38,7 +38,6 @@ set number relativenumber " Enable line numbers
 set foldmethod=indent
 set nofoldenable
 set cursorline " Highlight on current line
-set colorcolumn=120 " Vertital column at 120
 if !has('gui_running')
   set termguicolors
   set mouse=a

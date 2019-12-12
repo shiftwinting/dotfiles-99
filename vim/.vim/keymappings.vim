@@ -8,6 +8,8 @@ nnoremap <M-a> ggVG
 
 nnoremap ]q :cnext<CR>
 nnoremap [q :cprev<CR>
+nnoremap ]l :lnext<CR>
+nnoremap [l :lprev<CR>
 
 nnoremap <C-l> 10zl
 nnoremap <C-h> 10zh

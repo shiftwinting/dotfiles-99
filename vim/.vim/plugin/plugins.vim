@@ -8,6 +8,7 @@ Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'andymass/vim-matchup' " Expand % match to a lot of languages and hightlight it
 Plug 'tpope/vim-commentary'
+Plug 'farmergreg/vim-lastplace' " When reopen a buffer, puts the cursor where it was last time
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
@@ -17,7 +18,7 @@ Plug 'alvan/vim-closetag', { 'for': ['html', 'javascript.jsx'] }
 Plug 'PeterRincker/vim-argumentative'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'nelstrom/vim-visual-star-search'
-Plug 'moll/vim-bbye'
+Plug 'moll/vim-bbye', { 'on': ['Bd', 'Bw'] }
 
 Plug 'tpope/vim-projectionist'
 Plug 'airblade/vim-rooter'
@@ -59,5 +60,6 @@ Plug 'haishanh/night-owl.vim'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'sainnhe/gruvbox-material'
 Plug 'reedes/vim-colors-pencil'
+Plug 'wadackel/vim-dogrun'
 
 call plug#end()
