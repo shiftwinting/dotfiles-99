@@ -2051,7 +2051,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.25</real>
+			<real>1.2</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -2079,6 +2079,7 @@
 		<string>3.3.6</string>
 		<string>3.3.2beta2</string>
 		<string>3.3.4beta1</string>
+		<string>3.3.7</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -2118,7 +2119,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>588614564.53436804</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>207</integer>
+	<integer>254</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2874,6 +2875,9 @@
 	</array>
 	<key>NoSyncSearchHistory2</key>
 	<array>
+		<string>git </string>
+		<string>leandro</string>
+		<string>cfop</string>
 		<string>status</string>
 		<string>icms_tax</string>
 		<string>icms-</string>
@@ -2881,9 +2885,6 @@
 		<string>ls -la</string>
 		<string>list</string>
 		<string>console.</string>
-		<string>Reduzir</string>
-		<string>Reduzic</string>
-		<string>Redm</string>
 	</array>
 	<key>NoSyncSuppressClipboardAccessDeniedWarning</key>
 	<true/>
@@ -2996,7 +2997,7 @@
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
-	<true/>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -3006,15 +3007,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-18T13:24:27Z</date>
+	<date>2019-12-06T13:50:44Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
-	<true/>
+	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
@@ -5947,7 +5948,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.6</string>
+	<string>3.3.7</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>
