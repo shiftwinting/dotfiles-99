@@ -51,13 +51,8 @@ endif
 
 " Colorscheme
 if strftime("%H") >= 17
-  let g:nord_cursor_line_number_background = 1
-  let g:nord_uniform_diff_background = 1
-  let g:nord_italic = 1
-  let g:nord_bold = 1
-  let g:nord_italic_comments = 1
-  let g:nord_underline = 1
-  colorscheme nord
+  set background=dark
+  colorscheme gruvbox-material
 else
   set background=light
   let g:pencil_terminal_italics = 1
@@ -84,10 +79,13 @@ augroup RemoveTraillingSpaces
   autocmd BufWritePre * %s/\s\+$//e
 augroup END
 
-if has('nvim')
-  augroup StartTerminalInInsertMode
-    " https://github.com/neovim/neovim/issues/8816
-    autocmd!
-    autocmd TermOpen term://* startinsert
-  augroup END
-endif
+" This cmd is causing 'Segment fault' when the buffer has 4000 chars.
+" To simulate the problem: insert 4000 chars and open the terminal.
+" E.g.: 4000ia<esc>:terminal
+" if has('nvim')
+"   augroup StartTerminalInInsertMode
+"     " https://github.com/neovim/neovim/issues/8816
+"     autocmd!
+"     autocmd TermOpen term://* startinsert
+"   augroup END
+" endif
