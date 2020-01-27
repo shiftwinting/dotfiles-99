@@ -64,4 +64,6 @@ Plug 'wadackel/vim-dogrun'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
+Plug 'junegunn/rainbow_parentheses.vim'
+
 call plug#end()
