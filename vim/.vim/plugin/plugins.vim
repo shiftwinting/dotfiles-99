@@ -62,10 +62,6 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'reedes/vim-colors-pencil'
 Plug 'wadackel/vim-dogrun'
 
-" You need to install the https://github.com/glacambre/firenvim extension on
-" your browser
-Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
-
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
 call plug#end()
