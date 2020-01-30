@@ -1003,7 +1003,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>331 367 928 394 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 900 </string>
+	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1022,7 +1022,7 @@
 			<key>ASCII Anti Aliased</key>
 			<true/>
 			<key>ASCII Ligatures</key>
-			<false/>
+			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1813,7 +1813,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Menlo-Regular 19</string>
+			<string>JetBrainsMono-Regular 20</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2051,7 +2051,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.2</real>
+			<real>1.1499999999999999</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -2088,9 +2088,7 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>IBM Plex Mono</string>
-		<string>Fira Code</string>
-		<string>Menlo</string>
+		<string>JetBrains Mono</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -2106,7 +2104,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{225, 652}</string>
+		<string>{258, 772}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2119,7 +2117,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>588614564.53436804</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>254</integer>
+	<integer>286</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2875,16 +2873,16 @@
 	</array>
 	<key>NoSyncSearchHistory2</key>
 	<array>
-		<string>git </string>
-		<string>leandro</string>
-		<string>cfop</string>
-		<string>status</string>
-		<string>icms_tax</string>
-		<string>icms-</string>
-		<string>console</string>
-		<string>ls -la</string>
-		<string>list</string>
-		<string>console.</string>
+		<string>sign_in</string>
+		<string>sigin</string>
+		<string>/api/v1/cashflow/monthly.json?start_date=2019-01-01T02:00:00.000Z&amp;end_date=2020-01-01T01:59:59.999Z</string>
+		<string>2020-01-01T01:59:59.999Z</string>
+		<string>2019-01-01T02:00:00.000Z</string>
+		<string>created_</string>
+		<string>created_at</string>
+		<string>lourenci</string>
+		<string>coverage</string>
+		<string>coveraeg</string>
 	</array>
 	<key>NoSyncSuppressClipboardAccessDeniedWarning</key>
 	<true/>
@@ -3007,7 +3005,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-12-06T13:50:44Z</date>
+	<date>2020-01-29T13:37:15Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -3015,7 +3013,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
