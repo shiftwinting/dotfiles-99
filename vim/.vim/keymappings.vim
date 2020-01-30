@@ -61,6 +61,7 @@ nmap ]g <Plug>(coc-git-nextchunk)
 nmap [g <Plug>(coc-git-prevchunk)
 nmap <leader>gi <Plug>(coc-git-chunkinfo)
 nmap <leader>gu :CocCommand git.chunkUndo<CR>
+nmap <leader>gs :CocCommand git.chunkStage<CR>
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
