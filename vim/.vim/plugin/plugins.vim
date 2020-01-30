@@ -29,6 +29,7 @@ Plug 'mateusbraga/vim-spell-pt-br'
 " File system navigation
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'wellle/context.vim'
 
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot'
