@@ -94,3 +94,6 @@ nnoremap <F5> :UndotreeToggle<cr>
 
 "" Projectionist
 nnoremap <Leader>a :A<CR>
+
+" Context
+nnoremap \ :ContextToggle<CR>
