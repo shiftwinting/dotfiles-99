@@ -1,5 +1,5 @@
 """"""""""""""""""" GENERAL MAPPINGS
-map <Space> <leader>
+let mapleader = "\<space>"
 
 " Relative path to clipboard
 nnoremap <Leader>rp :let @*=expand("%")<CR>
