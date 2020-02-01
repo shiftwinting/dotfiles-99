@@ -90,7 +90,7 @@ map <F3> :NERDTreeToggle<CR>
 map - :NERDTreeFind<CR>
 
 """ Undotree
-nnoremap <F5> :UndotreeToggle<cr>
+nnoremap <Leader>\ :UndotreeToggle<cr>
 
 "" Projectionist
 nnoremap <Leader>a :A<CR>
