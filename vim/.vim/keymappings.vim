@@ -85,9 +85,8 @@ nnoremap <Leader>. :History!<CR>
 nnoremap <Leader>, :Buffers!<CR>
 nnoremap <Leader>t :Filetypes!<CR>
 
-""""" Nerdtree
-map <F3> :NERDTreeToggle<CR>
-map - :NERDTreeFind<CR>
+""""" Fern
+map - :Fern . -reveal=%<CR>
 
 """ Undotree
 nnoremap <Leader>\ :UndotreeToggle<cr>

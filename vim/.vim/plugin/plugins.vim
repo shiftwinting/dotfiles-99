@@ -1,7 +1,7 @@
 call plug#begin()
 
 " Addons
-Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+Plug 'lambdalisue/fern.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-endwise', { 'for': ['ruby', 'vim'] }
 Plug 'tpope/vim-surround'
