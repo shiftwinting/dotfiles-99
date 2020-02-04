@@ -19,6 +19,7 @@ Plug 'PeterRincker/vim-argumentative'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'moll/vim-bbye', { 'on': ['Bd', 'Bw'] }
+Plug 'junegunn/vim-peekaboo'
 
 Plug 'tpope/vim-projectionist'
 Plug 'airblade/vim-rooter'
