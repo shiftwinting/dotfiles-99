@@ -22,7 +22,6 @@ Plug 'moll/vim-bbye', { 'on': ['Bd', 'Bw'] }
 
 Plug 'tpope/vim-projectionist'
 Plug 'airblade/vim-rooter'
-Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
 
 Plug 'mateusbraga/vim-spell-pt-br'
 
