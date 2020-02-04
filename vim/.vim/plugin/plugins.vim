@@ -1,7 +1,7 @@
 call plug#begin()
 
 " Addons
-Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern.vim', { 'on': ['Fern'] }
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-endwise', { 'for': ['ruby', 'vim'] }
 Plug 'tpope/vim-surround'
@@ -29,7 +29,7 @@ Plug 'mateusbraga/vim-spell-pt-br'
 " File system navigation
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
-Plug 'wellle/context.vim'
+Plug 'wellle/context.vim', { 'on': ['ContextToggle'] }
 
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot'
