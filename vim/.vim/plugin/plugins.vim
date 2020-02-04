@@ -62,6 +62,8 @@ Plug 'cormacrelf/vim-colors-github'
 Plug 'sainnhe/gruvbox-material'
 Plug 'reedes/vim-colors-pencil'
 Plug 'wadackel/vim-dogrun'
+Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'arzg/vim-colors-xcode'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
