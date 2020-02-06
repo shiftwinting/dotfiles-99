@@ -78,12 +78,12 @@ nnoremap <silent> <leader>c :<C-u>CocList --tab --normal bcommits<CR>
 nnoremap <silent> <Leader>o  :<C-u>CocList --tab outline<CR>
 
 """"" FZF
-nnoremap <Leader>p :FZF!<CR>
-nnoremap <Leader>9 :GFiles!?<CR>
-nnoremap <Leader>/ :Rg! <CR>
-nnoremap <Leader>. :History!<CR>
-nnoremap <Leader>, :Buffers!<CR>
-nnoremap <Leader>t :Filetypes!<CR>
+nnoremap <Leader>p :Clap gfiles ++ef=fzf<CR>
+nnoremap <Leader>9 :Clap git_diff_files ++ef=fzf<CR>
+nnoremap <Leader>/ :Clap grep ++ef=fzf<CR>
+nnoremap <Leader>. :Clap history ++ef=fzf<CR>
+nnoremap <Leader>, :Clap buffers ++ef=fzf<CR>
+nnoremap <Leader>t :Clap filetypes ++ef=fzf<CR>
 
 """"" Fern
 map - :Fern . -reveal=%<CR>
