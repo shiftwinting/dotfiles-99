@@ -50,14 +50,8 @@ else
 endif
 
 " Colorscheme
-if strftime("%H") >= 17
-  set background=dark
-  colorscheme gruvbox-material
-else
-  set background=light
-  let g:pencil_terminal_italics = 1
-  colorscheme pencil
-endif
+set background=dark
+colorscheme gruvbox-material
 
 " Change keyboard to USA layout on vim enter
 if executable('xkbswitch')
