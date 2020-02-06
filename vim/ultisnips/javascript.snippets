@@ -50,7 +50,7 @@ function $1($2) {
 }
 endsnippet
 
-snippet rccom "Class component" b
+snippet comp "Class component" b
 ${1:export ${2:default }}class $3 extends React.PureComponent {
 	render() {
 		return (
@@ -58,15 +58,6 @@ ${1:export ${2:default }}class $3 extends React.PureComponent {
 		)
 	}
 }
-endsnippet
-
-snippet rcoms "Component spec" b
-import { render } from '@testing-library/react'
-import $1 from './'
-
-describe('<$1 />', () => {
-	$0
-})
 endsnippet
 
 snippet waite "Wait for element" b
