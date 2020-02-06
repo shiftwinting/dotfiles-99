@@ -1,6 +1,4 @@
 let g:fern#default_hidden = 1
-nmap g? <Plug>(fern-action-help)
-nmap <tab> <Plug>(fern-action-mark-toggle)
 
 " Disable netrw
 let g:loaded_netrw             = 1

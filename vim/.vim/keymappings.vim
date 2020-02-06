@@ -88,6 +88,16 @@ nnoremap <Leader>t :Clap filetypes ++ef=fzf<CR>
 """"" Fern
 map - :Fern . -reveal=%<CR>
 
+function! s:map_fern() abort
+  nmap <buffer> g? <Plug>(fern-action-help)
+  nmap <buffer> <tab> <Plug>(fern-action-mark-toggle)
+endfunction
+
+augroup FernMappings
+  autocmd!
+  autocmd FileType fern call s:map_fern()
+augroup END
+
 """ Undotree
 nnoremap <Leader>\ :UndotreeToggle<cr>
 
