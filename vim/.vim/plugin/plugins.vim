@@ -27,9 +27,8 @@ Plug 'airblade/vim-rooter'
 Plug 'mateusbraga/vim-spell-pt-br'
 
 " File system navigation
-Plug 'junegunn/fzf', { 'do': './install --all' }
-Plug 'liuchengxu/vim-clap'
-
+Plug 'junegunn/fzf', { 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
 Plug 'wellle/context.vim', { 'on': ['ContextToggle'] }
 
 " Syntax highlighting
