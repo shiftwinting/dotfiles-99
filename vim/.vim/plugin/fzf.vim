@@ -7,3 +7,10 @@ endif
 let g:fzf_buffers_jump = 1
 
 command! -bang -nargs=? GFiles call fzf#vim#gitfiles(<q-args>, {'options': '--no-preview'}, <bang>0)
+
+augroup WorkaroundToPreventSegmentFault
+  " This should be removed when the https://github.com/neovim/neovim/issues/11548 get merged
+  autocmd!
+  autocmd FileType fzf set wrap
+    \| autocmd BufLeave <buffer> set nowrap
+augroup END
