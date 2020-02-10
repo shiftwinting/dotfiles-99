@@ -84,6 +84,7 @@ nnoremap <Leader>/ :Rg! <CR>
 nnoremap <Leader>. :History!<CR>
 nnoremap <Leader>, :Buffers!<CR>
 nnoremap <Leader>t :Filetypes!<CR>
+nnoremap <Leader>0 :GFilesChangedFromMaster!<CR>
 
 """"" Fern
 map - :Fern . -reveal=%<CR>

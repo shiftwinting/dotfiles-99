@@ -14,3 +14,4 @@ augroup WorkaroundToPreventSegmentFault
   autocmd FileType fzf set wrap
     \| autocmd BufLeave <buffer> set nowrap
 augroup END
+command! -bang GFilesChangedFromMaster call fzf#run(fzf#wrap({'source': 'git diff --name-only master'}, <bang>0))
