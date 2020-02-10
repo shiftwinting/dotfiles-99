@@ -43,7 +43,7 @@ if !has('gui_running')
   set mouse=a
 endif
 if has('nvim')
-  set inccommand=nosplit
+  set inccommand=split
   set undodir=~/.config/nvim/undo/
 else
   set undodir=~/.vim/undo/
