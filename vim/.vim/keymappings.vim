@@ -78,13 +78,13 @@ nnoremap <silent> <leader>c :<C-u>CocList --tab --normal bcommits<CR>
 nnoremap <silent> <Leader>o  :<C-u>CocList --tab outline<CR>
 
 """"" FZF
-nnoremap <Leader>p :FZF!<CR>
-nnoremap <Leader>9 :GFiles!?<CR>
-nnoremap <Leader>/ :Rg! <CR>
-nnoremap <Leader>. :History!<CR>
-nnoremap <Leader>, :Buffers!<CR>
-nnoremap <Leader>t :Filetypes!<CR>
-nnoremap <Leader>0 :GFilesChangedFromMaster!<CR>
+nnoremap <Leader>p :FZF<CR>
+nnoremap <Leader>9 :GFiles?<CR>
+nnoremap <Leader>/ :Rg <CR>
+nnoremap <Leader>. :History<CR>
+nnoremap <Leader>, :Buffers<CR>
+nnoremap <Leader>t :Filetypes<CR>
+nnoremap <Leader>0 :GFilesChangedFromMaster<CR>
 
 """"" Fern
 map - :Fern . -reveal=%<CR>

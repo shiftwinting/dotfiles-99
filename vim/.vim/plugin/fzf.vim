@@ -6,12 +6,8 @@ endif
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
 
+let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.9 } }
+
 command! -bang -nargs=? GFiles call fzf#vim#gitfiles(<q-args>, {'options': '--no-preview'}, <bang>0)
 
-augroup WorkaroundToPreventSegmentFault
-  " This should be removed when the https://github.com/neovim/neovim/issues/11548 get merged
-  autocmd!
-  autocmd FileType fzf set wrap
-    \| autocmd BufLeave <buffer> set nowrap
-augroup END
 command! -bang GFilesChangedFromMaster call fzf#run(fzf#wrap({'source': 'git diff --name-only master'}, <bang>0))
