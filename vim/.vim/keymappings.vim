@@ -106,4 +106,4 @@ nnoremap <Leader>\ :UndotreeToggle<cr>
 nnoremap <Leader>a :A<CR>
 
 " Context
-nnoremap \ :ContextToggle<CR>
+nnoremap \ :ContextPeek<CR>
