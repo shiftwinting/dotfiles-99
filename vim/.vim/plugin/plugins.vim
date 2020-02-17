@@ -27,7 +27,7 @@ Plug 'mateusbraga/vim-spell-pt-br'
 " File system navigation
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
-Plug 'wellle/context.vim', { 'on': ['ContextToggle'] }
+Plug 'wellle/context.vim', { 'on': ['ContextToggle', 'ContextPeek'] }
 Plug 'jeetsukumaran/vim-indentwise'
 
 " Syntax highlighting
