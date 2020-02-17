@@ -51,8 +51,7 @@ endif
 
 " Colorscheme
 if strftime("%H") >= 17
-  set background=dark
-  colorscheme gruvbox-material
+  colorscheme bluewery
 else
   set background=light
   let g:pencil_terminal_italics = 1
