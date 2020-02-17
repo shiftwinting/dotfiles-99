@@ -64,6 +64,8 @@ Plug 'reedes/vim-colors-pencil'
 Plug 'wadackel/vim-dogrun'
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'arzg/vim-colors-xcode'
+Plug 'relastle/bluewery.vim'
+Plug 'junegunn/seoul256.vim'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
