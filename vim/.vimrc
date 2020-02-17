@@ -58,8 +58,6 @@ else
   colorscheme pencil
 endif
 
-let g:netrw_liststyle = 3
-
 " Change keyboard to USA layout on vim enter
 if executable('xkbswitch')
   augroup SetEnglishKeyboard
