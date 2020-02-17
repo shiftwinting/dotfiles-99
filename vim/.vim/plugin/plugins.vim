@@ -1,7 +1,7 @@
 call plug#begin()
 
 " Addons
-Plug 'lambdalisue/fern.vim', { 'tag': '*', 'on': ['Fern'] }
+Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-endwise', { 'for': ['ruby', 'vim'] }
 Plug 'tpope/vim-surround'
