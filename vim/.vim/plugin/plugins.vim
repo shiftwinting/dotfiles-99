@@ -68,6 +68,6 @@ Plug 'arzg/vim-colors-xcode'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
-Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'junegunn/rainbow_parentheses.vim', { 'for': ['clojure', 'lisp'] }
 
 call plug#end()
