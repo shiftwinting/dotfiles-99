@@ -6,7 +6,7 @@ endif
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
 
-let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.9 } }
+let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.85 } }
 
 command! -bang -nargs=? GFiles call fzf#vim#gitfiles(<q-args>, {'options': '--no-preview'}, <bang>0)
 
