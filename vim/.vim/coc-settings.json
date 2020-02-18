@@ -1,4 +1,5 @@
 {
+  "diagnostic.enableSign": false,
   "eslint.autoFixOnSave": true,
   "javascript.format.insertSpaceAfterConstructor": true,
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
