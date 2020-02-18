@@ -1,4 +1,5 @@
 let g:fern#default_hidden = 1
+let g:fern#keepalt_on_edit = 1
 
 " Disable netrw
 let g:loaded_netrw             = 1
