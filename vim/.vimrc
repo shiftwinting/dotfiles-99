@@ -17,8 +17,6 @@ set wildmenu                          " Tab autocomplete in command mode
 set clipboard=unnamed,unnamedplus     " Clipboard support (OSX)
 set laststatus=2                      " Show status line on startup
 set nowrap                            " Don't wrap long lines
-set listchars=extends:→               " Show arrow if line continues rightwards
-set listchars+=precedes:←             " Show arrow if line continues leftwards
 set nobackup nowritebackup noswapfile " Turn off backup files
 set noerrorbells novisualbell         " Turn off visual and audible bells
 set expandtab shiftwidth=2 tabstop=2  " Two spaces for tabs everywhere
