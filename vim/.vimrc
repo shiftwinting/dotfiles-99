@@ -49,7 +49,8 @@ endif
 
 " Colorscheme
 if strftime("%H") >= 17
-  colorscheme bluewery
+  let g:forest_night_enable_italic = 1
+  colorscheme forest-night
 else
   set background=light
   let g:pencil_terminal_italics = 1

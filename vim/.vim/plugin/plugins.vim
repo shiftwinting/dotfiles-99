@@ -66,6 +66,7 @@ Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'arzg/vim-colors-xcode'
 Plug 'relastle/bluewery.vim'
 Plug 'junegunn/seoul256.vim'
+Plug 'sainnhe/vim-color-forest-night'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
