@@ -46,6 +46,8 @@ if has('nvim')
 else
   set undodir=~/.vim/undo/
 endif
+set list                                        " Show characteres specified in listchars
+set listchars+=extends:→,precedes:←             " Show arrow if line continues leftwards
 
 " Colorscheme
 if strftime("%H") >= 17
