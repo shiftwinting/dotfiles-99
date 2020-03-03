@@ -27,12 +27,10 @@ endfunction
 if strftime("%H") >= 17
   call Zenburn()
 else
-  let randomColorscheme = s:randnum(3)
+  let randomColorscheme = s:randnum(2)
   if randomColorscheme == 1
     call Pencil()
-  elseif randomColorscheme == 2
-    call Solarized()
   else
-    call Zenburn()
+    call Solarized()
   endif
 endif
