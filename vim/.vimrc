@@ -4,12 +4,12 @@
 if has('nvim')
   source ~/.config/nvim/plugin/plugins.vim
   source ~/.config/nvim/keymappings.vim
+  source ~/.config/nvim/colorscheme.vim
 else
   source ~/.vim/plugin/plugins.vim
   source ~/.vim/keymappings.vim
+  source ~/.vim/colorscheme.vim
 endif
-
-syntax on
 
 set hidden                            " Allows change the buffer without the needs to save it
 set autoread                          " Auto reload changed files
@@ -48,16 +48,6 @@ else
 endif
 set list                                        " Show characteres specified in listchars
 set listchars+=extends:→,precedes:←             " Show arrow if line continues leftwards
-
-" Colorscheme
-if strftime("%H") >= 17
-  let g:forest_night_enable_italic = 1
-  colorscheme forest-night
-else
-  set background=light
-  let g:pencil_terminal_italics = 1
-  colorscheme pencil
-endif
 
 " Change keyboard to USA layout on vim enter
 if executable('xkbswitch')

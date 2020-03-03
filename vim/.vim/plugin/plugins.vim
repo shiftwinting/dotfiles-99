@@ -53,19 +53,8 @@ if !has('gui_running')
 else
   Plug 'altercation/vim-colors-solarized'
 endif
-Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
-Plug 'rakr/vim-one'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'haishanh/night-owl.vim'
-Plug 'cormacrelf/vim-colors-github'
-Plug 'sainnhe/gruvbox-material'
 Plug 'reedes/vim-colors-pencil'
-Plug 'wadackel/vim-dogrun'
-Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'arzg/vim-colors-xcode'
-Plug 'relastle/bluewery.vim'
-Plug 'junegunn/seoul256.vim'
-Plug 'sainnhe/vim-color-forest-night'
+Plug 'jnurmine/Zenburn'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
