@@ -46,8 +46,6 @@ if has('nvim')
 else
   set undodir=~/.vim/undo/
 endif
-set list                                        " Show characteres specified in listchars
-set listchars+=extends:→,precedes:←             " Show arrow if line continues leftwards
 
 " Change keyboard to USA layout on vim enter
 if executable('xkbswitch')
