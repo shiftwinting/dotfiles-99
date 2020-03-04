@@ -28,7 +28,6 @@ Plug 'mateusbraga/vim-spell-pt-br'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'wellle/context.vim', { 'on': ['ContextToggle', 'ContextPeek'] }
-Plug 'jeetsukumaran/vim-indentwise'
 
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot'
