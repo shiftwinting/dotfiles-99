@@ -56,13 +56,6 @@ inoremap <silent><expr> <c-space> coc#refresh()
 nmap <silent> [z <Plug>(coc-diagnostic-prev)
 nmap <silent> ]z <Plug>(coc-diagnostic-next)
 
-" Commands for the git extension
-nmap ]g <Plug>(coc-git-nextchunk)
-nmap [g <Plug>(coc-git-prevchunk)
-nmap <leader>gi <Plug>(coc-git-chunkinfo)
-nmap <leader>gu :CocCommand git.chunkUndo<CR>
-nmap <leader>gs :CocCommand git.chunkStage<CR>
-
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
@@ -74,7 +67,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-nnoremap <silent> <leader>c :<C-u>CocList --tab --normal bcommits<CR>
 nnoremap <silent> <Leader>o  :<C-u>CocList --tab outline<CR>
 
 """"" FZF
@@ -85,6 +77,7 @@ nnoremap <Leader>. :History<CR>
 nnoremap <Leader>, :Buffers<CR>
 nnoremap <Leader>t :Filetypes<CR>
 nnoremap <Leader>0 :GFilesChangedFromMaster<CR>
+nnoremap <Leader>c :BCommits<CR>
 
 """"" Fern
 map - :Fern . -reveal=%<CR>
