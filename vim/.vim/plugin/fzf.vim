@@ -10,4 +10,6 @@ let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.85 } }
 
 command! -bang -nargs=? GFiles call fzf#vim#gitfiles(<q-args>, {'options': '--no-preview'}, <bang>0)
 
+command! -bang NoteFiles call fzf#vim#files('~/Library/Mobile Documents/com~apple~CloudDocs/notes', <bang>0)
+
 command! -bang GFilesChangedFromMaster call fzf#run(fzf#wrap({'source': 'git diff --name-only master'}, <bang>0))
