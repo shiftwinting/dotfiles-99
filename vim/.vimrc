@@ -15,7 +15,7 @@ set hidden                            " Allows change the buffer without the nee
 set autoread                          " Auto reload changed files
 set wildmenu                          " Tab autocomplete in command mode
 set clipboard=unnamed,unnamedplus     " Clipboard support (OSX)
-set laststatus=2                      " Show status line on startup
+set laststatus=0 title titlestring=%f%m%r
 set nowrap                            " Don't wrap long lines
 set nobackup nowritebackup noswapfile " Turn off backup files
 set noerrorbells novisualbell         " Turn off visual and audible bells
