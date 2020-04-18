@@ -2071,7 +2071,7 @@
 	<array>
 		<string>Monaco</string>
 		<string>Menlo</string>
-		<string>JetBrains Mono</string>
+		<string>Fantasque Sans Mono</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -2100,7 +2100,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>588614564.53436804</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>341</integer>
+	<integer>347</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2949,7 +2949,7 @@
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenBookmark</key>
-	<true/>
+	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PointerActions</key>
@@ -2982,7 +2982,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-14T13:13:33Z</date>
+	<date>2020-04-17T13:13:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
