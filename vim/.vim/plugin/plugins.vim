@@ -56,6 +56,7 @@ else
 endif
 Plug 'reedes/vim-colors-pencil'
 Plug 'jnurmine/Zenburn'
+Plug 'rakr/vim-one'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 

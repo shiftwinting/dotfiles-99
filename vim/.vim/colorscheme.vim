@@ -15,20 +15,31 @@ function! s:randnum(max) abort
   return str2nr(matchstr(reltimestr(reltime()), '\v\.@<=\d+')[1:]) % a:max
 endfunction
 
+function! One() abort
+  let g:one_allow_italics = 1
+  colorscheme one
+endfunction
+
 if strftime("%H") >= 17
-  let randomColorscheme = s:randnum(2)
+  set background=dark
+
+  let randomColorscheme = s:randnum(3)
   if randomColorscheme == 1
     call Zenburn()
-  else
-    set background=dark
+  elseif randomColorscheme == 2
     colorscheme solarized
+  else
+    call One()
   endif
 else
-  let randomColorscheme = s:randnum(2)
+  set background=light
+
+  let randomColorscheme = s:randnum(3)
   if randomColorscheme == 1
     call Pencil()
+  elseif randomColorscheme == 2
+    call One()
   else
-    set background=light
     colorscheme solarized
   endif
 endif
