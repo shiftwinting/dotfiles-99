@@ -69,10 +69,10 @@ augroup END
 " This cmd is causing 'Segment fault' when the buffer has 4000 chars.
 " To simulate the problem: insert 4000 chars and open the terminal.
 " E.g.: 4000ia<esc>:terminal
-" if has('nvim')
-"   augroup StartTerminalInInsertMode
-"     " https://github.com/neovim/neovim/issues/8816
-"     autocmd!
-"     autocmd TermOpen term://* startinsert
-"   augroup END
-" endif
+if has('nvim')
+  augroup StartTerminalInInsertMode
+    " https://github.com/neovim/neovim/issues/8816
+    autocmd!
+    autocmd TermOpen term://* startinsert
+  augroup END
+endif

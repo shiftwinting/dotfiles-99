@@ -79,6 +79,7 @@ nnoremap <Leader>t :Filetypes<CR>
 nnoremap <Leader>0 :GFilesChangedFromMaster<CR>
 nnoremap <Leader>c :BCommits<CR>
 nnoremap <Leader>n :NoteFiles<CR>
+nnoremap <Leader>; :terminal<CR>
 
 """ Undotree
 nnoremap <Leader>\ :UndotreeToggle<cr>
