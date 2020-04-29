@@ -21,14 +21,21 @@ function! One() abort
   colorscheme one
 endfunction
 
+function! MiraMare() abort
+  let g:miramare_enable_italic = 1
+  colorscheme miramare
+endfunction
+
 if strftime("%H") >= 17
   set background=dark
 
-  let randomColorscheme = s:randnum(3)
+  let randomColorscheme = s:randnum(4)
   if randomColorscheme == 1
     call Zenburn()
   elseif randomColorscheme == 2
     colorscheme solarized
+  elseif randomColorscheme == 3
+    call MiraMare()
   else
     call One()
   endif
