@@ -66,6 +66,10 @@ augroup RemoveTraillingSpaces
   autocmd BufWritePre * %s/\s\+$//e
 augroup END
 
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --hidden\ --smart-case
+endif
+
 " This cmd is causing 'Segment fault' when the buffer has 4000 chars.
 " To simulate the problem: insert 4000 chars and open the terminal.
 " E.g.: 4000ia<esc>:terminal
