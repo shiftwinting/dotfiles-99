@@ -1,4 +1,5 @@
 syntax on
+set termguicolors
 
 function! Zenburn() abort
   let g:zenburn_disable_Label_underline = 1

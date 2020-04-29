@@ -37,7 +37,6 @@ set foldmethod=indent
 set nofoldenable
 set cursorline " Highlight on current line
 if !has('gui_running')
-  set termguicolors
   set mouse=a
 endif
 if has('nvim')
