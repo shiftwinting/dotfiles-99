@@ -36,6 +36,7 @@ set number relativenumber " Enable line numbers
 set foldmethod=indent
 set nofoldenable
 set cursorline " Highlight on current line
+set shortmess+=c
 if !has('gui_running')
   set mouse=a
 endif
