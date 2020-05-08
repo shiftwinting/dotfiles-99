@@ -67,7 +67,7 @@ augroup RemoveTraillingSpaces
 augroup END
 
 if executable('rg')
-  set grepprg=rg\ --vimgrep\ --hidden\ --smart-case
+  set grepprg=rg\ --vimgrep\ --hidden\ --smart-case\ --glob\ '!.git'
 endif
 
 " This cmd is causing 'Segment fault' when the buffer has 4000 chars.
