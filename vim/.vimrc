@@ -80,3 +80,6 @@ if has('nvim')
     autocmd TermOpen term://* startinsert
   augroup END
 endif
+
+command! TODOs :noautocmd vimgrep /\<todo\>\|\<fixme\>/ `git diff --name-only --diff-filter=d origin/master`
+command! TODOsAll :noautocmd vimgrep /\<todo\>\|\<fixme\>/ `git ls-files`
