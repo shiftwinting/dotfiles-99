@@ -11,7 +11,7 @@ Plug 'tpope/vim-commentary'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
-Plug 'mbbill/undotree'
+Plug 'mbbill/undotree', { 'on': ['UndotreeToggle'] }
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'alvan/vim-closetag', { 'for': ['html', 'javascriptreact', 'javascript'] }
 Plug 'PeterRincker/vim-argumentative'
