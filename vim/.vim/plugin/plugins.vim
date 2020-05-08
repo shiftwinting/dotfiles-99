@@ -20,6 +20,9 @@ Plug 'lourenci/vim-visual-star-search'
 Plug 'moll/vim-bbye', { 'on': ['Bd', 'Bw'] }
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 
+Plug 'will133/vim-dirdiff', { 'on': ['DirDiff'] }
+Plug 'AndrewRadev/linediff.vim', { 'on': ['Linediff', 'LinediffReset'] }
+
 Plug 'tpope/vim-projectionist'
 Plug 'airblade/vim-rooter'
 
