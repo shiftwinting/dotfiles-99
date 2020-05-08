@@ -7,11 +7,6 @@ endif
 let g:fzf_buffers_jump = 1
 
 let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.85 } }
-
 let g:fzf_preview_window = ''
 
-command! -bang -nargs=? GFiles call fzf#vim#gitfiles(<q-args>, {'options': '--no-preview'}, <bang>0)
-
-command! -bang NoteFiles call fzf#vim#files('~/Library/Mobile Documents/com~apple~CloudDocs/notes', <bang>0)
-
-command! -bang GFilesChangedFromMaster call fzf#run(fzf#wrap({'source': 'git diff --name-only master'}, <bang>0))
+command! -bang GFilesChangedFromMaster call fzf#run(fzf#wrap({'source': 'git diff --name-only --diff-filter=d origin/master'}, <bang>0))
