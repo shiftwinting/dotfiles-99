@@ -19,7 +19,6 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'moll/vim-bbye', { 'on': ['Bd', 'Bw'] }
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
-Plug 'junegunn/vim-peekaboo'
 
 Plug 'tpope/vim-projectionist'
 Plug 'airblade/vim-rooter'
