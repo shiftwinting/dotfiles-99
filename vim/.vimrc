@@ -57,7 +57,7 @@ endif
 if !has('gui_running')
   augroup LoadChangedFileExternally
     autocmd!
-    autocmd FocusGained * :checktime
+    autocmd FocusGained,CursorHold ?* if getcmdwintype() == '' | checktime | endif
   augroup END
 endif
 
