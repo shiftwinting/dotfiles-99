@@ -16,7 +16,7 @@ Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'alvan/vim-closetag', { 'for': ['html', 'javascriptreact', 'javascript'] }
 Plug 'PeterRincker/vim-argumentative'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'nelstrom/vim-visual-star-search'
+Plug 'lourenci/vim-visual-star-search'
 Plug 'moll/vim-bbye', { 'on': ['Bd', 'Bw'] }
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 
