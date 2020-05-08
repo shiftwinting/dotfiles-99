@@ -29,13 +29,15 @@ endfunction
 if strftime("%H") >= 17
   set background=dark
 
-  let randomColorscheme = s:randnum(4)
+  let randomColorscheme = s:randnum(5)
   if randomColorscheme == 1
     call Zenburn()
   elseif randomColorscheme == 2
-    colorscheme solarized
-  elseif randomColorscheme == 3
     call MiraMare()
+  elseif randomColorscheme == 3
+    colorscheme dogrun
+  elseif randomColorscheme == 4
+    colorscheme nightfly
   else
     call One()
   endif
@@ -48,6 +50,6 @@ else
   elseif randomColorscheme == 2
     call One()
   else
-    colorscheme solarized
+    colorscheme PaperColor
   endif
 endif

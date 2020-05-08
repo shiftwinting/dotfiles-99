@@ -49,15 +49,13 @@ if !has('nvim')
 endif
 
 " Themes
-if !has('gui_running')
-  Plug 'arakashic/nvim-colors-solarized'
-else
-  Plug 'altercation/vim-colors-solarized'
-endif
 Plug 'reedes/vim-colors-pencil'
 Plug 'jnurmine/Zenburn'
 Plug 'rakr/vim-one'
 Plug 'franbach/miramare'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'wadackel/vim-dogrun'
+Plug 'bluz71/vim-nightfly-guicolors'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
