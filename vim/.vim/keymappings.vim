@@ -90,3 +90,6 @@ nnoremap <Leader>a :A<CR>
 
 " Context
 nnoremap \ :ContextPeek<CR>
+
+" Dirvish
+nnoremap <Leader>- :Dirvish<CR>
