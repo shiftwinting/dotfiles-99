@@ -42,32 +42,20 @@ vnoremap <Left>   <NOP>
 vnoremap <Right>  <NOP>
 
 """""""""""""" PLUGINS MAPS
-"""" Coc
+"""" LSP
 
-" Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-
-" Remap for rename current word
-nmap <leader>rn <Plug>(coc-rename)
-
-" Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
-
-nmap <silent> [z <Plug>(coc-diagnostic-prev)
-nmap <silent> ]z <Plug>(coc-diagnostic-next)
-
-" Use K to show documentation in preview window
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
-
-nnoremap <silent> <Leader>o  :<C-u>CocList --tab outline<CR>
+if has('nvim')
+  nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
+  nnoremap <silent> <leader>rn <cmd>lua vim.lsp.buf.rename()<CR>
+  nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
+else
+  nmap <silent> gd <Plug>(coc-definition)
+  nmap <leader>rn <Plug>(coc-rename)
+  " Use <c-space> to trigger completion.
+  inoremap <silent><expr> <c-space> coc#refresh()
+  nmap <silent> [z <Plug>(coc-diagnostic-prev)
+  nmap <silent> ]z <Plug>(coc-diagnostic-next)
+endif
 
 """"" FZF
 nnoremap <Leader>p :FZF<CR>

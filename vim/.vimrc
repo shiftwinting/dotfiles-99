@@ -37,6 +37,7 @@ set foldmethod=indent
 set nofoldenable
 set cursorline " Highlight on current line
 set shortmess+=c
+set completeopt=menuone,noinsert,noselect
 if !has('gui_running')
   set mouse=a
 endif
