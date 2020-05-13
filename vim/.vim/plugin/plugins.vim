@@ -5,7 +5,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-endwise', { 'for': ['ruby', 'vim'] }
 Plug 'tpope/vim-surround'
 Plug 'justinmk/vim-dirvish'
-Plug 'kristijanhusak/vim-dirvish-git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-commentary'
 Plug 'michaeljsmith/vim-indent-object'
