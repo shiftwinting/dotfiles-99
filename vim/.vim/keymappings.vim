@@ -68,7 +68,8 @@ nnoremap <Leader>0 :GFilesChangedFromMaster<CR>
 nnoremap <Leader>l :BCommits<CR>
 nnoremap <Leader>n :NoteFiles<CR>
 nnoremap <Leader>c :Promiscuous<CR>
-nnoremap <Leader>; :terminal<CR>
+
+nnoremap <Leader>; :tabe <bar> :terminal<CR>
 
 """ Undotree
 nnoremap <Leader>\ :UndotreeToggle<cr>
