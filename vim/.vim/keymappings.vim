@@ -14,7 +14,7 @@ nnoremap [l :lprev<CR>
 nnoremap <C-l> 10zl
 nnoremap <C-h> 10zh
 
-nnoremap <Leader>rm :!rm %<CR>
+nnoremap <Leader>rm :!rm % <bar> :bw
 
 " Change to the last active tab
 if !exists('g:lasttab')
@@ -48,6 +48,8 @@ if has('nvim')
   nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
   nnoremap <silent> <leader>rn <cmd>lua vim.lsp.buf.rename()<CR>
   nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
+  " Use <c-space> to trigger completion.
+  inoremap <silent><expr> <c-space> completion#trigger_completion()
 else
   nmap <silent> gd <Plug>(coc-definition)
   nmap <leader>rn <Plug>(coc-rename)
