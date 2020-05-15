@@ -1,11 +1,6 @@
 syntax on
 set termguicolors
 
-function! Zenburn() abort
-  let g:zenburn_disable_Label_underline = 1
-  colorscheme zenburn
-endfunction
-
 function! Pencil() abort
   set background=light
   let g:pencil_terminal_italics = 1
@@ -29,14 +24,12 @@ endfunction
 if strftime("%H") >= 17
   set background=dark
 
-  let randomColorscheme = s:randnum(5)
+  let randomColorscheme = s:randnum(4)
   if randomColorscheme == 1
-    call Zenburn()
-  elseif randomColorscheme == 2
     call MiraMare()
-  elseif randomColorscheme == 3
+  elseif randomColorscheme == 2
     colorscheme dogrun
-  elseif randomColorscheme == 4
+  elseif randomColorscheme == 3
     colorscheme nightfly
   else
     call One()
