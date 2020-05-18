@@ -48,6 +48,7 @@ if has('nvim')
   nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
   nnoremap <silent> <leader>rn <cmd>lua vim.lsp.buf.rename()<CR>
   nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
+  nnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.formatting()<CR>
   " Use <c-space> to trigger completion.
   inoremap <silent><expr> <c-space> completion#trigger_completion()
 else
@@ -72,6 +73,9 @@ nnoremap <Leader>n :NoteFiles<CR>
 nnoremap <Leader>c :Promiscuous<CR>
 
 nnoremap <Leader>; :tabe <bar> :terminal<CR>
+if has('nvim')
+  tnoremap <C-o> <C-\><C-N>
+endif
 
 """ Undotree
 nnoremap <Leader>\ :UndotreeToggle<cr>
@@ -83,4 +87,4 @@ nnoremap <Leader>a :A<CR>
 nnoremap \ :ContextPeek<CR>
 
 " Dirvish
-nnoremap <Leader>- :Dirvish<CR>
+nmap <Leader>- <Plug>(dirvish_up)
