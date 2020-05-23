@@ -90,3 +90,10 @@ endif
 
 command! TODOs :noautocmd vimgrep /\<todo\>\|\<fixme\>/ `git diff --name-only --diff-filter=d origin/master`
 command! TODOsAll :noautocmd vimgrep /\<todo\>\|\<fixme\>/ `git ls-files`
+
+function! Mkdir(dir)
+  if !isdirectory(a:dir)
+    call mkdir(a:dir, "p")
+  endif
+endfunction
+command! W call Mkdir(expand("%:p:h")) | write
