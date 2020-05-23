@@ -14,18 +14,6 @@ nnoremap [l :lprev<CR>
 nnoremap <C-l> 10zl
 nnoremap <C-h> 10zh
 
-nnoremap <Leader>rm :!rm % <bar> :bw
-
-" Change to the last active tab
-if !exists('g:lasttab')
-  let g:lasttab = 1
-endif
-nmap gl :exe "tabn ".g:lasttab<CR>
-augroup SetLastTab
-  autocmd!
-  autocmd TabLeave * let g:lasttab = tabpagenr()
-augroup END
-
 nnoremap <Up> :resize +2<CR>
 nnoremap <Down> :resize -2<CR>
 nnoremap <Left> :vertical resize -2<CR>
@@ -45,7 +33,8 @@ vnoremap <Right>  <NOP>
 """" LSP
 
 if has('nvim')
-  nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
+  nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>
+  nnoremap <silent> gD <cmd>lua vim.lsp.buf.implementation()<CR>
   nnoremap <silent> <leader>rn <cmd>lua vim.lsp.buf.rename()<CR>
   nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
   nnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.formatting()<CR>
@@ -78,15 +67,16 @@ if has('nvim')
 endif
 
 """ Undotree
-nnoremap <Leader>\ :UndotreeToggle<cr>
+nnoremap <Leader>u :UndotreeToggle<cr>
 
 "" Projectionist
 nnoremap <Leader>a :A<CR>
 
 " Context
-nnoremap \ :ContextPeek<CR>
+nnoremap <Leader>\ :ContextPeek<CR>
 
 " Dirvish
-nmap <Leader>- <Plug>(dirvish_up)
+nmap \ <Plug>(dirvish_up)
+
 nnoremap <Leader>ww :tabe ~/Library/Mobile\ Documents/com~apple~CloudDocs/notes<CR>
 nnoremap <Leader>wn :tabe ~/Library/Mobile\ Documents/com~apple~CloudDocs/notes/scratch/`date +\%Y-\%m-\%d`.md<CR>
