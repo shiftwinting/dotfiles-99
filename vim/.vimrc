@@ -81,6 +81,11 @@ if has('nvim')
     autocmd!
     autocmd TermOpen term://* startinsert
   augroup END
+
+  augroup HighlightYank
+    autocmd!
+    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 250)
+  augroup END
 endif
 
 command! TODOs :noautocmd vimgrep /\<todo\>\|\<fixme\>/ `git diff --name-only --diff-filter=d origin/master`
