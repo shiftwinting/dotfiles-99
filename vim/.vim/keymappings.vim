@@ -88,3 +88,5 @@ nnoremap \ :ContextPeek<CR>
 
 " Dirvish
 nmap <Leader>- <Plug>(dirvish_up)
+nnoremap <Leader>ww :tabe ~/Library/Mobile\ Documents/com~apple~CloudDocs/notes<CR>
+nnoremap <Leader>wn :tabe ~/Library/Mobile\ Documents/com~apple~CloudDocs/notes/scratch/`date +\%Y-\%m-\%d`.md<CR>
