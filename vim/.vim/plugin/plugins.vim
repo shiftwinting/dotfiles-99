@@ -62,6 +62,7 @@ Plug 'franbach/miramare'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'wadackel/vim-dogrun'
 Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'whatyouhide/vim-gotham'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
