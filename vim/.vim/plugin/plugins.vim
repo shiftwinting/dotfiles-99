@@ -38,6 +38,7 @@ Plug 'sheerun/vim-polyglot'
 if has('nvim')
   Plug 'neovim/nvim-lsp'
   Plug 'haorenW1025/completion-nvim'
+  Plug 'dense-analysis/ale'
 else
   Plug 'neoclide/coc.nvim', { 'branch': 'release' }
   Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
