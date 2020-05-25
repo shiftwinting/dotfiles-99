@@ -6,10 +6,14 @@ nnoremap <Leader>rp :let @*=expand("%")<CR>
 
 nnoremap <M-a> ggVG
 
+nnoremap [Q :cfirst<CR>
 nnoremap ]q :cnext<CR>
 nnoremap [q :cprev<CR>
+nnoremap ]Q :clast<CR>
+nnoremap [L :lfirst<CR>
 nnoremap ]l :lnext<CR>
 nnoremap [l :lprev<CR>
+nnoremap ]L :llast<CR>
 
 nnoremap <C-l> 10zl
 nnoremap <C-h> 10zh
