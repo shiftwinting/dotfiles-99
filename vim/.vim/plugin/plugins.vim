@@ -57,7 +57,6 @@ endif
 
 " Themes
 Plug 'reedes/vim-colors-pencil'
-Plug 'rakr/vim-one'
 Plug 'franbach/miramare'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'wadackel/vim-dogrun'

@@ -11,11 +11,6 @@ function! s:randnum(max) abort
   return str2nr(matchstr(reltimestr(reltime()), '\v\.@<=\d+')[1:]) % a:max
 endfunction
 
-function! One() abort
-  let g:one_allow_italics = 1
-  colorscheme one
-endfunction
-
 function! MiraMare() abort
   let g:miramare_enable_italic = 1
   colorscheme miramare
@@ -24,33 +19,29 @@ endfunction
 if strftime("%H") >= 17
   set background=dark
 
-  let randomColorscheme = s:randnum(6)
-  if randomColorscheme == 1
+  let randomColorscheme = s:randnum(5)
+  if randomColorscheme == 0
     call MiraMare()
-  elseif randomColorscheme == 2
+  elseif randomColorscheme == 1
     colorscheme dogrun
-  elseif randomColorscheme == 3
+  elseif randomColorscheme == 2
     colorscheme nightfly
-  elseif randomColorscheme == 4
+  elseif randomColorscheme == 3
     colorscheme gotham
-  elseif randomColorscheme == 5
+  elseif randomColorscheme == 4
     let ayucolor="mirage"
     colorscheme ayu
-  else
-    call One()
   endif
 else
   set background=light
 
-  let randomColorscheme = s:randnum(4)
-  if randomColorscheme == 1
+  let randomColorscheme = s:randnum(3)
+  if randomColorscheme == 0
     call Pencil()
-  elseif randomColorscheme == 2
-    call One()
-  elseif randomColorscheme == 3
+  elseif randomColorscheme == 1
     let ayucolor="light"
     colorscheme ayu
-  else
+  elseif randomColorscheme == 2
     colorscheme PaperColor
   endif
 endif
