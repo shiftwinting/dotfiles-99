@@ -82,6 +82,11 @@ if has('nvim')
     autocmd TermOpen term://* startinsert
   augroup END
 
+  augroup AutoCloseTerminal
+    autocmd!
+    autocmd TermClose term://*zsh call nvim_input('<CR>')
+  augroup END
+
   augroup HighlightYank
     autocmd!
     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 250)
