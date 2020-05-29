@@ -35,7 +35,7 @@ Plug 'wellle/context.vim', { 'on': ['ContextToggle', 'ContextPeek'] }
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot'
 
-if has('nvim')
+if has('nvim-0.5')
   Plug 'neovim/nvim-lsp'
   Plug 'haorenW1025/completion-nvim'
   Plug 'dense-analysis/ale'

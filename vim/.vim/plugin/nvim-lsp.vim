@@ -1,4 +1,4 @@
-if has('nvim')
+if has('nvim-0.5')
 lua << EOF
 require'nvim_lsp'.tsserver.setup{on_attach=require'completion'.on_attach}
 require'nvim_lsp'.cssls.setup{on_attach=require'completion'.on_attach}
