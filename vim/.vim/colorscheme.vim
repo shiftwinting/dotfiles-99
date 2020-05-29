@@ -24,7 +24,7 @@ endfunction
 if strftime("%H") >= 17
   set background=dark
 
-  let randomColorscheme = s:randnum(5)
+  let randomColorscheme = s:randnum(6)
   if randomColorscheme == 1
     call MiraMare()
   elseif randomColorscheme == 2
@@ -33,17 +33,23 @@ if strftime("%H") >= 17
     colorscheme nightfly
   elseif randomColorscheme == 4
     colorscheme gotham
+  elseif randomColorscheme == 5
+    let ayucolor="mirage"
+    colorscheme ayu
   else
     call One()
   endif
 else
   set background=light
 
-  let randomColorscheme = s:randnum(3)
+  let randomColorscheme = s:randnum(4)
   if randomColorscheme == 1
     call Pencil()
   elseif randomColorscheme == 2
     call One()
+  elseif randomColorscheme == 3
+    let ayucolor="light"
+    colorscheme ayu
   else
     colorscheme PaperColor
   endif
