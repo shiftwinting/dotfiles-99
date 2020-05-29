@@ -68,6 +68,10 @@ nnoremap <Leader>c :Promiscuous<CR>
 nnoremap <Leader>; :tabe <bar> :terminal<CR>
 if has('nvim')
   tnoremap <C-o> <C-\><C-N>
+  tnoremap <C-u> <C-\><C-N><C-u>
+  tnoremap <C-b> <C-\><C-N><C-b>
+  tnoremap gt <C-\><C-N>gt
+  tnoremap gT <C-\><C-N>gT
 endif
 
 """ Undotree
