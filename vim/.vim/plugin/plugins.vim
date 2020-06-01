@@ -38,21 +38,6 @@ if has('nvim-0.5')
   Plug 'neovim/nvim-lsp'
   Plug 'haorenW1025/completion-nvim'
   Plug 'dense-analysis/ale'
-else
-  Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-  Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-solargraph', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-endif
-
-Plug 'airblade/vim-gitgutter'
-
-if !has('nvim')
-  Plug 'markonm/traces.vim'
 endif
 
 " Themes
