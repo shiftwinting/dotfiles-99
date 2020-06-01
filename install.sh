@@ -53,7 +53,6 @@ do
           rm -rf ~/.config/nvim
           ln -s $PWD/vim/.vim ~/.config/nvim
           ln -s $PWD/vim/.vimrc ~/.config/nvim/init.vim
-          ln -s $PWD/vim/ultisnips ~/.config/coc/ultisnips
           ;;
         2)
           printf '%s\n' 'Symlinking vim'
@@ -61,7 +60,6 @@ do
           ln -s $PWD/vim/.vim ~/.vim
           ln -s $PWD/vim/.vimrc ~/.vimrc
           ln -s $PWD/vim/.gvimrc ~/.gvimrc
-          ln -s $PWD/vim/ultisnips ~/.config/coc/ultisnips
           ;;
         3)
           printf '%s\n' 'Symlinking karabiner'
