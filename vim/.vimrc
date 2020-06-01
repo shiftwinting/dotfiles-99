@@ -35,8 +35,8 @@ set undofile
 set number relativenumber " Enable line numbers
 set foldmethod=indent
 set nofoldenable
-set cursorline " Highlight on current line
 set shortmess+=c
+set shortmess-=S " Show how many matches / ? have
 set completeopt=menuone,noinsert,noselect
 if !has('gui_running')
   set mouse=a
