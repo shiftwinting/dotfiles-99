@@ -35,13 +35,11 @@ if strftime("%H") >= 17
 else
   set background=light
 
-  let randomColorscheme = s:randnum(3)
+  let randomColorscheme = s:randnum(2)
   if randomColorscheme == 0
     call Pencil()
   elseif randomColorscheme == 1
     let ayucolor="light"
     colorscheme ayu
-  elseif randomColorscheme == 2
-    colorscheme PaperColor
   endif
 endif
