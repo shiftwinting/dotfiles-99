@@ -38,12 +38,15 @@ vnoremap <Right>  <NOP>
 
 if has('nvim')
   nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>
-  nnoremap <silent> gD <cmd>lua vim.lsp.buf.implementation()<CR>
   nnoremap <silent> <leader>rn <cmd>lua vim.lsp.buf.rename()<CR>
   nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
   nnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.formatting()<CR>
+  nnoremap <silent> <c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
+  nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
   " Use <c-space> to trigger completion.
   inoremap <silent><expr> <c-space> completion#trigger_completion()
+  nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
+  nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
 else
   nmap <silent> gd <Plug>(coc-definition)
   nmap <leader>rn <Plug>(coc-rename)
@@ -70,8 +73,6 @@ if has('nvim')
   tnoremap <C-o> <C-\><C-N>
   tnoremap <C-u> <C-\><C-N><C-u>
   tnoremap <C-b> <C-\><C-N><C-b>
-  tnoremap gt <C-\><C-N>gt
-  tnoremap gT <C-\><C-N>gT
 endif
 
 """ Undotree
