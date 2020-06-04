@@ -1,8 +1,7 @@
 if has('nvim-0.5')
 lua << EOF
-require'nvim_lsp'.tsserver.setup{on_attach=require'completion'.on_attach}
-require'nvim_lsp'.cssls.setup{on_attach=require'completion'.on_attach}
-require'nvim_lsp'.solargraph.setup{on_attach=require'completion'.on_attach}
+require'nvim_lsp'.tsserver.setup{}
+require'nvim_lsp'.cssls.setup{}
+require'nvim_lsp'.solargraph.setup{}
 EOF
-  let g:completion_confirm_key = "\<C-y>"
 endif
