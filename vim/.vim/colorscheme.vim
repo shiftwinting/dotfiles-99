@@ -16,7 +16,7 @@ function! MiraMare() abort
   colorscheme miramare
 endfunction
 
-if strftime("%H") >= 17
+if strftime("%H") >= 17 || $VIM_NIGHT == 1
   set background=dark
 
   let randomColorscheme = s:randnum(5)
