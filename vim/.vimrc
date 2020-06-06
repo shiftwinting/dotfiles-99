@@ -103,3 +103,8 @@ function! Mkdir(dir)
   endif
 endfunction
 command! W call Mkdir(expand("%:p:h")) | write
+
+augroup LinterFile
+  autocmd!
+  autocmd BufWritePost *.js,*.rb Make!
+augroup END
