@@ -29,7 +29,6 @@ set splitright                        " Open new splits to the right
 set splitbelow                        " Open new splits to the bottom
 set noshowmode                        " Do not show the mode below the statusline
 set showcmd                           " shows partial commands in the right bottom of screen
-set encoding=utf-8
 set synmaxcol=300                     " make syntax highligh works just for the first 300 chars
 set diffopt+=indent-heuristic,algorithm:patience
 set undofile
@@ -103,8 +102,3 @@ function! Mkdir(dir)
   endif
 endfunction
 command! W call Mkdir(expand("%:p:h")) | write
-
-augroup LinterFile
-  autocmd!
-  autocmd BufWritePost *.js,*.rb Make!
-augroup END
