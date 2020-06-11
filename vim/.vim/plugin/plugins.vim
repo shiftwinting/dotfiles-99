@@ -50,4 +50,6 @@ Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
 Plug 'junegunn/rainbow_parentheses.vim', { 'for': ['clojure', 'lisp'] }
 
+packadd Cfilter
+
 call plug#end()
