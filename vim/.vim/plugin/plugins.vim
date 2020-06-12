@@ -26,7 +26,7 @@ Plug 'airblade/vim-rooter'
 Plug 'mateusbraga/vim-spell-pt-br'
 
 " File system navigation
-Plug 'junegunn/fzf', { 'do': './install --bin' }
+Plug '/usr/local/opt/fzf' " You need to install fzf yourself: `brew install fzf`
 Plug 'junegunn/fzf.vim'
 Plug 'wellle/context.vim', { 'on': ['ContextToggle', 'ContextPeek'] }
 
