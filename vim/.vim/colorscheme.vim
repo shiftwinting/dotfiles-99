@@ -19,16 +19,14 @@ endfunction
 if strftime("%H") >= 17 || $VIM_NIGHT == 1
   set background=dark
 
-  let randomColorscheme = s:randnum(5)
+  let randomColorscheme = s:randnum(4)
   if randomColorscheme == 0
     call MiraMare()
   elseif randomColorscheme == 1
-    colorscheme dogrun
-  elseif randomColorscheme == 2
     colorscheme nightfly
-  elseif randomColorscheme == 3
+  elseif randomColorscheme == 2
     colorscheme gotham
-  elseif randomColorscheme == 4
+  elseif randomColorscheme == 3
     let ayucolor="mirage"
     colorscheme ayu
   endif
