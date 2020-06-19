@@ -48,14 +48,6 @@ else
   set undodir=~/.vim/undo/
 endif
 
-" Change keyboard to USA layout on vim enter
-if executable('xkbswitch')
-  augroup SetEnglishKeyboard
-    autocmd!
-    autocmd VimEnter * silent !{xkbswitch -se US}
-  augroup END
-endif
-
 if !has('gui_running')
   augroup LoadChangedFileExternally
     autocmd!

@@ -1,11 +1,6 @@
 """"""""""""""""""" GENERAL MAPPINGS
 let mapleader = "\<space>"
 
-" Relative path to clipboard
-nnoremap <Leader>rp :let @*=expand("%")<CR>
-
-nnoremap <M-a> ggVG
-
 nnoremap [Q :cfirst<CR>
 nnoremap ]q :cnext<CR>
 nnoremap [q :cprev<CR>
