@@ -19,7 +19,7 @@ endfunction
 if strftime("%H") >= 17 || $VIM_NIGHT == 1
   set background=dark
 
-  let randomColorscheme = s:randnum(4)
+  let randomColorscheme = s:randnum(5)
   if randomColorscheme == 0
     call MiraMare()
   elseif randomColorscheme == 1
@@ -29,6 +29,9 @@ if strftime("%H") >= 17 || $VIM_NIGHT == 1
   elseif randomColorscheme == 3
     let ayucolor="mirage"
     colorscheme ayu
+  elseif randomColorscheme == 4
+    let g:jellybeans_use_term_italics = 1
+    colorscheme jellybeans
   endif
 else
   set background=light

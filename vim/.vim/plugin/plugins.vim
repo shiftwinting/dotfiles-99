@@ -44,6 +44,7 @@ Plug 'franbach/miramare'
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'whatyouhide/vim-gotham'
 Plug 'ayu-theme/ayu-vim'
+Plug 'nanotech/jellybeans.vim'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
