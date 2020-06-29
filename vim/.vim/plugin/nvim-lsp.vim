@@ -3,5 +3,6 @@ lua << EOF
 require'nvim_lsp'.tsserver.setup{}
 require'nvim_lsp'.cssls.setup{}
 require'nvim_lsp'.solargraph.setup{}
+require'nvim_lsp'.jsonls.setup{}
 EOF
 endif
