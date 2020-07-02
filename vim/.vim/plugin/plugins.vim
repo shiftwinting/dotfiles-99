@@ -16,7 +16,6 @@ Plug 'alvan/vim-closetag', { 'for': ['html', 'javascriptreact', 'javascript'] }
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'lourenci/vim-visual-star-search'
 Plug 'moll/vim-bbye', { 'on': ['Bd', 'Bw'] }
-Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 
 Plug 'AndrewRadev/linediff.vim', { 'on': ['Linediff', 'LinediffReset'] }
 
@@ -35,7 +34,7 @@ Plug 'sheerun/vim-polyglot'
 
 if has('nvim-0.5')
   Plug 'neovim/nvim-lsp'
-  Plug 'haorenW1025/completion-nvim'
+  Plug 'nvim-lua/completion-nvim'
 endif
 
 " Themes
@@ -49,6 +48,9 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 
 Plug 'junegunn/rainbow_parentheses.vim', { 'for': ['clojure', 'lisp'] }
+
+Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
+Plug 'tpope/vim-obsession'
 
 packadd Cfilter
 

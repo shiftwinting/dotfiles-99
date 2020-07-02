@@ -27,7 +27,7 @@ if strftime("%H") >= 17 || $VIM_NIGHT == 1
   elseif randomColorscheme == 2
     colorscheme gotham
   elseif randomColorscheme == 3
-    let ayucolor="mirage"
+    let ayucolor="dark"
     colorscheme ayu
   elseif randomColorscheme == 4
     let g:jellybeans_use_term_italics = 1
