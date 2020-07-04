@@ -48,7 +48,6 @@ Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 Plug 'junegunn/rainbow_parentheses.vim', { 'for': ['clojure', 'lisp'] }
 
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
-Plug 'tpope/vim-obsession'
 
 packadd Cfilter
 
