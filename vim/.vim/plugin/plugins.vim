@@ -2,7 +2,6 @@ call plug#begin()
 
 " Addons
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-endwise', { 'for': ['ruby', 'vim'] }
 Plug 'tpope/vim-surround'
 Plug 'justinmk/vim-dirvish'
 Plug 'terryma/vim-multiple-cursors'
@@ -11,7 +10,7 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch', { 'commit': '3757ddad87073a6ded8c34dfabb28c325acf6c02' }
 Plug 'mbbill/undotree', { 'on': ['UndotreeToggle'] }
-Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
+Plug 'cohama/lexima.vim' " Insert or delete brackets, parens, quotes in pair.
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'lourenci/vim-visual-star-search'
 Plug 'moll/vim-bbye', { 'on': ['Bd', 'Bw'] }
