@@ -93,3 +93,8 @@ function! Mkdir(dir)
   endif
 endfunction
 command! W call Mkdir(expand("%:p:h")) | write
+
+let g:netrw_banner = 0
+let g:netrw_altfile = 1 " wipe netrw buffer on file selection
+let g:netrw_list_hide = '^\.\.\=/\=$' " Don't show './' and '../' paths
+let g:netrw_use_errorwindow = 0

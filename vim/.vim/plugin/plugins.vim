@@ -3,7 +3,6 @@ call plug#begin()
 " Addons
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'justinmk/vim-dirvish'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-commentary'
 Plug 'michaeljsmith/vim-indent-object'
