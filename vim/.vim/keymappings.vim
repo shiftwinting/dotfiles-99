@@ -28,6 +28,8 @@ vnoremap <Down>   <NOP>
 vnoremap <Left>   <NOP>
 vnoremap <Right>  <NOP>
 
+nnoremap <Leader>yr :let @*=expand('%')<CR>
+
 """""""""""""" PLUGINS MAPS
 """" LSP
 
@@ -74,7 +76,8 @@ endif
 nnoremap <Leader>u :UndotreeToggle<cr>
 
 "" Projectionist
-nnoremap <Leader>a :A<CR>
+nnoremap <Leader>aa :A<CR>
+nnoremap <Leader>av :AV<CR>
 
 " Context
 nnoremap <Leader>\ :ContextPeek<CR>

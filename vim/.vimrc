@@ -80,7 +80,7 @@ endif
 if has('nvim-0.5')
   augroup HighlightYank
     autocmd!
-    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 250)
+    autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=250}
   augroup END
 endif
 
