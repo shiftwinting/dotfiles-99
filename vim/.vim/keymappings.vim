@@ -76,8 +76,7 @@ endif
 nnoremap <Leader>u :UndotreeToggle<cr>
 
 "" Projectionist
-nnoremap <Leader>aa :A<CR>
-nnoremap <Leader>av :AV<CR>
+nnoremap <Leader>a :A<CR>
 
 " Context
 nnoremap <Leader>\ :ContextPeek<CR>
