@@ -44,6 +44,7 @@ if has('nvim')
   inoremap <silent><expr> <c-space> completion#trigger_completion()
   nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
   nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
+  nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
 else
   nmap <silent> gd <Plug>(coc-definition)
   nmap <leader>rn <Plug>(coc-rename)
@@ -65,13 +66,6 @@ nnoremap <Leader>l :BCommits<CR>
 nnoremap <Leader>n :NoteFiles<CR>
 nnoremap <Leader>c :Promiscuous<CR>
 
-nnoremap <Leader>; :tabe <bar> :terminal<CR>
-if has('nvim')
-  tnoremap <C-o> <C-\><C-N>
-  tnoremap <C-u> <C-\><C-N><C-u>
-  tnoremap <C-b> <C-\><C-N><C-b>
-endif
-
 """ Undotree
 nnoremap <Leader>u :UndotreeToggle<cr>
 
@@ -79,7 +73,7 @@ nnoremap <Leader>u :UndotreeToggle<cr>
 nnoremap <Leader>a :A<CR>
 
 " Context
-nnoremap <Leader>\ :ContextPeek<CR>
+nnoremap \ :ContextPeek<CR>
 
 nnoremap <Leader>e :Ex<CR>
 
