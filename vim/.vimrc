@@ -29,7 +29,7 @@ set splitright splitbelow
 set noshowmode                        " Do not show the mode below the statusline
 set showcmd                           " shows partial commands in the right bottom of screen
 set synmaxcol=300                     " make syntax highligh works just for the first 300 chars
-set diffopt+=indent-heuristic,algorithm:patience
+set diffopt+=indent-heuristic,algorithm:histogram
 set undofile
 set number relativenumber " Enable line numbers
 set foldmethod=indent
