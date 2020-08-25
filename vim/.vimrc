@@ -48,10 +48,17 @@ else
 endif
 
 if !has('gui_running')
-  augroup LoadChangedFileExternally
-    autocmd!
-    autocmd FocusGained,CursorHold ?* if getcmdwintype() == '' | checktime | endif
-  augroup END
+  if has('nvim')
+    augroup LoadChangedFileExternally
+      autocmd!
+      autocmd FocusGained,VimResume * if getcmdwintype() == '' | checktime | endif
+    augroup END
+  else
+    augroup LoadChangedFileExternally
+      autocmd!
+      autocmd FocusGained,CursorHold * if getcmdwintype() == '' | checktime | endif
+    augroup END
+  endif
 endif
 
 augroup RemoveTraillingSpaces
