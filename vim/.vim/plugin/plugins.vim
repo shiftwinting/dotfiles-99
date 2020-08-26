@@ -1,8 +1,6 @@
 call plug#begin()
 
 " Addons
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-fugitive'
