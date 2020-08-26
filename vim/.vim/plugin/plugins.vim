@@ -38,9 +38,6 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'phanviet/vim-monokai-pro'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
-
-Plug 'junegunn/rainbow_parentheses.vim', { 'for': ['clojure', 'lisp'] }
-
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 
 packadd Cfilter
