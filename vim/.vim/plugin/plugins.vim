@@ -31,12 +31,7 @@ endif
 
 " Themes
 Plug 'reedes/vim-colors-pencil'
-Plug 'franbach/miramare'
 Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'whatyouhide/vim-gotham'
-Plug 'nanotech/jellybeans.vim'
-Plug 'phanviet/vim-monokai-pro'
-Plug 'bignimbus/pop-punk.vim'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
