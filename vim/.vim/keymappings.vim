@@ -66,6 +66,12 @@ nnoremap <Leader>l :BCommits<CR>
 nnoremap <Leader>n :NoteFiles<CR>
 nnoremap <Leader>c :Promiscuous<CR>
 
+if has('nvim')
+  tnoremap <C-u> <C-\><C-N><C-u>
+  tnoremap <C-b> <C-\><C-N><C-b>
+  tnoremap <C-y> <C-\><C-N><C-y>
+endif
+
 """ Undotree
 nnoremap <Leader>u :UndotreeToggle<cr>
 

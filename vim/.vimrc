@@ -82,8 +82,11 @@ if has('nvim')
 
   augroup AutoCloseTerminal
     autocmd!
-    autocmd TermClose term://*zsh call nvim_input('<CR>')
+    autocmd TermClose term://\(*zsh\|*git*\) call nvim_input('<CR>')
   augroup END
+
+  command! -nargs=* Gpatch :tabe term://git add -p <args>
+  command! -nargs=* Gcheckout :tabe term://git checkout -p <args>
 endif
 if has('nvim-0.5')
   augroup HighlightYank
