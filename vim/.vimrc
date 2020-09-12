@@ -25,7 +25,6 @@ set history=500                       " Number of commands history to store
 set hlsearch                          " Highlight search results
 set ignorecase smartcase              " Search queries intelligently set case
 set incsearch                         " Show search results as you type
-set splitright splitbelow
 set noshowmode                        " Do not show the mode below the statusline
 set showcmd                           " shows partial commands in the right bottom of screen
 set synmaxcol=300                     " make syntax highligh works just for the first 300 chars
