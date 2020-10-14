@@ -41,7 +41,7 @@ if has('nvim')
   nnoremap <silent> <c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
   nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
   " Use <c-space> to trigger completion.
-  inoremap <silent><expr> <c-space> completion#trigger_completion()
+  imap <silent> <c-space> <Plug>(completion_trigger)
   nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
   nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
   nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
@@ -70,13 +70,11 @@ if has('nvim')
   tnoremap <C-u> <C-\><C-N><C-u>
   tnoremap <C-b> <C-\><C-N><C-b>
   tnoremap <C-y> <C-\><C-N><C-y>
+  tnoremap <C-e> <C-\><C-N><C-e>
 endif
 
 """ Undotree
 nnoremap <Leader>u :UndotreeToggle<cr>
-
-"" Projectionist
-nnoremap <Leader>a :A<CR>
 
 " Context
 nnoremap \ :ContextPeek<CR>
