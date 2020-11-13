@@ -2,7 +2,10 @@ if has('nvim-0.5')
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "all",
-  highlight = { enable = true }
+  highlight = {
+    enable = true,
+    disable = { "markdown" },
+  },
 }
 EOF
 endif

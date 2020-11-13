@@ -40,11 +40,13 @@ if has('nvim')
   nnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.formatting()<CR>
   nnoremap <silent> <c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
   nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
-  " Use <c-space> to trigger completion.
-  imap <silent> <c-space> <Plug>(completion_trigger)
   nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
   nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
   nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
+  nnoremap <silent> <leader>ac    <cmd>lua vim.lsp.buf.code_action()<CR>
+  nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
+  " Use <c-space> to trigger completion.
+  imap <silent> <c-space> <Plug>(completion_trigger)
 else
   nmap <silent> gd <Plug>(coc-definition)
   nmap <leader>rn <Plug>(coc-rename)
@@ -66,6 +68,7 @@ nnoremap <Leader>l :BCommits<CR>
 nnoremap <Leader>n :NoteFiles<CR>
 nnoremap <Leader>c :Promiscuous<CR>
 
+nnoremap <Leader>; :tabe <bar> :terminal<CR>
 if has('nvim')
   tnoremap <C-u> <C-\><C-N><C-u>
   tnoremap <C-b> <C-\><C-N><C-b>
@@ -80,6 +83,10 @@ nnoremap <Leader>u :UndotreeToggle<cr>
 nnoremap \ :ContextPeek<CR>
 
 nnoremap <Leader>e :Ex<CR>
+augroup netrw
+  autocmd!
+  autocmd FileType netrw nmap <buffer> <Leader>e -
+augroup END
 
 nnoremap <Leader>ww :tabe ~/Library/Mobile\ Documents/com~apple~CloudDocs/notes<CR>
 nnoremap <Leader>wn :tabe ~/Library/Mobile\ Documents/com~apple~CloudDocs/notes/scratch/`date +\%Y-\%m-\%d`.md<CR>
