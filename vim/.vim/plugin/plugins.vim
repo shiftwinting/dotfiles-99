@@ -11,7 +11,6 @@ Plug 'mbbill/undotree', { 'on': ['UndotreeToggle'] }
 Plug 'cohama/lexima.vim' " Insert or delete brackets, parens, quotes in pair.
 Plug 'lourenci/vim-visual-star-search'
 
-Plug 'AndrewRadev/linediff.vim', { 'on': ['Linediff', 'LinediffReset'] }
 Plug 'whiteinge/diffconflicts', { 'on': ['DiffConflicts', 'DiffConflictsWithHistory'] }
 
 Plug 'tpope/vim-projectionist'
