@@ -18,6 +18,8 @@ nnoremap <Down> :resize -2<CR>
 nnoremap <Left> :vertical resize -2<CR>
 nnoremap <Right> :vertical resize +2<CR>
 
+nnoremap <esc> <esc>:noh<return>
+
 " Get off my lawn - helpful when learning Vim :)
 inoremap <Up>     <NOP>
 inoremap <Down>   <NOP>
@@ -82,7 +84,6 @@ nnoremap <Leader>u :UndotreeToggle<cr>
 " Context
 nnoremap \ :ContextPeek<CR>
 
-nnoremap <Leader>e :Ex<CR>
 augroup netrw
   autocmd!
   autocmd FileType netrw nmap <buffer> <Leader>e -
