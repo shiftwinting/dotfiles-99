@@ -1,6 +1,6 @@
 " Change the fzf to use ag
 if (executable('rg'))
-  let $FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --no-ignore-vcs --glob "!node_modules" --glob "!coverage" --glob "!.git" --glob "!.cache"'
+  let $FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git" '
 endif
 
 let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.85 } }
