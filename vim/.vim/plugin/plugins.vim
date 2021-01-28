@@ -32,10 +32,7 @@ else
 endif
 
 " Themes
-Plug 'reedes/vim-colors-pencil'
-Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'jsit/toast.vim'
-Plug 'nanotech/jellybeans.vim'
+Plug 'protesilaos/tempus-themes-vim'
 
 Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
