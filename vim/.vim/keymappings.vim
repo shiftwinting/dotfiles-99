@@ -49,13 +49,6 @@ if has('nvim')
   nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
   " Use <c-space> to trigger completion.
   imap <silent> <c-space> <Plug>(completion_trigger)
-else
-  nmap <silent> gd <Plug>(coc-definition)
-  nmap <leader>rn <Plug>(coc-rename)
-  " Use <c-space> to trigger completion.
-  inoremap <silent><expr> <c-space> coc#refresh()
-  nmap <silent> [z <Plug>(coc-diagnostic-prev)
-  nmap <silent> ]z <Plug>(coc-diagnostic-next)
 endif
 
 """"" FZF
