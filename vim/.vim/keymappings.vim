@@ -47,11 +47,8 @@ if has('nvim')
   nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
   nnoremap <silent> <leader>ac    <cmd>lua vim.lsp.buf.code_action()<CR>
   nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
-
-  """" nvim-comp
-  inoremap <silent><expr> <C-Space> compe#complete()
-  inoremap <silent><expr> <C-y>      compe#confirm('<C-y>')
-  inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+  " Use <c-space> to trigger completion.
+  imap <silent> <c-space> <Plug>(completion_trigger)
 endif
 
 """"" FZF
