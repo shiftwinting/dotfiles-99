@@ -5,6 +5,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch', { 'commit': '3757ddad87073a6ded8c34dfabb28c325acf6c02' }
 Plug 'mbbill/undotree', { 'on': ['UndotreeToggle'] }
@@ -34,7 +35,6 @@ endif
 " Themes
 Plug 'protesilaos/tempus-themes-vim'
 
-Plug 'AaronLasseigne/yank-code', { 'on': ['YankCode'] }
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 
 packadd Cfilter
