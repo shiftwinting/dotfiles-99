@@ -15,7 +15,7 @@ PS3='Please enter your choice: '
 while :
 do
     clear
-    options=("nvim ${opts[1]}" "vim ${opts[2]}" "karabiner ${opts[3]}" "vscode ${opts[4]}" "Done")
+    options=("nvim ${opts[1]}" "vim ${opts[2]}" "karabiner ${opts[3]}" "Done")
     select opt in "${options[@]}"
     do
         case $opt in
@@ -29,10 +29,6 @@ do
                 ;;
             "karabiner ${opts[3]}")
                 choice 3
-                break
-                ;;
-            "vscode ${opts[4]}")
-                choice 4
                 break
                 ;;
             "Done")
@@ -65,11 +61,6 @@ do
           printf '%s\n' 'Symlinking karabiner'
           rm -f ~/.config/karabiner/karabiner.json
           ln -s $PWD/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
-          ;;
-        4)
-          printf '%s\n' 'Symlinking vscode'
-          rm -f ~/Library/Application\ Support/Code/User/settings.json
-          ln -s $PWD/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
           ;;
       esac
     fi

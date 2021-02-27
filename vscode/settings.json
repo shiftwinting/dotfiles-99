@@ -1,9 +1,0 @@
-{
-  "editor.fontSize": 19,
-  "editor.lineHeight": 40,
-  "editor.lineNumbers": "relative",
-  "editor.tabSize": 2,
-  "vim.visualstar": true,
-  "vim.hlsearch": true,
-  "vim.useSystemClipboard": true
-}
