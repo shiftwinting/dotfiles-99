@@ -33,7 +33,8 @@ else
 endif
 
 " Themes
-Plug 'protesilaos/tempus-themes-vim'
+Plug 'jsit/toast.vim'
+Plug 'embark-theme/vim', { 'as': 'embark' }
 
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 
