@@ -50,6 +50,7 @@ do
       case $opt in
         1)
           printf '%s\n' 'Symlinking nvim'
+          rm -f ~/.config/nvim/init.vim
           rm -rf ~/.config/nvim
           ln -s $PWD/vim/.vim ~/.config/nvim
           ln -s $PWD/vim/.vimrc ~/.config/nvim/init.vim
