@@ -15,7 +15,7 @@ PS3='Please enter your choice: '
 while :
 do
     clear
-    options=("nvim ${opts[1]}" "vim ${opts[2]}" "karabiner ${opts[3]}" "Done")
+    options=("nvim ${opts[1]}" "vim ${opts[2]}" "karabiner ${opts[3]}" "zshrc ${opts[4]}" "Done")
     select opt in "${options[@]}"
     do
         case $opt in
@@ -29,6 +29,10 @@ do
                 ;;
             "karabiner ${opts[3]}")
                 choice 3
+                break
+                ;;
+            "zshrc ${opts[4]}")
+                choice 4
                 break
                 ;;
             "Done")
@@ -61,6 +65,11 @@ do
           printf '%s\n' 'Symlinking karabiner'
           rm -f ~/.config/karabiner/karabiner.json
           ln -s $PWD/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+          ;;
+        4)
+          printf '%s\n' 'Symlinking .zshrc'
+          rm -f ~/.zshrc
+          ln -s $PWD/zsh/.zshrc ~/.zshrc
           ;;
       esac
     fi
