@@ -30,11 +30,15 @@ if has('nvim-0.5')
   Plug 'hrsh7th/nvim-compe'
 else
   Plug 'sheerun/vim-polyglot'
+  Plug 'prabirshrestha/vim-lsp'
+  Plug 'mattn/vim-lsp-settings'
+  Plug 'prabirshrestha/asyncomplete.vim'
+  Plug 'prabirshrestha/asyncomplete-lsp.vim'
 endif
 
 " Themes
-Plug 'jsit/toast.vim'
-Plug 'embark-theme/vim', { 'as': 'embark' }
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'w0ng/vim-hybrid'
 
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 

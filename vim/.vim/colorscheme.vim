@@ -1,12 +1,27 @@
 syntax on
 set termguicolors
 
-let output =  system("defaults read -g AppleInterfaceStyle")
-if v:shell_error != 0
-  set background=light
-  colorscheme toast
+func! ChangeBackground(auto=0)
+  let output =  system("defaults read -g AppleInterfaceStyle")
+  if v:shell_error != 0
+    set background=light
+    colorscheme PaperColor
+  else
+    set background=dark
+    colorscheme hybrid
+  endif
+
+  if (a:auto)
+    redraw!
+  endif
+endfunc
+
+if has('gui_running')
+  augroup AutoChangeBackground
+    autocmd!
+    au OSAppearanceChanged * call ChangeBackground(1)
+  augroup END
 else
-  set background=dark
-  let g:embark_terminal_italics = 1
-  colorscheme embark
+  call ChangeBackground()
 endif
+

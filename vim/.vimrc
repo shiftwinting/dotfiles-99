@@ -35,6 +35,7 @@ set foldmethod=indent
 set nofoldenable
 set shortmess+=c
 set shortmess-=S " Show how many matches / ? have
+set belloff=all
 if !has('gui_running')
   set mouse=a
 endif

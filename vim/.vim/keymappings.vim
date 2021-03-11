@@ -47,10 +47,24 @@ if has('nvim')
   nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
   nnoremap <silent> <leader>ac    <cmd>lua vim.lsp.buf.code_action()<CR>
   nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
+  nnoremap <silent> [g    <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
+  nnoremap <silent> ]g    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
   inoremap <silent><expr> <C-Space> compe#complete()
   inoremap <silent><expr> <C-y>     compe#confirm('<C-y>')
   inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+else
+  imap <c-space> <Plug>(asyncomplete_force_refresh)
+
+  nmap <c-]> <plug>(lsp-definition)
+  nmap gr <plug>(lsp-references)
+  nmap <leader>rn <plug>(lsp-rename)
+  nmap K <plug>(lsp-hover)
+  nmap gs <plug>(lsp-document-symbol-search)
+  nmap gS <plug>(lsp-workspace-symbol-search)
+  nmap <leader>ac <cmd>LspCodeAction<cr>
+  nmap [g <plug>(lsp-previous-diagnostic)
+  nmap ]g <plug>(lsp-next-diagnostic)
 endif
 
 """"" FZF
@@ -65,10 +79,10 @@ nnoremap <Leader>l :BCommits<CR>
 nnoremap <Leader>n :NoteFiles<CR>
 nnoremap <Leader>c :Promiscuous<CR>
 
-nnoremap <Leader>; :tabe <bar> :terminal<CR>
 if has('nvim')
-  tnoremap <C-b> <C-\><C-N><C-b>
-  tnoremap <C-y> <C-\><C-N><C-y>
+  nnoremap <Leader>; :tabe <bar> :terminal<CR>
+else
+  nnoremap <Leader>; <cmd>terminal<CR>
 endif
 
 """ Undotree
