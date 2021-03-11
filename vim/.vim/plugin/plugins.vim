@@ -25,7 +25,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'wellle/context.vim', { 'on': ['ContextToggle', 'ContextPeek'] }
 
 if has('nvim-0.5')
-  Plug 'nvim-treesitter/nvim-treesitter'
+  Plug 'sheerun/vim-polyglot'
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
 else
