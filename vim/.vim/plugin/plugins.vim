@@ -38,7 +38,7 @@ endif
 
 " Themes
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'w0ng/vim-hybrid'
+Plug 'savq/melange'
 
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 

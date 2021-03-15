@@ -8,7 +8,7 @@ func! ChangeBackground(auto=0)
     colorscheme PaperColor
   else
     set background=dark
-    colorscheme hybrid
+    colorscheme melange
   endif
 
   if (a:auto)
