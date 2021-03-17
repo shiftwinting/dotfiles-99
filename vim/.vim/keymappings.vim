@@ -12,6 +12,8 @@ nnoremap ]L :llast<CR>
 
 nnoremap <C-l> 10zl
 nnoremap <C-h> 10zh
+vnoremap <C-l> 10zl
+vnoremap <C-h> 10zh
 
 nnoremap <Up> :resize +2<CR>
 nnoremap <Down> :resize -2<CR>
@@ -47,8 +49,8 @@ if has('nvim')
   nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
   nnoremap <silent> <leader>ac    <cmd>lua vim.lsp.buf.code_action()<CR>
   nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
-  nnoremap <silent> [g    <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
-  nnoremap <silent> ]g    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+  nnoremap <silent> [d    <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
+  nnoremap <silent> ]d    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
   inoremap <silent><expr> <C-Space> compe#complete()
   inoremap <silent><expr> <C-y>     compe#confirm('<C-y>')
