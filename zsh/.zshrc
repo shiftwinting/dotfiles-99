@@ -5,6 +5,7 @@
 export EDITOR="nvim"
 export GPG_TTY=$(tty)
 export MANPAGER='nvim -c "set ft=man" -'
+export LC_ALL='en_US.UTF-8'
 
 alias glog="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias gs="git status"
