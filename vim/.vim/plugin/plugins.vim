@@ -24,10 +24,14 @@ Plug '/usr/local/opt/fzf' " You need to install fzf yourself: `brew install fzf`
 Plug 'junegunn/fzf.vim'
 Plug 'wellle/context.vim', { 'on': ['ContextToggle', 'ContextPeek'] }
 
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
+
 if has('nvim-0.5')
   Plug 'nvim-treesitter/nvim-treesitter'
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
+  Plug 'kristijanhusak/vim-dadbod-completion'
 else
   Plug 'sheerun/vim-polyglot'
   Plug 'prabirshrestha/vim-lsp'

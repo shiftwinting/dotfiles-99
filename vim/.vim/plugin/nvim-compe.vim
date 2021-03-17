@@ -9,4 +9,5 @@ if has('nvim')
   let g:compe.source.nvim_lsp = v:true
   let g:compe.source.buffer = v:true
   let g:compe.source.path = v:true
+  let g:compe.source.vim_dadbod_completion = v:true
 endif
