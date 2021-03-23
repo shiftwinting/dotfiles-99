@@ -42,7 +42,7 @@ endif
 
 " Themes
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'savq/melange'
+Plug 'franbach/miramare'
 
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 
