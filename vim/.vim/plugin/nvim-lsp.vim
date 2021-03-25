@@ -71,5 +71,6 @@ lspconfig.yamlls.setup{
     }
   }
 }
+lspconfig.dockerls.setup{}
 EOF
 endif
