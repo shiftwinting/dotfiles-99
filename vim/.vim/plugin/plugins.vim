@@ -7,7 +7,7 @@ Plug 'tpope/vim-commentary'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-dispatch', { 'commit': '3757ddad87073a6ded8c34dfabb28c325acf6c02' }
+Plug 'tpope/vim-dispatch'
 Plug 'mbbill/undotree', { 'on': ['UndotreeToggle'] }
 Plug 'cohama/lexima.vim' " Insert or delete brackets, parens, quotes in pair.
 Plug 'lourenci/vim-visual-star-search'
@@ -43,6 +43,7 @@ endif
 " Themes
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'savq/melange'
 
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 
