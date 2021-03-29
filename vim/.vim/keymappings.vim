@@ -9,6 +9,10 @@ nnoremap [L :lfirst<CR>
 nnoremap ]l :lnext<CR>
 nnoremap [l :lprev<CR>
 nnoremap ]L :llast<CR>
+nnoremap [A :first<CR>
+nnoremap ]a :next<CR>
+nnoremap [a :prev<CR>
+nnoremap ]A :last<CR>
 
 nnoremap <C-l> 10zl
 nnoremap <C-h> 10zh
@@ -50,6 +54,7 @@ if has('nvim')
   nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
   nnoremap <silent> [d    <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
   nnoremap <silent> ]d    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+  inoremap <silent> <c-s> <cmd>lua vim.lsp.buf.signature_help()<CR>
 
   inoremap <silent><expr> <C-Space> compe#complete()
   inoremap <silent><expr> <C-y>     compe#confirm('<C-y>')
