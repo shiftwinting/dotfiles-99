@@ -29,6 +29,7 @@ Plug 'kristijanhusak/vim-dadbod-ui'
 
 if has('nvim-0.5')
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'JoosepAlviste/nvim-ts-context-commentstring'
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
   Plug 'kristijanhusak/vim-dadbod-completion'
