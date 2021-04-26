@@ -36,6 +36,7 @@ set nofoldenable
 set shortmess+=c
 set shortmess-=S " Show how many matches / ? have
 set belloff=all
+set updatetime=750
 if !has('gui_running')
   set mouse=a
 endif
