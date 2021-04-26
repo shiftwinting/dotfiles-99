@@ -46,6 +46,7 @@ if has('nvim')
   nnoremap <silent> <leader>rn <cmd>lua vim.lsp.buf.rename()<CR>
   nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
   nnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.formatting()<CR>
+  vnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.range_formatting()<CR>
   nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
   nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
   nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
