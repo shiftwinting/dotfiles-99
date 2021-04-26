@@ -91,6 +91,18 @@ if has('nvim-0.5')
     autocmd!
     autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=250}
   augroup END
+
+lua <<EOF
+  vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+    vim.lsp.diagnostic.on_publish_diagnostics, {
+      virtual_text = false
+    }
+  )
+EOF
+  augroup ShowDiagnostics
+    autocmd!
+    autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
+  augroup END
 endif
 
 command! TODOs :noautocmd vimgrep /\<todo\>\|\<fixme\>/ `git diff --name-only --diff-filter=d origin/master`
