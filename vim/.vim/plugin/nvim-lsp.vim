@@ -1,16 +1,16 @@
 if has('nvim-0.5')
 lua << EOF
 local lspconfig = require'lspconfig'
+local lsp_signature = require"lsp_signature"
 
-lspconfig.tsserver.setup{}
-lspconfig.cssls.setup{}
-lspconfig.solargraph.setup{
-  settings = {
-    solargraph = {
-      useBundler = true,
-    }
-  }
+local function on_attach()
+  lsp_signature.on_attach()
+end
+
+lspconfig.tsserver.setup{
+  on_attach = on_attach
 }
+lspconfig.cssls.setup{}
 lspconfig.jsonls.setup{
   settings = {
     json = {
@@ -59,7 +59,9 @@ lspconfig.jsonls.setup{
     },
   }
 }
-lspconfig.gopls.setup{}
+lspconfig.gopls.setup{
+  on_attach = on_attach
+}
 lspconfig.yamlls.setup{
   settings = {
     yaml = {

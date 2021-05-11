@@ -55,7 +55,6 @@ if has('nvim')
   nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
   nnoremap <silent> [d    <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
   nnoremap <silent> ]d    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
-  inoremap <silent> <c-s> <cmd>lua vim.lsp.buf.signature_help()<CR>
 
   inoremap <silent><expr> <C-Space> compe#complete()
   inoremap <silent><expr> <C-y>     compe#confirm('<C-y>')
