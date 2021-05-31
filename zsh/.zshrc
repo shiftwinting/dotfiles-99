@@ -16,7 +16,7 @@ alias gclear="git checkout master | git branch | grep -v master | xargs git bran
 # Edit command in $EDITOR
 autoload -U edit-command-line
 zle -N edit-command-line
-bindkey '^x^e' edit-command-line
+bindkey '^f' edit-command-line
 
 # Insensitive tab-completion
 autoload -Uz compinit && compinit
