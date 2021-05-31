@@ -33,6 +33,7 @@ if has('nvim-0.5')
   Plug 'hrsh7th/nvim-compe'
   Plug 'kristijanhusak/vim-dadbod-completion'
   Plug 'ray-x/lsp_signature.nvim'
+  Plug 'lithammer/nvim-diagnosticls'
 else
   Plug 'sheerun/vim-polyglot'
   Plug 'prabirshrestha/vim-lsp'

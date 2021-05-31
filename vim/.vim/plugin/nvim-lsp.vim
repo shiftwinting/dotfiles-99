@@ -2,6 +2,7 @@ if has('nvim-0.5')
 lua << EOF
 local lspconfig = require'lspconfig'
 local lsp_signature = require"lsp_signature"
+local diagnosticls = require("diagnosticls")
 
 local function on_attach()
   lsp_signature.on_attach()
@@ -74,5 +75,25 @@ lspconfig.yamlls.setup{
   }
 }
 lspconfig.dockerls.setup{}
+lspconfig.diagnosticls.setup({
+  filetypes = diagnosticls.filetypes,
+  init_options = {
+    linters = diagnosticls.linters,
+    formatters = diagnosticls.formatters,
+    filetypes = {
+      javascript = "eslint",
+      javascriptreact = "eslint",
+      typescript = "eslint",
+      typescriptreact = "eslint",
+    },
+    formatFiletypes = {
+      javascript = "prettier",
+      javascriptreact = "prettier",
+      json = "prettier",
+      typescript = "prettier",
+      typescriptreact = "prettier",
+    },
+  },
+})
 EOF
 endif
