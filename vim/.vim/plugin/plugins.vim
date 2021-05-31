@@ -31,7 +31,6 @@ if has('nvim-0.5')
   Plug 'JoosepAlviste/nvim-ts-context-commentstring'
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
-  Plug 'kristijanhusak/vim-dadbod-completion'
   Plug 'ray-x/lsp_signature.nvim'
   Plug 'lithammer/nvim-diagnosticls'
 else
