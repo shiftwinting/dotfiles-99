@@ -5,11 +5,10 @@ func! ChangeBackground(auto=0)
   let output =  system("defaults read -g AppleInterfaceStyle")
   if v:shell_error != 0
     set background=light
-    colorscheme PaperColor
   else
     set background=dark
-    colorscheme melange
   endif
+  colorscheme github-colors
 
   if (a:auto)
     redraw!

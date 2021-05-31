@@ -44,9 +44,7 @@ else
 endif
 
 " Themes
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'savq/melange'
+Plug 'lourenci/github-colors'
 
 Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 
