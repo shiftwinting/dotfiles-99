@@ -2,14 +2,16 @@ if has('nvim-0.5')
 lua << EOF
 local lspconfig = require'lspconfig'
 local lsp_signature = require"lsp_signature"
-local diagnosticls = require("diagnosticls")
 
 local function on_attach()
   lsp_signature.on_attach()
 end
 
 lspconfig.tsserver.setup{
-  on_attach = on_attach
+  on_attach = function(client)
+    client.resolved_capabilities.document_formatting = false
+    on_attach()
+  end
 }
 lspconfig.cssls.setup{}
 lspconfig.jsonls.setup{
@@ -76,24 +78,64 @@ lspconfig.yamlls.setup{
 }
 lspconfig.dockerls.setup{}
 lspconfig.diagnosticls.setup({
-  filetypes = diagnosticls.filetypes,
+  filetypes={
+    'javascript',
+    'typescript',
+    'javascriptreact',
+    'typescriptreact',
+  },
   init_options = {
-    linters = diagnosticls.linters,
-    formatters = diagnosticls.formatters,
     filetypes = {
-      javascript = "eslint",
-      javascriptreact = "eslint",
-      typescript = "eslint",
-      typescriptreact = "eslint",
+      javascript = 'eslint',
+      typescript = 'eslint',
+      javascriptreact = 'eslint',
+      typescriptreact = 'eslint',
+    },
+    formatters = {
+      prettier = {
+        command = './node_modules/.bin/prettier',
+        rootPatterns = {'package.json'},
+        args = {
+          '--stdin-filepath',
+          '%filepath',
+        }
+      }
     },
     formatFiletypes = {
-      javascript = "prettier",
-      javascriptreact = "prettier",
-      json = "prettier",
-      typescript = "prettier",
-      typescriptreact = "prettier",
+      javascript = 'prettier',
+      typescript = 'prettier',
+      javascriptreact = 'prettier',
+      typescriptreact = 'prettier'
     },
-  },
+    linters = {
+      eslint = {
+        command = './node_modules/.bin/eslint',
+        rootPatterns = {'package.json'},
+        debounce = 100,
+        args = {
+          '--stdin',
+          '--stdin-filename',
+          '%filepath',
+          '--format',
+          'json'
+        },
+        sourceName = 'eslint',
+        parseJson = {
+          errorsRoot = '[0].messages',
+          line = 'line',
+          column = 'column',
+          endLine = 'endLine',
+          endColumn = 'endColumn',
+          message = '${message} [${ruleId}]',
+          security = 'severity'
+        },
+        securities = {
+          [2] = 'error',
+          [1] = 'warning',
+        },
+      },
+    },
+  }
 })
 EOF
 endif
