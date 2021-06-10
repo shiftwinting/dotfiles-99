@@ -4,7 +4,7 @@ local lspconfig = require'lspconfig'
 local lsp_signature = require"lsp_signature"
 
 local function on_attach()
-  lsp_signature.on_attach()
+  lsp_signature.on_attach({ hint_enable = false })
 end
 
 lspconfig.tsserver.setup{
