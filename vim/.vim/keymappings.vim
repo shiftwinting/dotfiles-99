@@ -83,7 +83,6 @@ nnoremap <Leader>t :Filetypes<CR>
 nnoremap <Leader>0 :GFilesChangedFromMaster<CR>
 nnoremap <Leader>l :BCommits<CR>
 nnoremap <Leader>n :NoteFiles<CR>
-nnoremap <Leader>c :Promiscuous<CR>
 
 if has('nvim')
   nnoremap <Leader>; :tabe <bar> :terminal<CR>

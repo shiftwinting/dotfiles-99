@@ -43,7 +43,6 @@ endif
 " Themes
 Plug 'lourenci/github-colors'
 
-Plug 'shuber/vim-promiscuous', { 'on': ['Promiscuous'] }
 
 packadd Cfilter
 
