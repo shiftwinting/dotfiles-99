@@ -1,0 +1,26 @@
+[user]
+	name = Leandro Lourenci
+	email = leandro@lourenci.com
+	signingkey = 8A31DBEB6937318A
+[commit]
+	gpgsign = true
+[merge]
+	tool = diffconflicts
+[mergetool "diffconflicts"]
+	cmd = nvim -c DiffConflicts \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
+	trustExitCode = true
+[mergetool]
+	keepBackup = false
+[interactive]
+	diffFilter = delta --color-only
+[pager]
+	diff = delta
+	log = delta
+	reflog = delta
+	show = delta
+[delta]
+	features = line-numbers
+	light = true
+[mergetool "fugitive"]
+	cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
+	trustExitCode = true
