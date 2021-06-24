@@ -16,7 +16,6 @@ Plug 'lourenci/vim-visual-star-search'
 Plug 'whiteinge/diffconflicts', { 'on': ['DiffConflicts', 'DiffConflictsWithHistory'] }
 
 Plug 'tpope/vim-projectionist'
-Plug 'airblade/vim-rooter'
 
 Plug 'mateusbraga/vim-spell-pt-br'
 
