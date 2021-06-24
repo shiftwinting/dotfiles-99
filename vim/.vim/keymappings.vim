@@ -95,7 +95,7 @@ endif
 nnoremap <Leader>u :UndotreeToggle<cr>
 
 " Context
-nnoremap \ :ContextPeek<CR>
+nnoremap \ :TSContextToggle<CR>
 
 augroup netrw
   autocmd!
