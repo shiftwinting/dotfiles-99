@@ -16,8 +16,6 @@ Plug 'whiteinge/diffconflicts', { 'on': ['DiffConflicts', 'DiffConflictsWithHist
 
 Plug 'tpope/vim-projectionist'
 
-Plug 'mateusbraga/vim-spell-pt-br'
-
 " File system navigation
 Plug '/usr/local/opt/fzf' " You need to install fzf yourself: `brew install fzf`
 Plug 'junegunn/fzf.vim'
@@ -26,7 +24,6 @@ Plug 'junegunn/fzf.vim'
 if has('nvim-0.5')
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'JoosepAlviste/nvim-ts-context-commentstring'
-  Plug 'romgrk/nvim-treesitter-context'
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
   Plug 'ray-x/lsp_signature.nvim'
