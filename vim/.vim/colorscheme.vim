@@ -15,12 +15,4 @@ func! ChangeBackground(auto=0)
   endif
 endfunc
 
-if has('gui_running')
-  augroup AutoChangeBackground
-    autocmd!
-    au OSAppearanceChanged * call ChangeBackground(1)
-  augroup END
-else
-  call ChangeBackground()
-endif
-
+call ChangeBackground()
