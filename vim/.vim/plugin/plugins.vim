@@ -10,7 +10,6 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
 Plug 'mbbill/undotree', { 'on': ['UndotreeToggle'] }
-Plug 'cohama/lexima.vim' " Insert or delete brackets, parens, quotes in pair.
 Plug 'lourenci/vim-visual-star-search'
 
 Plug 'whiteinge/diffconflicts', { 'on': ['DiffConflicts', 'DiffConflictsWithHistory'] }
@@ -37,6 +36,12 @@ else
   Plug 'mattn/vim-lsp-settings'
   Plug 'prabirshrestha/asyncomplete.vim'
   Plug 'prabirshrestha/asyncomplete-lsp.vim'
+endif
+
+if has('nvim')
+  Plug 'windwp/nvim-autopairs'
+else
+  Plug 'cohama/lexima.vim'
 endif
 
 " Themes
