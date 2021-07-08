@@ -51,7 +51,8 @@ if has('nvim')
   nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
   nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
   nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
-  nnoremap <silent> <leader>ac    <cmd>lua vim.lsp.buf.code_action()<CR>
+  nnoremap <silent> <leader>ca    <cmd>lua vim.lsp.buf.code_action()<CR>
+  nnoremap <silent> <leader>e    <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
   nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
   nnoremap <silent> [d    <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
   nnoremap <silent> ]d    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
@@ -82,7 +83,6 @@ nnoremap <Leader>, :Buffers<CR>
 nnoremap <Leader>t :Filetypes<CR>
 nnoremap <Leader>0 :GFilesChangedFromMaster<CR>
 nnoremap <Leader>l :BCommits<CR>
-nnoremap <Leader>n :NoteFiles<CR>
 
 if has('nvim')
   nnoremap <Leader>; :tabe <bar> :terminal<CR>
@@ -92,11 +92,3 @@ endif
 
 """ Undotree
 nnoremap <Leader>u :UndotreeToggle<cr>
-
-" Context
-nnoremap \ :TSContextToggle<CR>
-
-augroup netrw
-  autocmd!
-  autocmd FileType netrw nmap <buffer> <Leader>e -
-augroup END
