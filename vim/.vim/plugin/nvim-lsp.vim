@@ -6,14 +6,19 @@ local lsp_signature = require"lsp_signature"
 local function on_attach()
   lsp_signature.on_attach({ hint_enable = false })
 end
+local flags = { debounce_text_changes = 150 }
 
 lspconfig.tsserver.setup{
   on_attach = function(client)
     client.resolved_capabilities.document_formatting = false
     on_attach()
-  end
+  end,
+  flags = flags,
 }
-lspconfig.cssls.setup{}
+lspconfig.cssls.setup{
+  on_attach = on_attach,
+  flags = flags
+}
 lspconfig.jsonls.setup{
   settings = {
     json = {
@@ -60,10 +65,13 @@ lspconfig.jsonls.setup{
         },
       }
     },
-  }
+  },
+  on_attach = on_attach,
+  flags = flags
 }
 lspconfig.gopls.setup{
-  on_attach = on_attach
+  on_attach = on_attach,
+  flags = flags
 }
 lspconfig.yamlls.setup{
   settings = {
@@ -74,9 +82,14 @@ lspconfig.yamlls.setup{
         ['https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json'] = 'docker-compose.yml',
       }
     }
-  }
+  },
+  on_attach = on_attach,
+  flags = flags
 }
-lspconfig.dockerls.setup{}
+lspconfig.dockerls.setup{
+  on_attach = on_attach,
+  flags = flags
+}
 lspconfig.diagnosticls.setup({
   filetypes={
     'javascript',
@@ -113,7 +126,6 @@ lspconfig.diagnosticls.setup({
       eslint = {
         command = './node_modules/.bin/eslint',
         rootPatterns = {'package.json'},
-        debounce = 100,
         args = {
           '--stdin',
           '--stdin-filename',
@@ -139,7 +151,6 @@ lspconfig.diagnosticls.setup({
       rubocop = {
         command = "bundle",
         sourceName = "rubocop",
-        debounce = 100,
         args = {
           "exec",
           "rubocop",
@@ -168,7 +179,9 @@ lspconfig.diagnosticls.setup({
         }
       }
     },
-  }
+  },
+  on_attach = on_attach,
+  flags = flags
 })
 EOF
 endif
