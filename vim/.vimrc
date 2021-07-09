@@ -1,15 +1,9 @@
 " Settings in this file may depend on plugins, so let's install them first.
 " Not to be confused with the contents of ~/.vim/plugin/* which are
 " configuration options for each plugin and automatically loaded by Vim.
-if has('nvim')
-  source ~/.config/nvim/plugin/plugins.vim
-  source ~/.config/nvim/keymappings.vim
-  source ~/.config/nvim/colorscheme.vim
-else
-  source ~/.vim/plugin/plugins.vim
-  source ~/.vim/keymappings.vim
-  source ~/.vim/colorscheme.vim
-endif
+source ~/.config/nvim/plugin/plugins.vim
+source ~/.config/nvim/keymappings.vim
+source ~/.config/nvim/colorscheme.vim
 
 set hidden                            " Allows change the buffer without the needs to save it
 set autoread                          " Auto reload changed files
@@ -40,25 +34,14 @@ set updatetime=750
 if !has('gui_running')
   set mouse=a
 endif
-if has('nvim')
-  set inccommand=split
-  set undodir=~/.config/nvim/undo/
-else
-  set undodir=~/.vim/undo/
-endif
+set inccommand=split
+set undodir=~/.config/nvim/undo/
 
 if !has('gui_running')
-  if has('nvim')
-    augroup LoadChangedFileExternally
-      autocmd!
-      autocmd FocusGained,VimResume * if getcmdwintype() == '' | checktime | endif
-    augroup END
-  else
-    augroup LoadChangedFileExternally
-      autocmd!
-      autocmd FocusGained,CursorHold * if getcmdwintype() == '' | checktime | endif
-    augroup END
-  endif
+  augroup LoadChangedFileExternally
+    autocmd!
+    autocmd FocusGained,VimResume * if getcmdwintype() == '' | checktime | endif
+  augroup END
 endif
 
 augroup RemoveTraillingSpaces
@@ -70,29 +53,22 @@ if executable('rg')
   set grepprg=rg\ --vimgrep\ --hidden\ --smart-case\ --glob\ '!.git'
 endif
 
-" This cmd is causing 'Segment fault' when the buffer has 4000 chars.
-" To simulate the problem: insert 4000 chars and open the terminal.
-" E.g.: 4000ia<esc>:terminal
-if has('nvim')
-  augroup StartTerminalInInsertMode
-    " https://github.com/neovim/neovim/issues/8816
-    autocmd!
-    autocmd TermOpen term://* startinsert
-  augroup END
+augroup StartTerminalInInsertMode
+  " https://github.com/neovim/neovim/issues/8816
+  autocmd!
+  autocmd TermOpen term://* startinsert
+augroup END
 
-  augroup AutoCloseTerminal
-    autocmd!
-    autocmd TermClose term://\(*zsh\|*git*\) call nvim_input('<CR>')
-  augroup END
+augroup AutoCloseTerminal
+  autocmd!
+  autocmd TermClose term://\(*zsh\|*git*\) call nvim_input('<CR>')
+augroup END
 
-  command! -nargs=* Gpatch :tabe term://git add -p <args>
-endif
-if has('nvim-0.5')
-  augroup HighlightYank
-    autocmd!
-    autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=250}
-  augroup END
-endif
+command! -nargs=* Gpatch :tabe term://git add -p <args>
+augroup HighlightYank
+  autocmd!
+  autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=250}
+augroup END
 
 command! TODOs :noautocmd vimgrep /\<todo\>\|\<fixme\>/ `git diff --name-only --diff-filter=d origin/master`
 command! TODOsAll :noautocmd vimgrep /\<todo\>\|\<fixme\>/ `git ls-files`

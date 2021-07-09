@@ -20,26 +20,13 @@ Plug 'tpope/vim-projectionist'
 Plug '/usr/local/opt/fzf' " You need to install fzf yourself: `brew install fzf`
 Plug 'junegunn/fzf.vim'
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
+Plug 'ray-x/lsp_signature.nvim'
 
-if has('nvim-0.5')
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  Plug 'JoosepAlviste/nvim-ts-context-commentstring'
-  Plug 'neovim/nvim-lspconfig'
-  Plug 'hrsh7th/nvim-compe'
-  Plug 'ray-x/lsp_signature.nvim'
-else
-  Plug 'sheerun/vim-polyglot'
-  Plug 'prabirshrestha/vim-lsp'
-  Plug 'mattn/vim-lsp-settings'
-  Plug 'prabirshrestha/asyncomplete.vim'
-  Plug 'prabirshrestha/asyncomplete-lsp.vim'
-endif
-
-if has('nvim')
-  Plug 'windwp/nvim-autopairs'
-else
-  Plug 'cohama/lexima.vim'
-endif
+Plug 'windwp/nvim-autopairs'
 
 " Themes
 Plug 'lourenci/github-colors'
