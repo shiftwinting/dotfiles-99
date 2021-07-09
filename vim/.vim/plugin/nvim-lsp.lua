@@ -1,5 +1,3 @@
-if has('nvim-0.5')
-lua << EOF
 local lspconfig = require'lspconfig'
 local lsp_signature = require"lsp_signature"
 
@@ -183,5 +181,3 @@ lspconfig.diagnosticls.setup({
   on_attach = on_attach,
   flags = flags
 })
-EOF
-endif
