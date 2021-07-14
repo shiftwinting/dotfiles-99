@@ -88,13 +88,21 @@ lspconfig.dockerls.setup{
   on_attach = on_attach,
   flags = flags
 }
+lspconfig.solargraph.setup{
+  on_attach = on_attach,
+  flags = flags,
+  settings = {
+    solargraph = {
+      useBundler = true
+    }
+  }
+}
 lspconfig.diagnosticls.setup({
   filetypes={
     'javascript',
     'typescript',
     'javascriptreact',
     'typescriptreact',
-    'ruby',
   },
   init_options = {
     filetypes = {
@@ -102,7 +110,6 @@ lspconfig.diagnosticls.setup({
       typescript = 'eslint',
       javascriptreact = 'eslint',
       typescriptreact = 'eslint',
-      ruby = 'rubocop',
     },
     formatters = {
       prettier = {
@@ -146,36 +153,6 @@ lspconfig.diagnosticls.setup({
           [1] = 'warning',
         },
       },
-      rubocop = {
-        command = "bundle",
-        sourceName = "rubocop",
-        args = {
-          "exec",
-          "rubocop",
-          "--format",
-          "json",
-          "--force-exclusion",
-          "--stdin",
-          "%filepath"
-        },
-        parseJson = {
-          errorsRoot = "files[0].offenses",
-          line = "location.start_line",
-          endLine = "location.last_line",
-          column = "location.start_column",
-          endColumn = "location.end_column",
-          message = "[${cop_name}] ${message}",
-          security = "severity"
-        },
-        securities = {
-          fatal = "error",
-          error = "error",
-          warning = "warning",
-          convention = "info",
-          refactor = "info",
-          info = "info"
-        }
-      }
     },
   },
   on_attach = on_attach,
