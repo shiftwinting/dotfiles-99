@@ -31,6 +31,7 @@ Plug 'windwp/nvim-autopairs'
 " Themes
 Plug 'lourenci/github-colors'
 
+Plug 'tversteeg/registers.nvim'
 
 packadd Cfilter
 
