@@ -7,7 +7,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-rhubarb'
-Plug 'tpope/vim-fugitive', { 'on': ['G', 'Gdiff', 'Gread', 'Gwrite', 'Gblame'] }
+Plug 'tpope/vim-fugitive', { 'on': ['G', 'Gdiff', 'Gread', 'Gwrite', 'Gblame', 'Gg', 'Ggrep'] }
 Plug 'tpope/vim-dispatch'
 Plug 'mbbill/undotree', { 'on': ['UndotreeToggle'] }
 Plug 'lourenci/vim-visual-star-search'
