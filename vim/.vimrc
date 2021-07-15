@@ -49,10 +49,6 @@ augroup RemoveTraillingSpaces
   autocmd BufWritePre * %s/\s\+$//e
 augroup END
 
-if executable('rg')
-  set grepprg=rg\ --vimgrep\ --hidden\ --smart-case\ --glob\ '!.git'
-endif
-
 augroup StartTerminalInInsertMode
   " https://github.com/neovim/neovim/issues/8816
   autocmd!
