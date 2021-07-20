@@ -25,7 +25,8 @@ set synmaxcol=300                     " make syntax highligh works just for the 
 set diffopt+=indent-heuristic,algorithm:histogram
 set undofile
 set number relativenumber " Enable line numbers
-set foldmethod=indent
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
 set nofoldenable
 set shortmess+=c
 set shortmess-=S " Show how many matches / ? have
