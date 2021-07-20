@@ -41,38 +41,24 @@ nnoremap <Leader>yr :let @*=expand('%')<CR>
 """""""""""""" PLUGINS MAPS
 """" LSP
 
-if has('nvim')
-  nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>
-  nnoremap <silent> <leader>rn <cmd>lua vim.lsp.buf.rename()<CR>
-  nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
-  nnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.formatting()<CR>
-  vnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.range_formatting()<CR>
-  nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
-  nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
-  nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
-  nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
-  nnoremap <silent> <leader>ca    <cmd>lua vim.lsp.buf.code_action()<CR>
-  nnoremap <silent> <leader>e    <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
-  nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
-  nnoremap <silent> [d    <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
-  nnoremap <silent> ]d    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> <leader>rn <cmd>lua vim.lsp.buf.rename()<CR>
+nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.formatting()<CR>
+vnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.range_formatting()<CR>
+nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
+nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
+nnoremap <silent> <leader>ca    <cmd>lua vim.lsp.buf.code_action()<CR>
+nnoremap <silent> <leader>e    <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
+nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
+nnoremap <silent> [d    <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
+nnoremap <silent> ]d    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
-  inoremap <silent><expr> <C-Space> compe#complete()
-  inoremap <silent><expr> <C-y>     compe#confirm('<C-y>')
-  inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-else
-  imap <c-space> <Plug>(asyncomplete_force_refresh)
-
-  nmap <c-]> <plug>(lsp-definition)
-  nmap gr <plug>(lsp-references)
-  nmap <leader>rn <plug>(lsp-rename)
-  nmap K <plug>(lsp-hover)
-  nmap gs <plug>(lsp-document-symbol-search)
-  nmap gS <plug>(lsp-workspace-symbol-search)
-  nmap <leader>ac <cmd>LspCodeAction<cr>
-  nmap [g <plug>(lsp-previous-diagnostic)
-  nmap ]g <plug>(lsp-next-diagnostic)
-endif
+inoremap <silent><expr> <C-Space> compe#complete()
+inoremap <silent><expr> <C-y>     compe#confirm('<C-y>')
+inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
 """"" FZF
 nnoremap <Leader>p :FZF<CR>
@@ -84,11 +70,7 @@ nnoremap <Leader>t :Filetypes<CR>
 nnoremap <Leader>0 :GFilesChangedFromMaster<CR>
 nnoremap <Leader>l :BCommits<CR>
 
-if has('nvim')
-  nnoremap <Leader>; :tabe <bar> :terminal<CR>
-else
-  nnoremap <Leader>; <cmd>terminal<CR>
-endif
+nnoremap <Leader>; :tabe <bar> :terminal<CR>
 
 """ Undotree
 nnoremap <Leader>u :UndotreeToggle<cr>
