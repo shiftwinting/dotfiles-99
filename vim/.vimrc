@@ -1,7 +1,4 @@
-" Settings in this file may depend on plugins, so let's install them first.
-" Not to be confused with the contents of ~/.vim/plugin/* which are
-" configuration options for each plugin and automatically loaded by Vim.
-source ~/.config/nvim/plugin/plugins.vim
+lua require('plugins')
 source ~/.config/nvim/keymappings.vim
 source ~/.config/nvim/colorscheme.vim
 
