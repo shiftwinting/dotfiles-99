@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim',
     requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}},
     config = function() require'config/telescope' end,
+    cmd = {'Telescope'}
   }
 
   use {'mbbill/undotree', cmd = {'UndotreeToggle'}, config = function() require'config/undotree' end, keys = {'<leader>u'} }
@@ -53,5 +54,5 @@ return require('packer').startup(function(use)
 
   use 'tversteeg/registers.nvim'
 
-  use 'windwp/nvim-autopairs'
+  use {'windwp/nvim-autopairs', config = function() require'config/nvim-autopairs' end }
 end)

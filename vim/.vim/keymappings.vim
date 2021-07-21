@@ -60,13 +60,14 @@ inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <C-y>     compe#confirm('<C-y>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
-""""" FZF
+""""" Telescope
 nnoremap <Leader>p <cmd>Telescope find_files<cr>
 nnoremap <Leader>9 <cmd>Telescope git_status<cr>
 nnoremap <Leader>/ <cmd>Telescope live_grep<cr>
 nnoremap <Leader>. <cmd>Telescope oldfiles<cr>
 nnoremap <Leader>, <cmd>Telescope buffers<cr>
 nnoremap <Leader>l <cmd>Telescope git_bcommits<cr>
+nnoremap <Leader>b <cmd>Telescope git_branches<cr>
 
 nnoremap <Leader>; :tabe <bar> :terminal<CR>
 
