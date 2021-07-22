@@ -67,7 +67,7 @@ nnoremap <Leader>/ <cmd>Telescope live_grep<cr>
 nnoremap <Leader>. <cmd>Telescope oldfiles<cr>
 nnoremap <Leader>, <cmd>Telescope buffers<cr>
 nnoremap <Leader>l <cmd>Telescope git_bcommits<cr>
-nnoremap <Leader>b <cmd>Telescope git_branches<cr>
+nnoremap <Leader>s <cmd>Telescope git_branches<cr>
 
 nnoremap <Leader>; :tabe <bar> :terminal<CR>
 
