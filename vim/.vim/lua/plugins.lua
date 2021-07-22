@@ -52,7 +52,5 @@ return require('packer').startup(function(use)
 
   use 'lourenci/github-colors'
 
-  use 'tversteeg/registers.nvim'
-
   use {'windwp/nvim-autopairs', config = function() require'config/nvim-autopairs' end }
 end)
