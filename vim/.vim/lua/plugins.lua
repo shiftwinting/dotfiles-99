@@ -36,7 +36,7 @@ return require('packer').startup(function(use)
 
   use {'mbbill/undotree', cmd = {'UndotreeToggle'}, config = function() require'config/undotree' end, keys = {'<leader>u'} }
 
-  use {'lourenci/vim-visual-star-search', keys = {'v *'}}
+  use {'lourenci/vim-visual-star-search', keys = {'*'}}
 
   use {
     'nvim-treesitter/nvim-treesitter',

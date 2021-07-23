@@ -184,7 +184,7 @@ _G.packer_plugins = {
     path = "/Users/lourenci/.local/share/nvim/site/pack/packer/start/vim-surround"
   },
   ["vim-visual-star-search"] = {
-    keys = { { "", "v *" } },
+    keys = { { "", "*" } },
     loaded = false,
     needs_bufread = false,
     path = "/Users/lourenci/.local/share/nvim/site/pack/packer/opt/vim-visual-star-search"
@@ -270,17 +270,17 @@ time([[Defining lazy-load commands]], false)
 
 -- Keymap lazy-loads
 time([[Defining lazy-load keymaps]], true)
-vim.cmd [[noremap <silent> F <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "F", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> . <cmd>lua require("packer.load")({'vim-repeat'}, { keys = ".", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> '<leader> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "'<lt>leader>", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> `<cr> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "`<lt>cr>", prefix = "" }, _G.packer_plugins)<cr>]]
 vim.cmd [[noremap <silent> <leader>u <cmd>lua require("packer.load")({'undotree'}, { keys = "<lt>leader>u", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> t <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "t", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> f <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "f", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> * <cmd>lua require("packer.load")({'vim-visual-star-search'}, { keys = "*", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> F <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "F", prefix = "" }, _G.packer_plugins)<cr>]]
 vim.cmd [[noremap <silent> T <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "T", prefix = "" }, _G.packer_plugins)<cr>]]
 vim.cmd [[noremap <silent> `<leader> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "`<lt>leader>", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> `<cr> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "`<lt>cr>", prefix = "" }, _G.packer_plugins)<cr>]]
 vim.cmd [[noremap <silent> '<cr> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "'<lt>cr>", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> v * <cmd>lua require("packer.load")({'vim-visual-star-search'}, { keys = "v *", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> '<leader> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "'<lt>leader>", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> . <cmd>lua require("packer.load")({'vim-repeat'}, { keys = ".", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> f <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "f", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> t <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "t", prefix = "" }, _G.packer_plugins)<cr>]]
 time([[Defining lazy-load keymaps]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
