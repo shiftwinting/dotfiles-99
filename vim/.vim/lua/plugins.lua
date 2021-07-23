@@ -13,7 +13,11 @@ return require('packer').startup(function(use)
 
   use 'tpope/vim-projectionist'
 
-  use {'tpope/vim-dispatch', cmd = {'Dispatch', 'Make', 'Focus', 'Start'}, keys = {"'<cr>"}}
+  use {
+    'tpope/vim-dispatch',
+    cmd = {'Dispatch', 'Make', 'Focus', 'Start'},
+    keys = {"'<cr>", "'<leader>", "`<cr>", "`<leader>"}
+  }
 
   use {
     'tpope/vim-fugitive',
@@ -32,7 +36,7 @@ return require('packer').startup(function(use)
 
   use {'mbbill/undotree', cmd = {'UndotreeToggle'}, config = function() require'config/undotree' end, keys = {'<leader>u'} }
 
-  use {'lourenci/vim-visual-star-search', keys = {'*'}}
+  use {'lourenci/vim-visual-star-search', keys = {'v *'}}
 
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -43,14 +47,24 @@ return require('packer').startup(function(use)
 
   use {
     'hrsh7th/nvim-compe',
+    event = 'InsertEnter',
     config = function() require'config/nvim-compe' end,
   }
 
-  use 'ray-x/lsp_signature.nvim'
-
-  use {'neovim/nvim-lspconfig', config = function() require'config/nvim-lsp' end }
+  use {
+    'neovim/nvim-lspconfig',
+    config = function() require'config/nvim-lsp' end,
+    requires = {{'ray-x/lsp_signature.nvim', event = 'InsertEnter'}}
+  }
 
   use 'lourenci/github-colors'
 
-  use {'windwp/nvim-autopairs', config = function() require'config/nvim-autopairs' end }
+  use {
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+    config = function() require'config/nvim-autopairs' end,
+    commit = 'b0bbe8d9089cbb045fd15d217ac5a5ec0f4f5066'
+  }
+
+  use {'deris/vim-shot-f', keys = {'f', 'F', 't', 'T'}}
 end)

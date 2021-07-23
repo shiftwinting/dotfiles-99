@@ -1,8 +1,7 @@
 local lspconfig = require'lspconfig'
-local lsp_signature = require"lsp_signature"
 
 local function on_attach()
-  lsp_signature.on_attach({ hint_enable = false })
+  require"lsp_signature".on_attach({ hint_enable = false })
 end
 local flags = { debounce_text_changes = 150 }
 local capabilities = vim.lsp.protocol.make_client_capabilities()
