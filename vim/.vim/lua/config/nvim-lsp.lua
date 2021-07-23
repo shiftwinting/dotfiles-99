@@ -1,8 +1,5 @@
 local lspconfig = require'lspconfig'
 
-local function on_attach()
-  require"lsp_signature".on_attach({ hint_enable = false })
-end
 local flags = { debounce_text_changes = 150 }
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -17,13 +14,11 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
 lspconfig.tsserver.setup{
   on_attach = function(client)
     client.resolved_capabilities.document_formatting = false
-    on_attach()
   end,
   flags = flags,
   capabilities = capabilities,
 }
 lspconfig.cssls.setup{
-  on_attach = on_attach,
   flags = flags,
   capabilities = capabilities,
 }
@@ -74,12 +69,10 @@ lspconfig.jsonls.setup{
       }
     },
   },
-  on_attach = on_attach,
   flags = flags,
   capabilities = capabilities,
 }
 lspconfig.gopls.setup{
-  on_attach = on_attach,
   flags = flags,
   capabilities = capabilities,
 }
@@ -92,17 +85,14 @@ lspconfig.yamlls.setup{
       }
     }
   },
-  on_attach = on_attach,
   flags = flags,
   capabilities = capabilities,
 }
 lspconfig.dockerls.setup{
-  on_attach = on_attach,
   flags = flags,
   capabilities = capabilities,
 }
 lspconfig.solargraph.setup{
-  on_attach = on_attach,
   flags = flags,
   capabilities = capabilities,
   settings = {
@@ -169,6 +159,5 @@ lspconfig.diagnosticls.setup({
       },
     },
   },
-  on_attach = on_attach,
   flags = flags
 })

@@ -47,6 +47,7 @@ nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
 nnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.formatting()<CR>
 vnoremap <silent> <leader>f <cmd>lua vim.lsp.buf.range_formatting()<CR>
 nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
+inoremap <silent> <c-s> <cmd>lua vim.lsp.handlers.signature_help()<CR>
 nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
 nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
 nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>

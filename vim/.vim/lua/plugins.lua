@@ -54,7 +54,6 @@ return require('packer').startup(function(use)
   use {
     'neovim/nvim-lspconfig',
     config = function() require'config/nvim-lsp' end,
-    requires = {{'ray-x/lsp_signature.nvim', event = 'InsertEnter'}}
   }
 
   use 'lourenci/github-colors'
