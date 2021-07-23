@@ -28,10 +28,10 @@ return require('packer').startup(function(use)
   use {'whiteinge/diffconflicts', cmd = {'DiffConflicts', 'DiffConflictsWithHistory'}}
 
   use {
-    'nvim-telescope/telescope.nvim',
-    requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}},
-    config = function() require'config/telescope' end,
-    cmd = {'Telescope'}
+    'junegunn/fzf.vim',
+    requires = {{'/usr/local/opt/fzf'}},
+    config = function() require'config/fzf' end,
+    cmd = {'Files', 'GFiles', 'Rg', 'History', 'Buffers', 'BCommits'}
   }
 
   use {'mbbill/undotree', cmd = {'UndotreeToggle'}, config = function() require'config/undotree' end, keys = {'<leader>u'} }

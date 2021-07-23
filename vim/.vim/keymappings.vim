@@ -61,13 +61,12 @@ inoremap <silent><expr> <C-y>     compe#confirm('<C-y>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
 """"" Telescope
-nnoremap <Leader>p <cmd>Telescope find_files<cr>
-nnoremap <Leader>9 <cmd>Telescope git_status<cr>
-nnoremap <Leader>/ <cmd>Telescope live_grep<cr>
-nnoremap <Leader>. <cmd>Telescope oldfiles<cr>
-nnoremap <Leader>, <cmd>Telescope buffers<cr>
-nnoremap <Leader>l <cmd>Telescope git_bcommits<cr>
-nnoremap <Leader>s <cmd>Telescope git_branches<cr>
+nnoremap <Leader>p :Files<CR>
+nnoremap <Leader>9 :GFiles<CR>
+nnoremap <Leader>/ :Rg<CR>
+nnoremap <Leader>. :History<CR>
+nnoremap <Leader>, :Buffers<CR>
+nnoremap <Leader>l :BCommits<CR>
 
 nnoremap <Leader>; :tabe <bar> :terminal<CR>
 

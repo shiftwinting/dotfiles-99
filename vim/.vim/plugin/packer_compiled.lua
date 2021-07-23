@@ -75,6 +75,17 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/Users/lourenci/.local/share/nvim/site/pack/packer/opt/diffconflicts"
   },
+  fzf = {
+    loaded = true,
+    path = "/Users/lourenci/.local/share/nvim/site/pack/packer/start/fzf"
+  },
+  ["fzf.vim"] = {
+    commands = { "FZF", "GFiles", "Rg", "History", "Buffers", "BCommits" },
+    config = { "\27LJ\2\n*\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\15config/fzf\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/Users/lourenci/.local/share/nvim/site/pack/packer/opt/fzf.vim"
+  },
   ["github-colors"] = {
     loaded = true,
     path = "/Users/lourenci/.local/share/nvim/site/pack/packer/start/github-colors"
@@ -114,21 +125,6 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/lourenci/.local/share/nvim/site/pack/packer/start/packer.nvim"
-  },
-  ["plenary.nvim"] = {
-    loaded = true,
-    path = "/Users/lourenci/.local/share/nvim/site/pack/packer/start/plenary.nvim"
-  },
-  ["popup.nvim"] = {
-    loaded = true,
-    path = "/Users/lourenci/.local/share/nvim/site/pack/packer/start/popup.nvim"
-  },
-  ["telescope.nvim"] = {
-    commands = { "Telescope" },
-    config = { "\27LJ\2\n0\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\21config/telescope\frequire\0" },
-    loaded = false,
-    needs_bufread = false,
-    path = "/Users/lourenci/.local/share/nvim/site/pack/packer/opt/telescope.nvim"
   },
   undotree = {
     commands = { "UndotreeToggle" },
@@ -207,8 +203,17 @@ time([[Config for nvim-treesitter]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-if vim.fn.exists(":Gblame") ~= 2 then
-vim.cmd [[command! -nargs=* -range -bang -complete=file Gblame lua require("packer.load")({'vim-fugitive'}, { cmd = "Gblame", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+if vim.fn.exists(":GFiles") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file GFiles lua require("packer.load")({'fzf.vim'}, { cmd = "GFiles", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
+if vim.fn.exists(":History") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file History lua require("packer.load")({'fzf.vim'}, { cmd = "History", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
+if vim.fn.exists(":Buffers") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file Buffers lua require("packer.load")({'fzf.vim'}, { cmd = "Buffers", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
+if vim.fn.exists(":BCommits") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file BCommits lua require("packer.load")({'fzf.vim'}, { cmd = "BCommits", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 end
 if vim.fn.exists(":Dispatch") ~= 2 then
 vim.cmd [[command! -nargs=* -range -bang -complete=file Dispatch lua require("packer.load")({'vim-dispatch'}, { cmd = "Dispatch", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
@@ -222,32 +227,11 @@ end
 if vim.fn.exists(":Start") ~= 2 then
 vim.cmd [[command! -nargs=* -range -bang -complete=file Start lua require("packer.load")({'vim-dispatch'}, { cmd = "Start", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 end
-if vim.fn.exists(":DiffConflicts") ~= 2 then
-vim.cmd [[command! -nargs=* -range -bang -complete=file DiffConflicts lua require("packer.load")({'diffconflicts'}, { cmd = "DiffConflicts", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-end
-if vim.fn.exists(":DiffConflictsWithHistory") ~= 2 then
-vim.cmd [[command! -nargs=* -range -bang -complete=file DiffConflictsWithHistory lua require("packer.load")({'diffconflicts'}, { cmd = "DiffConflictsWithHistory", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-end
-if vim.fn.exists(":Gbr") ~= 2 then
-vim.cmd [[command! -nargs=* -range -bang -complete=file Gbr lua require("packer.load")({'vim-fugitive'}, { cmd = "Gbr", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-end
-if vim.fn.exists(":Ggrep") ~= 2 then
-vim.cmd [[command! -nargs=* -range -bang -complete=file Ggrep lua require("packer.load")({'vim-fugitive'}, { cmd = "Ggrep", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-end
-if vim.fn.exists(":Gg") ~= 2 then
-vim.cmd [[command! -nargs=* -range -bang -complete=file Gg lua require("packer.load")({'vim-fugitive'}, { cmd = "Gg", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-end
-if vim.fn.exists(":Gdiff") ~= 2 then
-vim.cmd [[command! -nargs=* -range -bang -complete=file Gdiff lua require("packer.load")({'vim-fugitive'}, { cmd = "Gdiff", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-end
-if vim.fn.exists(":Telescope") ~= 2 then
-vim.cmd [[command! -nargs=* -range -bang -complete=file Telescope lua require("packer.load")({'telescope.nvim'}, { cmd = "Telescope", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-end
 if vim.fn.exists(":G") ~= 2 then
 vim.cmd [[command! -nargs=* -range -bang -complete=file G lua require("packer.load")({'vim-fugitive'}, { cmd = "G", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 end
-if vim.fn.exists(":UndotreeToggle") ~= 2 then
-vim.cmd [[command! -nargs=* -range -bang -complete=file UndotreeToggle lua require("packer.load")({'undotree'}, { cmd = "UndotreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+if vim.fn.exists(":Gdiff") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file Gdiff lua require("packer.load")({'vim-fugitive'}, { cmd = "Gdiff", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 end
 if vim.fn.exists(":Gread") ~= 2 then
 vim.cmd [[command! -nargs=* -range -bang -complete=file Gread lua require("packer.load")({'vim-fugitive'}, { cmd = "Gread", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
@@ -255,21 +239,48 @@ end
 if vim.fn.exists(":Gwrite") ~= 2 then
 vim.cmd [[command! -nargs=* -range -bang -complete=file Gwrite lua require("packer.load")({'vim-fugitive'}, { cmd = "Gwrite", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 end
+if vim.fn.exists(":Gblame") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file Gblame lua require("packer.load")({'vim-fugitive'}, { cmd = "Gblame", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
+if vim.fn.exists(":Gg") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file Gg lua require("packer.load")({'vim-fugitive'}, { cmd = "Gg", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
+if vim.fn.exists(":Ggrep") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file Ggrep lua require("packer.load")({'vim-fugitive'}, { cmd = "Ggrep", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
+if vim.fn.exists(":Gbr") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file Gbr lua require("packer.load")({'vim-fugitive'}, { cmd = "Gbr", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
+if vim.fn.exists(":DiffConflicts") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file DiffConflicts lua require("packer.load")({'diffconflicts'}, { cmd = "DiffConflicts", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
+if vim.fn.exists(":DiffConflictsWithHistory") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file DiffConflictsWithHistory lua require("packer.load")({'diffconflicts'}, { cmd = "DiffConflictsWithHistory", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
+if vim.fn.exists(":UndotreeToggle") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file UndotreeToggle lua require("packer.load")({'undotree'}, { cmd = "UndotreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
+if vim.fn.exists(":Rg") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file Rg lua require("packer.load")({'fzf.vim'}, { cmd = "Rg", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
+if vim.fn.exists(":FZF") ~= 2 then
+vim.cmd [[command! -nargs=* -range -bang -complete=file FZF lua require("packer.load")({'fzf.vim'}, { cmd = "FZF", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+end
 time([[Defining lazy-load commands]], false)
 
 -- Keymap lazy-loads
 time([[Defining lazy-load keymaps]], true)
-vim.cmd [[noremap <silent> t <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "t", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> <leader>u <cmd>lua require("packer.load")({'undotree'}, { keys = "<lt>leader>u", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> v * <cmd>lua require("packer.load")({'vim-visual-star-search'}, { keys = "v *", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> T <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "T", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> `<cr> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "`<lt>cr>", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> '<cr> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "'<lt>cr>", prefix = "" }, _G.packer_plugins)<cr>]]
 vim.cmd [[noremap <silent> F <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "F", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> '<leader> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "'<lt>leader>", prefix = "" }, _G.packer_plugins)<cr>]]
 vim.cmd [[noremap <silent> . <cmd>lua require("packer.load")({'vim-repeat'}, { keys = ".", prefix = "" }, _G.packer_plugins)<cr>]]
-vim.cmd [[noremap <silent> `<leader> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "`<lt>leader>", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> '<leader> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "'<lt>leader>", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> `<cr> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "`<lt>cr>", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> <leader>u <cmd>lua require("packer.load")({'undotree'}, { keys = "<lt>leader>u", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> t <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "t", prefix = "" }, _G.packer_plugins)<cr>]]
 vim.cmd [[noremap <silent> f <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "f", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> T <cmd>lua require("packer.load")({'vim-shot-f'}, { keys = "T", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> `<leader> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "`<lt>leader>", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> '<cr> <cmd>lua require("packer.load")({'vim-dispatch'}, { keys = "'<lt>cr>", prefix = "" }, _G.packer_plugins)<cr>]]
+vim.cmd [[noremap <silent> v * <cmd>lua require("packer.load")({'vim-visual-star-search'}, { keys = "v *", prefix = "" }, _G.packer_plugins)<cr>]]
 time([[Defining lazy-load keymaps]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
