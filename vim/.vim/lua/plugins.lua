@@ -62,7 +62,6 @@ return require('packer').startup(function(use)
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
     config = function() require'config/nvim-autopairs' end,
-    commit = 'b0bbe8d9089cbb045fd15d217ac5a5ec0f4f5066'
   }
 
   use {'deris/vim-shot-f', keys = {'f', 'F', 't', 'T'}}
