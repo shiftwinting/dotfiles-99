@@ -54,6 +54,7 @@ return require('packer').startup(function(use)
   use {
     'neovim/nvim-lspconfig',
     config = function() require'config/nvim-lsp' end,
+    ft = {'go', 'ruby', 'css', 'scss', 'json', 'yaml', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact'},
   }
 
   use 'lourenci/github-colors'
