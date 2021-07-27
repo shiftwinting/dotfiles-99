@@ -74,6 +74,7 @@ function! Mkdir(dir)
   endif
 endfunction
 command! W call Mkdir(expand("%:p:h")) | write
+command! -nargs=1 Rm exe "!rm" <q-args> | bw! <q-args>
 
 let g:netrw_banner = 0
 let g:netrw_altfile = 1 " wipe netrw buffer on file selection
