@@ -4,6 +4,7 @@
 	signingkey = 8A31DBEB6937318A
 [commit]
 	gpgsign = true
+	verbose = true
 [merge]
 	tool = diffconflicts
 [mergetool "diffconflicts"]
