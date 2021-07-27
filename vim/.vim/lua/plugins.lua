@@ -64,6 +64,4 @@ return require('packer').startup(function(use)
     event = 'InsertEnter',
     config = function() require'config/nvim-autopairs' end,
   }
-
-  use {'deris/vim-shot-f', keys = {'f', 'F', 't', 'T'}}
 end)
