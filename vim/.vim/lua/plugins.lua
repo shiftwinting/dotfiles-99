@@ -1,3 +1,5 @@
+local lsp_ft = {'go', 'ruby', 'css', 'scss', 'json', 'yaml', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact'}
+
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
@@ -21,20 +23,20 @@ return require('packer').startup(function(use)
 
   use {
     'tpope/vim-fugitive',
-    requires = {{'tpope/vim-rhubarb'}},
-    cmd = {'G', 'Gdiff', 'Gread', 'Gwrite', 'Gblame', 'Gg', 'Ggrep', 'Gbr'}
+    requires = {{'tpope/vim-rhubarb', after = 'vim-fugitive'}},
+    cmd = {'G', 'Gdiff', 'Gread', 'Gwrite', 'Gblame', 'Gg', 'Ggrep', 'Gbr', 'Gbr!'}
   }
 
   use {'whiteinge/diffconflicts', cmd = {'DiffConflicts', 'DiffConflictsWithHistory'}}
 
   use {
     'junegunn/fzf.vim',
-    requires = {{'/usr/local/opt/fzf'}},
+    requires = {{'/usr/local/opt/fzf', after = 'fzf.vim'}},
     config = function() require'config/fzf' end,
     cmd = {'Files', 'GFiles', 'Rg', 'History', 'Buffers', 'BCommits'}
   }
 
-  use {'mbbill/undotree', cmd = {'UndotreeToggle'}, config = function() require'config/undotree' end, keys = {'<leader>u'} }
+  use {'mbbill/undotree', cmd = {'UndotreeToggle'}, config = function() require'config/undotree' end }
 
   use {'lourenci/vim-visual-star-search', keys = {'*'}}
 
@@ -49,12 +51,13 @@ return require('packer').startup(function(use)
     'hrsh7th/nvim-compe',
     event = 'InsertEnter',
     config = function() require'config/nvim-compe' end,
+    ft = lsp_ft
   }
 
   use {
     'neovim/nvim-lspconfig',
     config = function() require'config/nvim-lsp' end,
-    ft = {'go', 'ruby', 'css', 'scss', 'json', 'yaml', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact'},
+    ft = lsp_ft,
   }
 
   use 'lourenci/github-colors'

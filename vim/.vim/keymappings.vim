@@ -60,8 +60,6 @@ nnoremap <silent> ]d    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <C-y>     compe#confirm('<C-y>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
-inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
 """"" Telescope
 nnoremap <Leader>p :Files<CR>
