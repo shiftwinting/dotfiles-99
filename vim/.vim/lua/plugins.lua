@@ -5,11 +5,11 @@ return require('packer').startup(function(use)
 
   use {'tpope/vim-repeat', keys = {'.'}}
 
-  use 'tpope/vim-surround'
+  use {'tpope/vim-surround'}
 
-  use 'tpope/vim-commentary'
+  use {'tpope/vim-commentary', keys = {'gc'}}
 
-  use 'tpope/vim-sleuth'
+  use {'tpope/vim-abolish', cmd = {'Sub'}}
 
   use 'michaeljsmith/vim-indent-object'
 
@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
   use {
     'tpope/vim-fugitive',
     requires = {{'tpope/vim-rhubarb', after = 'vim-fugitive'}},
-    cmd = {'G', 'Gdiff', 'Gread', 'Gwrite', 'Gblame', 'Gg', 'Ggrep', 'Gbr', 'Gbr!'}
+    cmd = {'G', 'Gdiff', 'Gread', 'Gwrite', 'Gblame', 'Gg', 'Ggrep', 'Gbr', 'Gbr!', 'Gcom'}
   }
 
   use {'whiteinge/diffconflicts', cmd = {'DiffConflicts', 'DiffConflictsWithHistory'}}
@@ -33,12 +33,14 @@ return require('packer').startup(function(use)
     'junegunn/fzf.vim',
     requires = {{'/usr/local/opt/fzf', after = 'fzf.vim'}},
     config = function() require'config/fzf' end,
-    cmd = {'Files', 'GFiles', 'Rg', 'History', 'Buffers', 'BCommits'}
+    cmd = {'Files', 'GFiles', 'Rg', 'History', 'Buffers', 'BCommits'},
   }
+
+  use {'shuber/vim-promiscuous', cmd = {'Prom'}, requires = {'junegunn/fzf.vim'}}
 
   use {'mbbill/undotree', cmd = {'UndotreeToggle'}, config = function() require'config/undotree' end }
 
-  use {'lourenci/vim-visual-star-search', keys = {'*'}}
+  use {'lourenci/vim-visual-star-search', keys = {'*', '#'}}
 
   use {
     'nvim-treesitter/nvim-treesitter',
