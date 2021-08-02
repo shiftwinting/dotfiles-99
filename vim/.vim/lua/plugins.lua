@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
 
   use {'tpope/vim-commentary', keys = {'gc'}}
 
-  use {'tpope/vim-abolish', cmd = {'Sub'}}
+  use {'tpope/vim-abolish', cmd = {'S'}}
 
   use 'michaeljsmith/vim-indent-object'
 
