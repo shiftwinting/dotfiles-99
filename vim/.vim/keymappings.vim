@@ -19,24 +19,10 @@ nnoremap <C-h> 10zh
 vnoremap <C-l> 10zl
 vnoremap <C-h> 10zh
 
-nnoremap <Up> :resize +2<CR>
-nnoremap <Down> :resize -2<CR>
-nnoremap <Left> :vertical resize -2<CR>
-nnoremap <Right> :vertical resize +2<CR>
-
 nnoremap <esc> <esc>:noh<return>
 
-" Get off my lawn - helpful when learning Vim :)
-inoremap <Up>     <NOP>
-inoremap <Down>   <NOP>
-inoremap <Left>   <NOP>
-inoremap <Right>  <NOP>
-vnoremap <Up>     <NOP>
-vnoremap <Down>   <NOP>
-vnoremap <Left>   <NOP>
-vnoremap <Right>  <NOP>
-
-nnoremap <Leader>yr :let @*=expand('%')<CR>
+nnoremap ]c ]czz
+nnoremap [c [czz
 
 """""""""""""" PLUGINS MAPS
 """" LSP
@@ -61,13 +47,14 @@ inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <C-y>     compe#confirm('<C-y>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
-""""" Telescope
+""""" fuzzy
 nnoremap <Leader>p :Files<CR>
 nnoremap <Leader>9 :GFiles?<CR>
 nnoremap <Leader>/ :Rg<CR>
 nnoremap <Leader>. :History<CR>
 nnoremap <Leader>, :Buffers<CR>
 nnoremap <Leader>l :BCommits<CR>
+nnoremap <Leader>c :Prom<CR>
 
 nnoremap <Leader>; :tabe <bar> :terminal<CR>
 
