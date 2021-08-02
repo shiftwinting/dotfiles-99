@@ -54,6 +54,7 @@ nnoremap <Leader>/ :Rg<CR>
 nnoremap <Leader>. :History<CR>
 nnoremap <Leader>, :Buffers<CR>
 nnoremap <Leader>l :BCommits<CR>
+nnoremap <Leader>0 :GFilesChangedFromMaster<CR>
 nnoremap <Leader>c :Prom<CR>
 
 nnoremap <Leader>; :tabe <bar> :terminal<CR>

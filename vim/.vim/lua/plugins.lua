@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
   use {
     'tpope/vim-fugitive',
     requires = {{'tpope/vim-rhubarb', after = 'vim-fugitive'}},
-    cmd = {'G', 'Gdiff', 'Gread', 'Gwrite', 'Gblame', 'Gg', 'Ggrep', 'Gbr', 'Gbr!', 'Gcom'}
+    cmd = {'G', 'Gdiff', 'Gread', 'Gwrite', 'Gblame', 'Gg', 'Ggrep', 'Gbr', 'Gbr!', 'Gcom', 'GFilesChangedFromMaster'}
   }
 
   use {'whiteinge/diffconflicts', cmd = {'DiffConflicts', 'DiffConflictsWithHistory'}}
