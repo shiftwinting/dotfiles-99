@@ -59,10 +59,19 @@ augroup AutoCloseTerminal
 augroup END
 
 command! -nargs=* Gpatch :tabe term://git add -p <args>
+
 augroup HighlightYank
   autocmd!
   autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=250}
 augroup END
+
+lua <<EOF
+  vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+    vim.lsp.diagnostic.on_publish_diagnostics, {
+      virtual_text = false
+    }
+  )
+EOF
 
 command! TODOs :noautocmd vimgrep /\<todo\>\|\<fixme\>/ `git diff --name-only --diff-filter=d origin/master`
 command! TODOsAll :noautocmd vimgrep /\<todo\>\|\<fixme\>/ `git ls-files`
