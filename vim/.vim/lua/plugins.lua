@@ -45,7 +45,10 @@ return require('packer').startup(function(use)
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
-    requires = {{'JoosepAlviste/nvim-ts-context-commentstring'}},
+    requires = {
+      {'JoosepAlviste/nvim-ts-context-commentstring', after = 'nvim-treesitter'},
+      {'windwp/nvim-ts-autotag', after = 'nvim-treesitter', ft = {'html', 'javascript', 'javascriptreact', 'typescriptreact'}}
+    },
     config = function() require'config/nvim-treesitter' end,
   }
 
