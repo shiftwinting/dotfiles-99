@@ -104,6 +104,11 @@ lspconfig.solargraph.setup{
     }
   }
 }
+lspconfig.html.setup{
+  on_attach = on_attach,
+  flags = flags,
+  capabilities = capabilities,
+}
 lspconfig.diagnosticls.setup({
   filetypes={
     'javascript',
