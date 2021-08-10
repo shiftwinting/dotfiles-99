@@ -1,4 +1,4 @@
-local lsp_ft = {'go', 'ruby', 'css', 'scss', 'json', 'yaml', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact'}
+local lsp_ft = {'go', 'ruby', 'css', 'scss', 'json', 'yaml', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'dockerfile'}
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
