@@ -56,7 +56,6 @@ return require('packer').startup(function(use)
     'hrsh7th/nvim-compe',
     event = 'InsertEnter',
     config = function() require'config/nvim-compe' end,
-    ft = lsp_ft
   }
 
   use {

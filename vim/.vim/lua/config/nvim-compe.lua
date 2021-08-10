@@ -5,6 +5,5 @@ require'compe'.setup {
   autocomplete = true,
   source = {
     nvim_lsp = true,
-    buffer = true,
   },
 }
