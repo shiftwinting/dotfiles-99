@@ -8,7 +8,7 @@ func! ChangeBackground(auto=0)
   else
     set background=dark
   endif
-  colorscheme github-colors
+  silent! colorscheme github-colors
 
   if (a:auto)
     redraw!
