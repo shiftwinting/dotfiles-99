@@ -7,8 +7,8 @@ nvim:
 	brew install ripgrep
 	rm -f ~/.config/nvim/init.vim
 	rm -rf ~/.config/nvim
-	ln -s $PWD/vim/.vim ~/.config/nvim
-	ln -s $PWD/vim/.vimrc ~/.config/nvim/init.vim
+	ln -s $(PWD)/vim/.vim ~/.config/nvim
+	ln -s $(PWD)/vim/.vimrc ~/.config/nvim/init.vim
 	nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 	nvim --headless -c 'TSInstallSync maintained' -c 'q'
 
@@ -19,4 +19,5 @@ zsh:
 git: nvim
 	brew install git-delta gnupg
 	gpg --import ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/gpg-keys/private-key.asc
-	ln -s $PWD/.gitconfig ~/.config/.gitconfig
+	rm -f ~/.gitconfig
+	ln -s $(PWD)/git/.gitconfig ~/.gitconfig
