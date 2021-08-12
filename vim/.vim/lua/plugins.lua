@@ -31,7 +31,7 @@ return require('packer').startup(function(use)
 
   use {
     'junegunn/fzf.vim',
-    requires = {{'/usr/local/opt/fzf', after = 'fzf.vim'}},
+    requires = {{'junegunn/fzf', run = function() vim.fn['fzf#install']() end, after = 'fzf.vim'}},
     config = function() require'config/fzf' end,
     cmd = {'Files', 'GFiles', 'Rg', 'History', 'Buffers', 'BCommits', 'GFilesChangedFromMaster'},
   }
