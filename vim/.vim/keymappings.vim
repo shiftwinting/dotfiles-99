@@ -43,9 +43,7 @@ nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
 nnoremap <silent> [d    <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> ]d    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
-inoremap <silent><expr> <C-Space> compe#complete()
-inoremap <silent><expr> <C-y>     compe#confirm('<C-y>')
-inoremap <silent><expr> <C-e>     compe#close('<C-e>')..'<C-e>'
+"" keymaps for completion is in ./lua/config/nvim-compe.lua
 
 """"" fuzzy
 nnoremap <Leader>p :Files<CR>
@@ -55,7 +53,6 @@ nnoremap <Leader>. :History<CR>
 nnoremap <Leader>, :Buffers<CR>
 nnoremap <Leader>l :BCommits<CR>
 nnoremap <Leader>0 :GFilesChangedFromMaster<CR>
-nnoremap <Leader>c :Prom<CR>
 
 nnoremap <Leader>; :tabe <bar> :terminal<CR>
 

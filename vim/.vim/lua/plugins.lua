@@ -1,5 +1,3 @@
-local lsp_ft = {'go', 'ruby', 'css', 'scss', 'json', 'yaml', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'dockerfile'}
-
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
@@ -53,9 +51,19 @@ return require('packer').startup(function(use)
   }
 
   use {
-    'hrsh7th/nvim-compe',
-    event = 'InsertEnter',
+    'neovim/nvim-lspconfig',
+    config = function() require'config/nvim-lsp' end,
+    ft = {'go', 'ruby', 'css', 'scss', 'json', 'yaml', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'dockerfile'},
+  }
+  use {
+    'hrsh7th/nvim-cmp',
+    after = 'nvim-lspconfig',
     config = function() require'config/nvim-compe' end,
+  }
+  use {
+    'hrsh7th/cmp-nvim-lsp',
+    after = 'nvim-cmp',
+    config = function() require('cmp_nvim_lsp').setup {} end,
   }
 
   use {
@@ -63,12 +71,6 @@ return require('packer').startup(function(use)
     ft = {'qf'}
   }
 
-  use {
-    'neovim/nvim-lspconfig',
-    config = function() require'config/nvim-lsp' end,
-    requires = {{'ray-x/lsp_signature.nvim', event = 'InsertEnter', after = 'nvim-lspconfig'}},
-    ft = lsp_ft,
-  }
 
   use 'lourenci/github-colors'
 
