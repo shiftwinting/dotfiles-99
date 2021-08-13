@@ -21,9 +21,10 @@ return require('packer').startup(function(use)
 
   use {
     'tpope/vim-fugitive',
-    requires = {{'tpope/vim-rhubarb', after = 'vim-fugitive'}},
     cmd = {'G', 'Gdiff', 'Gread', 'Gwrite', 'Gblame', 'Gg', 'Ggrep', 'Gbr', 'Gbr!', 'Gcom'}
   }
+  use {'tpope/vim-rhubarb', after = 'vim-fugitive'}
+
 
   use {'whiteinge/diffconflicts', cmd = {'DiffConflicts', 'DiffConflictsWithHistory'}}
 
@@ -43,12 +44,10 @@ return require('packer').startup(function(use)
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
-    requires = {
-      {'JoosepAlviste/nvim-ts-context-commentstring', after = 'nvim-treesitter'},
-      {'windwp/nvim-ts-autotag', after = 'nvim-treesitter', ft = {'html', 'javascript', 'javascriptreact', 'typescriptreact'}}
-    },
     config = function() require'config/nvim-treesitter' end,
   }
+  use {'JoosepAlviste/nvim-ts-context-commentstring', after = 'nvim-treesitter'}
+  use {'windwp/nvim-ts-autotag', after = 'nvim-treesitter'}
 
   use {
     'neovim/nvim-lspconfig',
@@ -70,7 +69,6 @@ return require('packer').startup(function(use)
     'itchyny/vim-qfedit',
     ft = {'qf'}
   }
-
 
   use 'lourenci/github-colors'
 
