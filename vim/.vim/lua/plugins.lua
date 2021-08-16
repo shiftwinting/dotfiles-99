@@ -5,7 +5,7 @@ return require('packer').startup(function(use)
 
   use {'tpope/vim-surround'}
 
-  use {'tpope/vim-commentary', keys = {{'n', 'gc'}}}
+  use {'tpope/vim-commentary', keys = {{'n', 'gc'}, { 'v', 'gc'}}}
 
   use {'tpope/vim-abolish', cmd = {'S'}}
 
