@@ -1,11 +1,11 @@
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  use {'tpope/vim-repeat', keys = {'.'}}
+  use {'tpope/vim-repeat', keys = {{'n', '.'}}}
 
   use {'tpope/vim-surround'}
 
-  use {'tpope/vim-commentary', keys = {'gc'}}
+  use {'tpope/vim-commentary', keys = {{'n', 'gc'}}}
 
   use {'tpope/vim-abolish', cmd = {'S'}}
 
@@ -21,10 +21,9 @@ return require('packer').startup(function(use)
 
   use {
     'tpope/vim-fugitive',
+    requires = {{'tpope/vim-rhubarb', after = 'vim-fugitive'}},
     cmd = {'G', 'Gdiff', 'Gread', 'Gwrite', 'Gblame', 'Gg', 'Ggrep', 'Gbr', 'Gbr!', 'Gcom'}
   }
-  use {'tpope/vim-rhubarb', after = 'vim-fugitive'}
-
 
   use {'whiteinge/diffconflicts', cmd = {'DiffConflicts', 'DiffConflictsWithHistory'}}
 
@@ -39,7 +38,7 @@ return require('packer').startup(function(use)
 
   use {'mbbill/undotree', cmd = {'UndotreeToggle'}, config = function() require'config/undotree' end }
 
-  use {'lourenci/vim-visual-star-search', keys = {'*', '#'}}
+  use {'lourenci/vim-visual-star-search', keys = {{'v', '*' }, {'v', '#'}}}
 
   use {
     'nvim-treesitter/nvim-treesitter',
