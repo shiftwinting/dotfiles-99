@@ -1,6 +1,12 @@
 local cmp = require'cmp'
 
 cmp.setup {
+  snippet = {
+    expand = function(args)
+      -- You must install `vim-vsnip` if you set up as same as the following.
+      vim.fn['vsnip#anonymous'](args.body)
+    end
+  },
   mapping = {
     ['<C-p>'] = cmp.mapping.prev_item(),
     ['<C-n>'] = cmp.mapping.next_item(),
@@ -14,6 +20,7 @@ cmp.setup {
     })
   },
   sources = {
-    { name = 'nvim_lsp' }
+    { name = 'nvim_lsp' },
+    { name = 'vsnip' }
   },
 }

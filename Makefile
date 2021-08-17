@@ -7,8 +7,10 @@ nvim:
 	brew install ripgrep
 	rm -f ~/.config/nvim/init.vim
 	rm -rf ~/.config/nvim
+	rm -rf ~/.vsnip
 	ln -s $(PWD)/vim/.vim ~/.config/nvim
 	ln -s $(PWD)/vim/.vimrc ~/.config/nvim/init.vim
+	ln -s $(PWD)/.vsnip ~/.vsnip
 	nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 	nvim --headless -c 'TSInstallSync maintained' -c 'q'
 

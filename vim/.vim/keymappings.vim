@@ -45,6 +45,10 @@ nnoremap <silent> ]d    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
 "" keymaps for completion is in ./lua/config/nvim-compe.lua
 
+" v-snip
+imap <expr> <c-y>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<c-y>'
+smap <expr> <c-y>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<c-y>'
+
 """"" fuzzy
 nnoremap <Leader>p :Files<CR>
 nnoremap <Leader>9 :GFiles?<CR>

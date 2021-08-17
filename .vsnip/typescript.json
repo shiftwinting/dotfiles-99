@@ -1,0 +1,27 @@
+{
+  "describe": {
+    "body": "describe('${1:Name of the group}', () => {\n\t$0\n})",
+    "description": "creates a describe block",
+    "prefix": "desc"
+  },
+  "it": {
+    "body": "it('${1:should }', () => {\n\t$0\n})",
+    "description": "creates an it block",
+    "prefix": "it"
+  },
+  "function": {
+    "body": "function ${2:Function name}(${1:vars}) {\n\t$0\n}",
+    "description": "creates a function",
+    "prefix": "func"
+  },
+  "@ts-expect-error": {
+    "body": "// @ts-expect-error ${0:message}",
+    "description": "creates a function",
+    "prefix": "@ts"
+  },
+  "eslint-disable-next-line": {
+    "body": "// eslint-disable-next-line ${1:rule}",
+    "description": "creates a function",
+    "prefix": "eslint-disable"
+  }
+}

@@ -63,6 +63,11 @@ return require('packer').startup(function(use)
     after = 'nvim-cmp',
     config = function() require('cmp_nvim_lsp').setup {} end,
   }
+  use {
+    'hrsh7th/cmp-vsnip',
+    requires = {'hrsh7th/vim-vsnip', after = 'cmp-vsnip'},
+    after = 'nvim-cmp',
+  }
 
   use {
     'itchyny/vim-qfedit',
