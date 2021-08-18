@@ -47,6 +47,11 @@ return require('packer').startup(function(use)
   }
   use {'JoosepAlviste/nvim-ts-context-commentstring', after = 'nvim-treesitter'}
   use {'windwp/nvim-ts-autotag', after = 'nvim-treesitter'}
+  use {
+    "ThePrimeagen/refactoring.nvim",
+    ft = {'go', 'lua', 'python', 'typescript', 'typescriptreact'}, -- see https://github.com/ThePrimeagen/refactoring.nvim/tree/master/queries
+    requires = {{"nvim-lua/plenary.nvim", after = 'refactoring.nvim'}}
+  }
 
   use {
     'neovim/nvim-lspconfig',

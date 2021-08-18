@@ -45,6 +45,12 @@ nnoremap <silent> ]d    <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
 "" keymaps for completion is in ./lua/config/nvim-compe.lua
 
+" refactoring
+vnoremap <silent> <leader>re    <esc><cmd>lua require('refactoring').refactor('Extract Function')<CR>
+vnoremap <silent> <leader>rf    <esc><cmd>lua require('refactoring').refactor('Extract Function To File')<CR>
+vnoremap <silent> <leader>rv    <esc><cmd>lua require('refactoring').refactor('Extract Variable')<CR>
+vnoremap <silent> <leader>ri    <esc><cmd>lua require('refactoring').refactor('Inline Variable')<CR>
+
 " v-snip
 imap <expr> <c-y>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<c-y>'
 smap <expr> <c-y>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<c-y>'
