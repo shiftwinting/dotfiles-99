@@ -23,5 +23,10 @@
     "body": "// eslint-disable-next-line ${1:rule}",
     "description": "creates a function",
     "prefix": "eslint-disable"
+  },
+  "import": {
+    "body": "import ${0:something} from '${1:module}'",
+    "description": "creates a function",
+    "prefix": "import"
   }
 }

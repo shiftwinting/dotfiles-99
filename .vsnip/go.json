@@ -1,0 +1,7 @@
+{
+  "test": {
+    "body": "func Test_${1}(t *testing.T) {\n\t${0}\n}",
+    "description": "Create a test",
+    "prefix": "test"
+  }
+}
