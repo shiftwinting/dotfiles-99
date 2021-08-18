@@ -1,5 +1,8 @@
 local lspconfig = require'lspconfig'
 
+local function on_attach()
+  require"lsp_signature".on_attach({ hint_enable = false })
+end
 local flags = { debounce_text_changes = 150 }
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.documentationFormat = { 'markdown' }
@@ -21,6 +24,7 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
 lspconfig.tsserver.setup{
   on_attach = function(client)
     client.resolved_capabilities.document_formatting = false
+    on_attach()
   end,
   flags = flags,
   capabilities = capabilities,
@@ -177,6 +181,5 @@ lspconfig.diagnosticls.setup({
       },
     },
   },
-  on_attach = on_attach,
   flags = flags
 })

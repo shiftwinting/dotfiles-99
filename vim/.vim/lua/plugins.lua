@@ -59,6 +59,10 @@ return require('packer').startup(function(use)
     ft = {'go', 'ruby', 'css', 'scss', 'json', 'yaml', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'dockerfile'},
   }
   use {
+    'ray-x/lsp_signature.nvim',
+    after = 'nvim-lspconfig',
+  }
+  use {
     'hrsh7th/nvim-cmp',
     after = 'nvim-lspconfig',
     config = function() require'config/nvim-compe' end,
