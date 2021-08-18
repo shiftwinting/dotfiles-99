@@ -11,6 +11,7 @@ alias glog="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgre
 alias gs="git status"
 alias gmm="git fetch --prune && git merge origin/master"
 alias gclear="git checkout master | git branch | grep -v master | xargs git branch -D | git fetch --prune | git prune"
+alias tm="tmux -CC new -A -s"
 
 ##### ZSH
 # Edit command in $EDITOR
