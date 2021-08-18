@@ -6,5 +6,7 @@
   "*.spec.tsx": {"alternate": "{}.tsx", "start": "yarn jest:watch {file}"},
   "*.tsx": {"alternate": "{}.spec.tsx", "start": "yarn jest:watch {}.spec.tsx"},
   "spec/*_spec.rb": {"alternate": "app/{}.rb", "start": "bundle exec guard"},
-  "app/*.rb": {"alternate": "spec/{}_spec.rb", "start": "bundle exec guard"}
+  "app/*.rb": {"alternate": "spec/{}_spec.rb", "start": "bundle exec guard"},
+  "*_test.go": {"alternate": "{}.go", "dispatch": "go test {file}"},
+  "*.go": {"alternate": "{}_test.go", "dispatch": "go test {}_test.go"}
 }
