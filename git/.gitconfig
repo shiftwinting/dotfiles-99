@@ -27,3 +27,5 @@
 	trustExitCode = true
 [init]
 	defaultBranch = main
+[alias]
+	fuck = "!f() { git commit -m \"$(curl --silent --fail http://whatthecommit.com/index.txt) [skip ci]\"; }; f"
