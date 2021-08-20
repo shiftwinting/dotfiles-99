@@ -5,12 +5,12 @@
     "prefix": "desc"
   },
   "it": {
-    "body": "it('${1:should }', () => {\n\t$0\n})",
+    "body": "it('${1:should}', () => {\n\t$0\n})",
     "description": "creates an it block",
     "prefix": "it"
   },
   "function": {
-    "body": "function ${2:Function name}(${1:vars}) {\n\t$0\n}",
+    "body": "function ${2:name}(${1:vars}) {\n\t$0\n}",
     "description": "creates a function",
     "prefix": "func"
   },
