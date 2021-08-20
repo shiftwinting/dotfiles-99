@@ -23,6 +23,7 @@ nnoremap <esc> <esc>:noh<return>
 
 nnoremap ]c ]czz
 nnoremap [c [czz
+nnoremap <Leader>yr :let @*=expand('%')<CR>
 
 """""""""""""" PLUGINS MAPS
 """" LSP
@@ -38,6 +39,7 @@ nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
 nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
 nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
 nnoremap <silent> <leader>ca    <cmd>lua vim.lsp.buf.code_action()<CR>
+vnoremap <silent> <leader>ca    <cmd>lua vim.lsp.buf.range_code_action()<CR>
 nnoremap <silent> <leader>e    <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
 nnoremap <leader>d <cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
 nnoremap <silent> [d    <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
