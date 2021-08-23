@@ -14,13 +14,6 @@ nnoremap ]a :next<CR>
 nnoremap [a :prev<CR>
 nnoremap ]A :last<CR>
 
-nnoremap <C-l> 10zl
-nnoremap <C-h> 10zh
-vnoremap <C-l> 10zl
-vnoremap <C-h> 10zh
-
-nnoremap <esc> <esc>:noh<return>
-
 nnoremap ]c ]czz
 nnoremap [c [czz
 nnoremap <Leader>yr :let @*=expand('%')<CR>

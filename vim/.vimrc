@@ -2,10 +2,8 @@ lua require('plugins')
 source ~/.config/nvim/keymappings.vim
 source ~/.config/nvim/colorscheme.vim
 
-set hidden                            " Allows change the buffer without the needs to save it
 set autoread                          " Auto reload changed files
 set wildmenu                          " Tab autocomplete in command mode
-set clipboard=unnamed,unnamedplus     " Clipboard support (OSX)
 set laststatus=2                      " Show status line on startup
 set nowrap                            " Don't wrap long lines
 set showbreak=↪
@@ -25,7 +23,6 @@ set number relativenumber " Enable line numbers
 set foldmethod=indent
 set nofoldenable
 set shortmess+=c
-set shortmess-=S " Show how many matches / ? have
 set belloff=all
 set updatetime=750
 if !has('gui_running')
