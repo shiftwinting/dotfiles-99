@@ -1,8 +1,8 @@
 {
   "*.spec.js": {"alternate": "{}.js", "start": "yarn jest:watch {file}"},
   "*.js": {"alternate": "{}.spec.js", "start": "yarn jest:watch {}.spec.js"},
-  "*.spec.ts": {"alternate": "{}.ts", "start": "yarn jest:watch {file}"},
-  "*.ts": {"alternate": "{}.spec.ts", "start": "yarn jest:watch {}.spec.ts"},
+  "*.spec.ts": {"alternate": "{}.ts", "start": "yarn jest:watch {file}", "dispatch": "yarn jest {file}"},
+  "*.ts": {"alternate": "{}.spec.ts", "start": "yarn jest:watch {}.spec.ts", "dispatch": "yarn jest {}.spec.ts"},
   "*.spec.tsx": {"alternate": "{}.tsx", "start": "yarn jest:watch {file}"},
   "*.tsx": {"alternate": "{}.spec.tsx", "start": "yarn jest:watch {}.spec.tsx"},
   "spec/*_spec.rb": {"alternate": "app/{}.rb", "start": "bundle exec guard"},
