@@ -49,7 +49,7 @@ return require('packer').startup(function(use)
   use {'windwp/nvim-ts-autotag', after = 'nvim-treesitter'}
   use {
     "ThePrimeagen/refactoring.nvim",
-    ft = {'go', 'lua', 'python', 'typescript', 'typescriptreact'}, -- see https://github.com/ThePrimeagen/refactoring.nvim/tree/master/queries
+    ft = {'go', 'lua', 'python', 'typescript', 'typescriptreact', 'javascript', 'javascriptreact'}, -- see https://github.com/ThePrimeagen/refactoring.nvim/tree/master/queries
     requires = {{"nvim-lua/plenary.nvim", after = 'refactoring.nvim'}}
   }
 
