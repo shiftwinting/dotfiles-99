@@ -78,11 +78,6 @@ return require('packer').startup(function(use)
     after = 'nvim-cmp',
   }
 
-  use {
-    'itchyny/vim-qfedit',
-    ft = {'qf'}
-  }
-
   use 'lourenci/github-colors'
 
   use {
