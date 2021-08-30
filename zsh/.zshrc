@@ -1,6 +1,11 @@
 . /usr/local/opt/asdf/asdf.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS='--cycle --bind ctrl-j:jump-accept,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-f:page-down,ctrl-b:page-up'
+if command -v rg &> /dev/null
+then
+  export FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git" '
+fi
 
 export EDITOR="nvim"
 export GPG_TTY=$(tty)
