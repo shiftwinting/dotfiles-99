@@ -4,7 +4,7 @@ all: nvim zsh git
 
 nvim:
 	brew install neovim --HEAD
-	brew install ripgrep
+	brew install ripgrep fzf
 	rm -f ~/.config/nvim/init.vim
 	rm -rf ~/.config/nvim
 	rm -rf ~/.vsnip
