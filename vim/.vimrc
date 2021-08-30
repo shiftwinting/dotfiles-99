@@ -31,6 +31,7 @@ endif
 set inccommand=split
 set undodir=~/.config/nvim/undo/
 set lazyredraw
+set notimeout nottimeout
 
 if !has('gui_running')
   augroup LoadChangedFileExternally
